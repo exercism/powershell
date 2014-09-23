@@ -1,0 +1,18 @@
+{
+  "slug": "powershell",
+  "language": "Windows PowerShell",
+  "repository": "https://github.com/exercism/xpowershell",
+  "active": false,
+  "problems": [
+
+  ],
+  "deprecated": [
+
+  ],
+  "ignored": [
+
+  ],
+  "foregone": [
+
+  ]
+}
