@@ -2,6 +2,7 @@
   "slug": "powershell",
   "language": "Windows PowerShell",
   "repository": "https://github.com/exercism/xpowershell",
+  "checklist_issue": 4,
   "active": false,
   "problems": [
 
