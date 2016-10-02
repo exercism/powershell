@@ -6,7 +6,8 @@
   "active": false,
   "problems": [
     "hello-world",
-    "hamming"
+    "hamming",
+    "leap"
   ],
   "deprecated": [
 
