@@ -4,19 +4,27 @@
   "repository": "https://github.com/exercism/xpowershell",
   "checklist_issue": 4,
   "active": false,
-  "problems": [
-    "hello-world",
-    "hamming"
-  ],
   "deprecated": [
 
   ],
   "ignored": [
-     "bin",
-     "docs",
-     "img"
+    "bin",
+    "docs",
+    "img"
   ],
   "foregone": [
 
+  ],
+  "exercises": [
+    {
+      "difficulty": 1,
+      "slug": "hello-world",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "hamming",
+      "topics": []
+    }
   ]
 }
