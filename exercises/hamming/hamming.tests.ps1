@@ -9,7 +9,7 @@ Describe "HammingTest" {
 	It "tests log identical strands" {
 		Compute "GGACTGA" "GGACTGA" | Should be 0
 	}
-	
+
 	It "tests complete distance in single nucleotide strands" {
 		Compute "A" "G" | Should be 1
 	}
@@ -37,7 +37,7 @@ Describe "HammingTest" {
 	It "tests non unique character in second strand" {
 		Compute "AGG" "AGA" | Should be 1
 	}
-	
+
 	It "tests same nucleotides in different position" {
 		Compute "TAG" "GAT" | Should be 2
 	}
@@ -45,7 +45,7 @@ Describe "HammingTest" {
 	It "tests large distance" {
 		Compute "GATACA" "GCATAA" | Should be 4
 	}
-	
+
 	It "tests large distance in off by one strand" {
 		Compute "GGACGGATTCTG" "AGGACGGATTCT" | Should be 9
 	}
@@ -59,6 +59,6 @@ Describe "HammingTest" {
 	}
 
 	It "tests disallow second strand longer" {
-		{ Compute("ATA", "AGTG") } | Should Throw "Mismatching string lengths"
+		{ Compute "ATA" "AGTG" } | Should Throw "Mismatching string lengths"
 	}
 }
