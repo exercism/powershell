@@ -19,12 +19,16 @@
     {
       "difficulty": 1,
       "slug": "hello-world",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "hamming",
-      "topics": []
+      "topics": [
+
+      ]
     }
   ]
 }
