@@ -1,4 +1,4 @@
-# xPowerShell
+# PowerShell
 
 Exercism Exercises for Windows PowerShell
 
