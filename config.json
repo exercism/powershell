@@ -1,7 +1,7 @@
 {
   "slug": "powershell",
   "language": "Windows PowerShell",
-  "repository": "https://github.com/exercism/xpowershell",
+  "repository": "https://github.com/exercism/powershell",
   "checklist_issue": 4,
   "active": false,
   "deprecated": [
