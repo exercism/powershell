@@ -12,38 +12,9 @@ run with powershell:
 
     PS> Invoke-Pester
 
-This will fail, complaining that the file `HelloWorld.ps1` was not found.
+This command will look for all files that end with the name `.Tests.ps1`.  These will be loaded at the tests run.  The tests will load the `HelloWorld.ps1` script and then call the function to test it.
 
-To fix the error create an empty file called `HelloWorld.ps1` in the same
-directory as the `HelloWorld.Tests.ps1` file.
-
-## Step 2
-
-Run the test again. It will give you a new error since now the file exists,
-but is empty and does not contain the expected code.
-
->The term 'Hello-World' is not recognized as the name of a cmdlet, function, script file, 
->or operable program
-
-
-### Fixing the Error
-
-To fix it, open up the HelloWorld.ps1 file and add the following code:
-
-``` PowerShell
-Function Hello-World() {
-
-}
-
-```
-
-Run the test again.
-
-Up until now we've been getting errors, this time we get 3 failures.
-
-An error means `Pester` cannot run properly because of things like missing files or syntax errors.
-
-A failure is different. A failure is when `Pester` is running fine and the test is expecting one outcome, but receiving a different outcome.
+Initially the tests will fail with:
 
 ```
 
@@ -73,9 +44,9 @@ Tests Passed: 0, Failed: 3, Skipped: 0, Pending: 0, Inconclusive: 0
 
 ```
 
-## Step 3
+## Step 2
 
-Add a `Write-Output` statement to the function and then run the test again.
+Update the function to output the `"Hello, World!"` string.
 
 ``` PowerShell
 
@@ -85,7 +56,7 @@ Function Hello-World() {
 
 ```
 
-This time the output will be a mix of green and purple text, representing test successes and failures.
+This time the output will be a mix of green and red text, representing test successes and failures.
 
 ```
 
