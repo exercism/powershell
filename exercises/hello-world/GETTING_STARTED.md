@@ -7,12 +7,12 @@ suite.
 
 ## Step 1
 
-Run the test suite. It's written using the Pester framework, and can be
+Run the test suite. It's written using the `Pester` framework, and can be
 run with powershell:
 
     PS> Invoke-Pester
 
-This will fail, complaining that `hello-world` could not be loaded.
+This will fail, complaining that the file `HelloWorld.ps1` was not found.
 
 To fix the error create an empty file called `HelloWorld.ps1` in the same
 directory as the `HelloWorld.Tests.ps1` file.
@@ -22,77 +22,101 @@ directory as the `HelloWorld.Tests.ps1` file.
 Run the test again. It will give you a new error since now the file exists,
 but is empty and does not contain the expected code.
 
->The term 'HelloWorld' is not recognized as the name of a cmdlet, function, script file,
-or operable program
+>The term 'Hello-World' is not recognized as the name of a cmdlet, function, script file, 
+>or operable program
 
 
 ### Fixing the Error
 
 To fix it, open up the HelloWorld.ps1 file and add the following code:
 
-    function HelloWorld {
+``` PowerShell
+Function Hello-World() {
 
-    }
+}
+
+```
 
 Run the test again.
 
 Up until now we've been getting errors, this time we get 3 failures.
 
-An error means Pester cannot run properly because of things like missing files or syntax errors.
+An error means `Pester` cannot run properly because of things like missing files or syntax errors.
 
-A failure is different. A failure is when Pester is running fine and the test is expecting one outcome, but getting another.
+A failure is different. A failure is when `Pester` is running fine and the test is expecting one outcome, but receiving a different outcome.
 
 ```
-[-] outputs 'Hello World!' 64ms
-  Expected: {Hello World!}
-  But was:  {}
-  at line: 7 in /Users/spencerowen/Code/github/xpowershell/exercises/hello-world/HelloWorld.Tests.ps1
-  7: 		HelloWorld | Should be 'Hello World!'
-[-] outputs Hello Alice! 42ms
-  Expected: {Hello Alice!}
-  But was:  {}
-  at line: 11 in /Users/spencerowen/Code/github/xpowershell/exercises/hello-world/HelloWorld.Tests.ps1
-  11: 		HelloWorld('Alice') | Should be 'Hello Alice!'
-[-] outpus Hello Bob! 46ms
-  Expected: {Hello Bob!}
-  But was:  {}
-  at line: 15 in /Users/spencerowen/Code/github/xpowershell/exercises/hello-world/HelloWorld.Tests.ps1
-  15: 		HelloWorld('Bob') | Should be 'Hello Bob!'
-  ```
+
+Executing script c:\Dev\Exercism.io\powershell\exercises\Hello-World\HelloWorld.Tests.ps1
+
+  Describing Hello-World
+    [-] Outputs: Hello World! 293ms
+      Expected: {Hello World!}
+      But was:  {}
+      22:               Hello-World | Should -Be "Hello World!"
+      at Invoke-Assertion, C:\Users\KentChenery\Documents\WindowsPowerShell\Modules\Pester\4.1.1\Functions\Assertions\Should.ps1: line 209
+      at <ScriptBlock>, C:\Dev\Exercism.io\powershell\exercises\Hello-World\HelloWorld.Tests.ps1: line 22
+    [-] Outputs: Hello Alice! 74ms
+      Expected: {Hello Alice!}
+      But was:  {}
+      26:               Hello-World "Alice" | Should -Be "Hello Alice!"
+      at Invoke-Assertion, C:\Users\KentChenery\Documents\WindowsPowerShell\Modules\Pester\4.1.1\Functions\Assertions\Should.ps1: line 209
+      at <ScriptBlock>, C:\Dev\Exercism.io\powershell\exercises\Hello-World\HelloWorld.Tests.ps1: line 26
+    [-] Outputs: Hello Bob! 32ms
+      Expected: {Hello Bob!}
+      But was:  {}
+      30:               Hello-World "Bob" | Should -Be "Hello Bob!"
+      at Invoke-Assertion, C:\Users\KentChenery\Documents\WindowsPowerShell\Modules\Pester\4.1.1\Functions\Assertions\Should.ps1: line 209
+      at <ScriptBlock>, C:\Dev\Exercism.io\powershell\exercises\Hello-World\HelloWorld.Tests.ps1: line 30
+Tests completed in 400ms
+Tests Passed: 0, Failed: 3, Skipped: 0, Pending: 0, Inconclusive: 0
+
+```
 
 ## Step 3
 
-Add a return statement to the function and then run the test again.
+Add a `Write-Output` statement to the function and then run the test again.
 
-```
-function HelloWorld {
-    return "Hello World!"
+``` PowerShell
+
+Function Hello-World() {
+    Write-Output "Hello World!"
 }
+
 ```
 
 This time the output will be a mix of green and purple text, representing test successes and failures.
 
 ```
-[+] outputs 'Hello World!' 31ms
-[-] outputs Hello Alice! 46ms
-  String lengths are both 12. Strings differ at index 6.
-  Expected: {Hello Alice!}
-  But was:  {Hello World!}
-  -----------------^
-  at line: 11 in
-  ./exercises/hello-world/HelloWorld.Tests.ps1
-  11: 		HelloWorld('Alice') | Should be 'Hello Alice!'
-  [-] outpus Hello Bob! 46ms
-  Expected: {Hello Bob!}
-  But was:  {}
-  at line: 15 in .
-  /exercises/hello-world/HelloWorld.Tests.ps1
-  15: 		HelloWorld('Bob') | Should be 'Hello Bob!'
+
+Executing script c:\Dev\Exercism.io\powershell\exercises\Hello-World\HelloWorld.Tests.ps1
+
+  Describing Hello-World
+    [+] Outputs: Hello World! 97ms
+    [-] Outputs: Hello Alice! 33ms
+      String lengths are both 12. Strings differ at index 6.
+      Expected: {Hello Alice!}
+      But was:  {Hello World!}
+      -----------------^
+      26:               Hello-World "Alice" | Should -Be "Hello Alice!"
+      at Invoke-Assertion, C:\Users\KentChenery\Documents\WindowsPowerShell\Modules\Pester\4.1.1\Functions\Assertions\Should.ps1: line 209
+      at <ScriptBlock>, C:\Dev\Exercism.io\powershell\exercises\Hello-World\HelloWorld.Tests.ps1: line 26
+    [-] Outputs: Hello Bob! 44ms
+      Expected string length 10 but was 12. Strings differ at index 6.
+      Expected: {Hello Bob!}
+      But was:  {Hello World!}
+      -----------------^
+      30:               Hello-World "Bob" | Should -Be "Hello Bob!"
+      at Invoke-Assertion, C:\Users\KentChenery\Documents\WindowsPowerShell\Modules\Pester\4.1.1\Functions\Assertions\Should.ps1: line 209
+      at <ScriptBlock>, C:\Dev\Exercism.io\powershell\exercises\Hello-World\HelloWorld.Tests.ps1: line 30
+Tests completed in 175ms
+Tests Passed: 1, Failed: 2, Skipped: 0, Pending: 0, Inconclusive: 0
+
 ```
 
 The first test passed because the function returned the expected string 'Hello World!'.
 
-Refactor the HelloWorld.ps1 file so that the `HelloWorld()` function takes a parameter.
+Refactor the HelloWorld.ps1 file so that the `Hello-World` function takes a parameter that is a person's name.  When supplied a name, the `Hello-World` function should greet that person.
 
 ## Wash, Rinse, Repeat
 
@@ -105,4 +129,8 @@ Refactor your code until a single test passes. Repeat over and over until all te
 When everything is passing, you can submit your code with the following
 command:
 
-    PS> exercism submit HelloWorld.ps1
+``` 
+
+PS> exercism submit HelloWorld.ps1
+
+```
