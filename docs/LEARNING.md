@@ -5,9 +5,7 @@ A great place to start learning PowerShell is at the PowerShell Github repositor
 PowerShell also has a very complete self documenting help system.  You can explore much of what PowerShell offers using the `Get-Help` cmdlet.  From within PowerShell, try:
 
 ``` PowerShell
-
 Get-Help about
-
 ```
 
 You will see about 3 pages of topics that can be explored.
@@ -26,7 +24,5 @@ PowerShell follows quite a strict Verb-Noun for the naming of its cmdlets.  Init
 To see a list of all the approved verbs, simply run:
 
 ``` PowerShell
-
 Get-Verb
-
 ```
