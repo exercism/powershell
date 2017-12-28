@@ -10,35 +10,35 @@ suite.
 Run the test suite. It's written using the `Pester` framework, and can be
 run with powershell:
 
-    PS> Invoke-Pester
+    Invoke-Pester
 
-This command will look for all files that end with the name `.Tests.ps1`.  These will be loaded at the tests run.  The tests will load the `HelloWorld.ps1` script and then call the function to test it.
+Without any parameters, this command will look for all files that end with the name `.Tests.ps1`.  These will be loaded and the tests run.  The tests will load the `OutHelloWorld.ps1` script and then call the function to test it.
 
 Initially the tests will fail with:
 
 ```
 
-Executing script c:\Dev\Exercism.io\powershell\exercises\Hello-World\HelloWorld.Tests.ps1
+Executing script c:\Dev\Exercism.io\powershell\exercises\Out-HelloWorld\OutHelloWorld.Tests.ps1
 
-  Describing Hello-World
+  Describing Out-HelloWorld
     [-] Outputs: Hello World! 293ms
       Expected: {Hello World!}
       But was:  {}
-      22:               Hello-World | Should -Be "Hello World!"
+      22:               Out-HelloWorld | Should -Be "Hello World!"
       at Invoke-Assertion, C:\Users\KentChenery\Documents\WindowsPowerShell\Modules\Pester\4.1.1\Functions\Assertions\Should.ps1: line 209
-      at <ScriptBlock>, C:\Dev\Exercism.io\powershell\exercises\Hello-World\HelloWorld.Tests.ps1: line 22
+      at <ScriptBlock>, C:\Dev\Exercism.io\powershell\exercises\Out-HelloWorld\OutHelloWorld.Tests.ps1: line 22
     [-] Outputs: Hello Alice! 74ms
       Expected: {Hello Alice!}
       But was:  {}
-      26:               Hello-World "Alice" | Should -Be "Hello Alice!"
+      26:               Out-HelloWorld "Alice" | Should -Be "Hello Alice!"
       at Invoke-Assertion, C:\Users\KentChenery\Documents\WindowsPowerShell\Modules\Pester\4.1.1\Functions\Assertions\Should.ps1: line 209
-      at <ScriptBlock>, C:\Dev\Exercism.io\powershell\exercises\Hello-World\HelloWorld.Tests.ps1: line 26
+      at <ScriptBlock>, C:\Dev\Exercism.io\powershell\exercises\Out-HelloWorld\OutHelloWorld.Tests.ps1: line 26
     [-] Outputs: Hello Bob! 32ms
       Expected: {Hello Bob!}
       But was:  {}
-      30:               Hello-World "Bob" | Should -Be "Hello Bob!"
+      30:               Out-HelloWorld "Bob" | Should -Be "Hello Bob!"
       at Invoke-Assertion, C:\Users\KentChenery\Documents\WindowsPowerShell\Modules\Pester\4.1.1\Functions\Assertions\Should.ps1: line 209
-      at <ScriptBlock>, C:\Dev\Exercism.io\powershell\exercises\Hello-World\HelloWorld.Tests.ps1: line 30
+      at <ScriptBlock>, C:\Dev\Exercism.io\powershell\exercises\Out-HelloWorld\OutHelloWorld.Tests.ps1: line 30
 Tests completed in 400ms
 Tests Passed: 0, Failed: 3, Skipped: 0, Pending: 0, Inconclusive: 0
 
@@ -50,7 +50,7 @@ Update the function to output the `"Hello, World!"` string.
 
 ``` PowerShell
 
-Function Hello-World() {
+Function Out-HelloWorld() {
     Write-Output "Hello World!"
 }
 
@@ -60,26 +60,26 @@ This time the output will be a mix of green and red text, representing test succ
 
 ```
 
-Executing script c:\Dev\Exercism.io\powershell\exercises\Hello-World\HelloWorld.Tests.ps1
+Executing script c:\Dev\Exercism.io\powershell\exercises\Out-HelloWorld\OutHelloWorld.Tests.ps1
 
-  Describing Hello-World
+  Describing Out-HelloWorld
     [+] Outputs: Hello World! 97ms
     [-] Outputs: Hello Alice! 33ms
       String lengths are both 12. Strings differ at index 6.
       Expected: {Hello Alice!}
       But was:  {Hello World!}
       -----------------^
-      26:               Hello-World "Alice" | Should -Be "Hello Alice!"
+      26:               Out-HelloWorld "Alice" | Should -Be "Hello Alice!"
       at Invoke-Assertion, C:\Users\KentChenery\Documents\WindowsPowerShell\Modules\Pester\4.1.1\Functions\Assertions\Should.ps1: line 209
-      at <ScriptBlock>, C:\Dev\Exercism.io\powershell\exercises\Hello-World\HelloWorld.Tests.ps1: line 26
+      at <ScriptBlock>, C:\Dev\Exercism.io\powershell\exercises\Out-HelloWorld\OutHelloWorld.Tests.ps1: line 26
     [-] Outputs: Hello Bob! 44ms
       Expected string length 10 but was 12. Strings differ at index 6.
       Expected: {Hello Bob!}
       But was:  {Hello World!}
       -----------------^
-      30:               Hello-World "Bob" | Should -Be "Hello Bob!"
+      30:               Out-HelloWorld "Bob" | Should -Be "Hello Bob!"
       at Invoke-Assertion, C:\Users\KentChenery\Documents\WindowsPowerShell\Modules\Pester\4.1.1\Functions\Assertions\Should.ps1: line 209
-      at <ScriptBlock>, C:\Dev\Exercism.io\powershell\exercises\Hello-World\HelloWorld.Tests.ps1: line 30
+      at <ScriptBlock>, C:\Dev\Exercism.io\powershell\exercises\Out-HelloWorld\OutHelloWorld.Tests.ps1: line 30
 Tests completed in 175ms
 Tests Passed: 1, Failed: 2, Skipped: 0, Pending: 0, Inconclusive: 0
 
@@ -87,7 +87,7 @@ Tests Passed: 1, Failed: 2, Skipped: 0, Pending: 0, Inconclusive: 0
 
 The first test passed because the function returned the expected string 'Hello World!'.
 
-Refactor the HelloWorld.ps1 file so that the `Hello-World` function takes a parameter that is a person's name.  When supplied a name, the `Hello-World` function should greet that person.
+Refactor the OutHelloWorld.ps1 file so that the `Out-HelloWorld` function takes a parameter that is a person's name.  When supplied a name, the `Out-HelloWorld` function should greet that person.
 
 ## Wash, Rinse, Repeat
 
@@ -102,6 +102,6 @@ command:
 
 ``` 
 
-PS> exercism submit HelloWorld.ps1
+PS> exercism submit OutHelloWorld.ps1
 
 ```
