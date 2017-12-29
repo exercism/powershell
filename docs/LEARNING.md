@@ -1,6 +1,6 @@
 # Learning PowerShell
 
-A great place to start learning PowerShell is at the PowerShell Github repository where it has a [learning section](https://github.com/PowerShell/PowerShell/tree/master/docs/learning-powershell).  This hsa a huge amount of information and links to a wide range of PowerShell topics.
+A great place to start learning PowerShell is at the PowerShell Github repository where it has a [learning section](https://github.com/PowerShell/PowerShell/tree/master/docs/learning-powershell).  This has a huge amount of information and links to a wide range of PowerShell topics.
 
 PowerShell also has a very complete self documenting help system.  You can explore much of what PowerShell offers using the `Get-Help` cmdlet.  From within PowerShell, try:
 
