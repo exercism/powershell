@@ -1,23 +1,40 @@
 {
-  "slug": "powershell",
   "language": "Windows PowerShell",
-  "repository": "https://github.com/exercism/xpowershell",
   "checklist_issue": 4,
   "active": false,
-  "problems": [
-    "hello-world",
-    "hamming",
-    "leap"
-  ],
-  "deprecated": [
-
-  ],
-  "ignored": [
-     "bin",
-     "docs",
-     "img"
-  ],
   "foregone": [
 
+  ],
+  "exercises": [
+    {
+      "uuid": "83c215e6-4a4e-4302-8d68-47f367478d2c",
+      "slug": "hello-world",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+
+      ]
+    },
+    {
+      "uuid": "e62edbd6-861b-4cd6-bb03-6c9bcaa742a4",
+      "slug": "leap",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+
+      ]
+    },
+    {
+      "uuid": "f55b2158-a8f0-4593-b44a-6e750ebac0a5",
+      "slug": "hamming",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+
+      ]
+    }
   ]
 }
