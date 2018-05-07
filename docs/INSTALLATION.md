@@ -1,10 +1,19 @@
-## Installing Windows PowerShell
+## PowerShell language track requirements
+
+The Exercism Windows PowerShell language track requires installed on your system:
+
+* Windows PowerShell or Windows PowerShell Core
+* Pester test and mock framework module installed
+
+(PS: Support for PowerShell is limited to critical fixes. PowerShell Core is consistently maintained and has greater cross-platform support)
+
+### Installing Windows PowerShell
 
 PowerShell comes pre-installed on all Windows operating systems from Windows 7 SP1 onward.
 
 You can find the latest version of PowerShell and installation instructions for all platforms (Linux, macOS and Windows) [here](https://github.com/PowerShell/PowerShell/blob/master/README.md#get-powershell).
 
-## Installing and updating the Pester framework
+### Installing and updating the Pester framework
 
 [Pester](https://github.com/pester/Pester) is the PowerShell testing framework.  Since version 4.0.9 it is compatible with PowerShell Core on Windows, Linux and MacOS (with some limitations)
 
