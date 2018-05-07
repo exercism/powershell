@@ -1,4 +1,4 @@
-Function Hello-World {
+Function Get-HelloWorld {
 	[CmdletBinding()]
 	Param(
 		[Parameter(Mandatory=$false)]

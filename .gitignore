@@ -1,3 +1,5 @@
 bin/configlet
 bin/configlet.exe
 exercises/hamming/hamming.ps1
+.vs/slnx.sqlite
+.vs/ProjectSettings.json
