@@ -1,4 +1,4 @@
-function Compute([string]$strand1, [string]$strand2) {
+function Get-HammingDifference([string]$strand1, [string]$strand2) {
   if ( $strand1.length -ne $strand2.length) {
     Throw "Mismatching string lengths"
   }
