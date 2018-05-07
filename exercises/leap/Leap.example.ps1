@@ -1,5 +1,5 @@
-function Leap {
-	param( [int]$year)
+function Test-LeapYear {
+	param([int]$year)
 	# This could be solved using the native system.datetime object
 	# but that isn't in the spirit of exercism. 
 	#[system.datetime]::isleapyear($year)
