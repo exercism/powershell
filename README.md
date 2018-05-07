@@ -18,4 +18,4 @@ The topics in this section provide development guidelines that you can use to pr
 * [Strongly Encouraged Development Guidelines](https://msdn.microsoft.com/en-us/library/dd878270(v=vs.85).aspx)
 * [Advisory Development Guidelines](https://msdn.microsoft.com/en-us/library/dd878291(v=vs.85).aspx)
 
-!!![Approved Verbs for Windows PowerShell Commands](https://msdn.microsoft.com/en-us/library/ms714428(v=vs.85).aspx)
+!!! [Approved Verbs for Windows PowerShell Commands](https://msdn.microsoft.com/en-us/library/ms714428(v=vs.85).aspx)
