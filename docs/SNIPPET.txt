@@ -1,9 +1,4 @@
-Function Hello-World {
-	[CmdletBinding()]
-	Param(
-		[Parameter(Mandatory=$false)]
-		[string]$Person = "World"
-	)
-
-	return "Hello, $Person!"
+function HelloWorld {
+	param( [string]$person = "World")
+	return "Hello $person!"
 }
