@@ -1,49 +1,33 @@
-# Installing PowerShell
+## Installing Windows PowerShell
 
-PowerShell is installed on Windows by default since Windows 7 SP1 and Windows Server 2008 R2 SP1.
+PowerShell comes pre-installed on all Windows operating systems from Windows 7 SP1 onward.
 
-Linux, macOS and Windows that would like to use PowerShell 6 (beta) can install the latest version from [GitHub](https://github.com/powershell/powershell#get-powershell).  This also includes specific installation instructions for different operating systems.
+You can find the latest version of PowerShell and installation instructions for all platforms (Linux, macOS and Windows) [here](https://github.com/PowerShell/PowerShell/blob/master/README.md#get-powershell).
 
-## Using Visual Studio Code
+## Installing and updating the Pester framework
 
-On Windows, PowerShell ISE was the original development environment for PowerShell.  It is still a competent tool, however, [Visual Studio Code](https://code.visualstudio.com/) is fast replacing it.  It is highly recommended you use Visual Studio Code for learning and developing PowerShell.
+[Pester](https://github.com/pester/Pester) is the PowerShell testing framework.  Since version 4.0.9 it is compatible with PowerShell Core on Windows, Linux and MacOS (with some limitations)
 
-### Installing Visual Studio Code
+It is preinstalled on Windows 10, however, it is recommended you update by running the following PowerShell command:
 
-* Download the latest release from: https://code.visualstudio.com/
-* Install the PowerShell extension within Visual Studio Code
-  * Open the extensions menu (Windows and Linux: `Ctrl + Shift + X`,  macOS: `⇧ ⌘ X`)
-  * Search for PowerShell
-  * Install the PowerShell extension developed by Microsoft
+```PowerShell
 
-
-
-## Installing Pester
-
-Pester is the defacto test and mocking framework for PowerShell.  Instructions for installation are available at: https://github.com/pester/Pester/wiki/Installation-and-Update
-
-The following is an abridged version of that wiki article.
-
-### Installing on Windows
-
-Version 3.4.0 ships with Windows 10 and this version conflicts with the standard module update mechanism.  To update, or install if running an earlier version of Windows, run as an administrator:
-
-``` PowerShell
 Install-Module -Name Pester -Force -SkipPublisherCheck
+
 ```
-
-### Installing on Linux and macOS
-
-Since Pester 4.1.0 it is compatible with PowerShell Core allowing it to be run on Linux and macOS.  It does have some [limitations](https://github.com/pester/Pester/wiki/Pester-on-PSCore-limitations)
-
-``` PowerShell
-Install-Module -Name Pester
-```
-
-### Updating Pester
-
-For subsequent updating run:
+For subsequent updates, run:
 
 ``` PowerShell
 Update-Module -Name Pester
 ```
+if necessary, further instructions for installation are available at: https://github.com/pester/Pester/wiki/Installation-and-Update
+
+## Using an IDE
+
+If you want a more full-featured editing experience, you probably want to use an IDE. These are the most popular IDE's that support building PowerShell projects:
+
+### All platforms
+* [PowerShell ISE], build-in graphical IDE that comes with PowerShell
+* [Visual Studio Code](https://code.visualstudio.com/download) with the [PowerShell extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell).  Visual Studio Code will also allow you to run the tests and also debug your code.
+* [Atom](https://atom.io/) with the [PowerShell package](https://atom.io/packages/language-powershell)
+* [Sublime Text 3](https://www.sublimetext.com/3) with the [PowerShell package](https://packagecontrol.io/packages/PowerShell)
