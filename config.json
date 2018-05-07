@@ -15,7 +15,7 @@
       "unlocked_by": null,
       "difficulty": 1,
       "topics": [
-
+        "strings"
       ]
     },
     {
@@ -25,7 +25,8 @@
       "unlocked_by": null,
       "difficulty": 1,
       "topics": [
-
+        "control_flow_if_else_statements",
+        "integers"
       ]
     },
     {
@@ -35,7 +36,8 @@
       "unlocked_by": null,
       "difficulty": 1,
       "topics": [
-
+        "filtering",
+        "strings"
       ]
     }
   ]
