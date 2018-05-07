@@ -1,8 +1,8 @@
-Function Out-HelloWorld {
+Function Get-HelloWorld {
 	Param(
 		[Parameter(Mandatory=$false, Position=0)]
 		[string]$Person = "World"
 	)
 
-	Write-Output "Hello $Person!"
+	return "Hello, $Person!"
 }
