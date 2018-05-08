@@ -3,3 +3,5 @@ bin/configlet.exe
 exercises/hamming/hamming.ps1
 .vs/ProjectSettings.json
 .vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+.vs/powershell/v15/.suo
