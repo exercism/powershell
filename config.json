@@ -6,7 +6,7 @@
   "active": false,
   "foregone": [
 
-  ],
+    ],
   "exercises": [
     {
       "uuid": "83c215e6-4a4e-4302-8d68-47f367478d2c",
@@ -15,7 +15,7 @@
       "unlocked_by": null,
       "difficulty": 1,
       "topics": [
-
+        "strings"
       ]
     },
     {
@@ -25,7 +25,8 @@
       "unlocked_by": null,
       "difficulty": 1,
       "topics": [
-
+        "control_flow_if_else_statements",
+        "integers"
       ]
     },
     {
@@ -35,7 +36,19 @@
       "unlocked_by": null,
       "difficulty": 1,
       "topics": [
-
+        "filtering",
+        "strings"
+      ]
+    },
+    {
+      "uuid": "45f285c2-9358-451d-a931-1dee54df7b67",
+      "slug": "two-fer",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "optional_values",
+        "strings"
       ]
     }
   ]
