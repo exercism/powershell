@@ -6,3 +6,4 @@ exercises/hamming/hamming.ps1
 .vs/VSWorkspaceState.json
 .vs/powershell/v15/.suo
 .vs/config/applicationhost.config
+*.sqlite-journal
