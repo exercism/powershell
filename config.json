@@ -30,17 +30,6 @@
       ]
     },
     {
-      "uuid": "f55b2158-a8f0-4593-b44a-6e750ebac0a5",
-      "slug": "hamming",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "filtering",
-        "strings"
-      ]
-    },
-    {
       "uuid": "45f285c2-9358-451d-a931-1dee54df7b67",
       "slug": "two-fer",
       "core": false,
@@ -48,6 +37,17 @@
       "difficulty": 1,
       "topics": [
         "optional_values",
+        "strings"
+      ]
+    },
+    {
+      "uuid": "f55b2158-a8f0-4593-b44a-6e750ebac0a5",
+      "slug": "hamming",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "filtering",
         "strings"
       ]
     }
