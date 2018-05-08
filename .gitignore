@@ -4,4 +4,8 @@ exercises/hamming/hamming.ps1
 .vs/ProjectSettings.json
 .vs/slnx.sqlite
 .vs/VSWorkspaceState.json
+<<<<<<< HEAD
 .vs/powershell/v15/.suo
+=======
+.vs/powershell/v15/.suo
+>>>>>>> a8cd8ef0056a6e0c131e117cf309b02048e28031
