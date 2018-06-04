@@ -16,11 +16,13 @@ Describe "Test Get-Raindrops" {
 		@{ Number = 15; Result = "PlingPlang" },
 		@{ Number = 21; Result = "PlingPlong" },
 		@{ Number = 25; Result = "Plang" },
+		@{ Number = 27; Result = "Pling" },
 		@{ Number = 35; Result = "PlangPlong" },
 		@{ Number = 49; Result = "Plong" },
 		@{ Number = 52; Result = "52" },
 		@{ Number = 105; Result = "PlingPlangPlong" },
-		@{ Number = 12121; Result = "12121"}
+		@{ Number = 3125; Result = "Plang" },
+		@{ Number = 12121; Result = "12121" }
 	) {
 		Param(
 			[int]$Number,
