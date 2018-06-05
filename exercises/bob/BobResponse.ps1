@@ -1,3 +1,8 @@
-function Get-BobResponse() {
-  Throw "Function not implemented"
+Function Get-BobResponse() {
+    [CmdletBinding()]
+    Param(
+        [string]$HeyBob
+    )
+
+    Throw "Function not implemented"
 }
