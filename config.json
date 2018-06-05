@@ -2,7 +2,7 @@
   "slug": "powershell",
   "language": "Windows PowerShell",
   "repository": "https://github.com/exercism/powershell",
-  "checklist_issue": 4,
+  "checklist_issue": "4",
   "active": false,
   "foregone": [
 
@@ -46,6 +46,17 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
+      "topics": [
+        "filtering",
+        "strings"
+      ]
+    },
+    {
+      "uuid": "90a12652-946c-4771-83bd-741f884cd426",
+      "slug": "raindrops",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 2,
       "topics": [
         "filtering",
         "strings"
