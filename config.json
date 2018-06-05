@@ -51,5 +51,16 @@
         "strings"
       ]
     }
+    ,{
+      "uuid": "213089cb-eaa6-41cd-a53b-3078b68ec323",
+      "slug": "raindrops",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "filtering"
+        ,"strings"
+      ]
+    }
   ]
 }
