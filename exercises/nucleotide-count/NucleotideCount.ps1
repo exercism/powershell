@@ -1,3 +1,8 @@
-function Get-NucleotideCount() {
-  Throw "Not implemented exception"
+Function Get-NucleotideCount() {
+    [CmdletBinding()]
+    Param(
+        [string]$Strand
+    )
+
+    Throw "Not implemented exception"
 }
