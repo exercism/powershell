@@ -28,6 +28,17 @@
         "control_flow_if_else_statements",
         "integers"
       ]
+    }
+    ,{
+      "uuid": "e80b254a-0dd8-4efb-83e4-cee1cfc9431e",
+      "slug": "bob",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "control_flow_if_else_statements"
+        ,"strings"
+      ]
     },
     {
       "uuid": "45f285c2-9358-451d-a931-1dee54df7b67",
@@ -41,22 +52,22 @@
       ]
     },
     {
-      "uuid": "f55b2158-a8f0-4593-b44a-6e750ebac0a5",
-      "slug": "hamming",
-      "core": false,
+      "uuid": "90a12652-946c-4771-83bd-741f884cd426",
+      "slug": "raindrops",
+      "core": true,
       "unlocked_by": null,
-      "difficulty": 1,
+      "difficulty": 2,
       "topics": [
         "filtering",
         "strings"
       ]
     },
     {
-      "uuid": "90a12652-946c-4771-83bd-741f884cd426",
-      "slug": "raindrops",
-      "core": true,
+      "uuid": "f55b2158-a8f0-4593-b44a-6e750ebac0a5",
+      "slug": "hamming",
+      "core": false,
       "unlocked_by": null,
-      "difficulty": 2,
+      "difficulty": 1,
       "topics": [
         "filtering",
         "strings"
