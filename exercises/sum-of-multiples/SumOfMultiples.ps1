@@ -1,3 +1,9 @@
-function Get-SumOfMultiples() {
-  Throw "Function not implemented"
+Function Get-SumOfMultiples {
+    [CmdletBinding()]
+    Param(
+        [int[]]$Multiples,
+        [int]$Limit
+    )
+
+    Throw "Function not implemented"
 }
