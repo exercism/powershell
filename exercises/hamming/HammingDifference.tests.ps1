@@ -1,65 +1,83 @@
-$here = Split-Path -Parent $MyInvocation.MyCommand.Path
-$sut = (Split-Path -Leaf $MyInvocation.MyCommand.Path) -replace '\.tests\.', '.'
-. "$here\$sut"
+$ExercisePath = Split-Path -Parent $MyInvocation.MyCommand.Path
+$ScriptFile = (Split-Path -Leaf $MyInvocation.MyCommand.Path) -replace '\.tests\.', '.'
 
-Describe "HammingTest" {
-    It "tests identical strands" {
-    Get-HammingDifference 'A' 'A' | Should be 0
+$CommandName = "Get-HammingDifference"
+
+# Remove the function if its already found
+If (Get-Command $CommandName -ErrorAction SilentlyContinue){
+    Write-Verbose "Removing the existing $CommandName function from memory as it is already loaded"
+    Remove-Item -Path "Function:\$CommandName"
+}
+
+# Load the script file
+If (Test-Path "$ExercisePath\$ScriptFile"){
+    Write-Output ("Loading: {0}" -f "$ExercisePath\$ScriptFile")
+    . ("$ExercisePath\$ScriptFile")
+}
+Else {
+    # Display an error and stop the tests
+    Write-Error "The file $ScriptFile was not found. You need to create your answer in a file named $ScriptFile" -ErrorAction Stop
+}
+
+Describe "Get-Hamming Test cases" {
+
+    It "Empty strands" {
+        Get-HammingDifference '' '' | Should be 0
+    }
+    
+    It "Empty strands" {
+        Get-HammingDifference 'A' 'A' | Should be 0
     }
 
-    It "tests log identical strands" {
+    It "Long identical strands" {
         Get-HammingDifference "GGACTGA" "GGACTGA" | Should be 0
     }
 
-    It "tests complete distance in single nucleotide strands" {
+    It "Complete distance in single nucleotide strands" {
         Get-HammingDifference "A" "G" | Should be 1
     }
 
-    It "tests complete distance in small strands" {
+    It "Complete distance in small strands" {
         Get-HammingDifference "AG" "CT" | Should be 2
     }
 
-    It "tests small distance in small strands" {
+    It "Small distance in small strands" {
         Get-HammingDifference "AT"  "CT" | Should be 1
     }
 
-    It "tests small distance" {
+    It "Small distance" {
         Get-HammingDifference "GGACG" "GGTCG" | Should be 1
     }
 
-    It "tests small distance in long strands" {
+    It "Small distance in long strands" {
         Get-HammingDifference "ACCAGGG" "ACTATGG" | Should be 2
     }
 
-    It "tests non unique character in first strand" {
-        Get-HammingDifference "AGA" "AGG" | Should be 1
+    It "Non-unique character in first strand" {
+        Get-HammingDifference "AAG" "AAA" | Should be 1
     }
 
-    It "tests non unique character in second strand" {
-        Get-HammingDifference "AGG" "AGA" | Should be 1
+    It "Non-unique character in second strand" {
+        Get-HammingDifference "AAA" "AAG" | Should be 1
     }
 
-    It "tests same nucleotides in different position" {
+    It "Same nucleotides in different positions" {
         Get-HammingDifference "TAG" "GAT" | Should be 2
     }
 
-    It "tests large distance" {
+    It "Large distance" {
         Get-HammingDifference "GATACA" "GCATAA" | Should be 4
     }
 
-    It "tests large distance in off by one strand" {
+    It "Large distance in off-by-one strand" {
         Get-HammingDifference "GGACGGATTCTG" "AGGACGGATTCT" | Should be 9
     }
 
-    It "tests empty strands" {
-        Get-HammingDifference "" "" | Should be 0
+    It "Disallow first strand longer" {
+        { Get-HammingDifference "AATG" "AAA" } | Should Throw "Left and right strands must be of equal length."
     }
 
-    It "tests disallow first strand longer" {
-        { Get-HammingDifference "AATG" "AAA" } | Should Throw "Mismatching string lengths"
-    }
-
-    It "tests disallow second strand longer" {
-        { Get-HammingDifference "ATA" "AGTG" } | Should Throw "Mismatching string lengths"
+    It "Disallow second strand longer" {
+        { Get-HammingDifference "ATA" "AGTG" } | Should Throw "Left and right strands must be of equal length."
     }
 }
