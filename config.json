@@ -1,16 +1,12 @@
 {
-  "slug": "powershell",
   "language": "Windows PowerShell",
-  "repository": "https://github.com/exercism/powershell",
-  "checklist_issue": 4,
   "active": false,
-  "foregone": [
-
-    ],
+  "blurb": "",
+  "checklist_issue": "4",
   "exercises": [
     {
-      "uuid": "83c215e6-4a4e-4302-8d68-47f367478d2c",
       "slug": "hello-world",
+      "uuid": "83c215e6-4a4e-4302-8d68-47f367478d2c",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
@@ -19,8 +15,18 @@
       ]
     },
     {
-      "uuid": "e62edbd6-861b-4cd6-bb03-6c9bcaa742a4",
+      "slug": "reverse-string",
+      "uuid": "925e73f0-28a9-4e33-937b-5f328ac50163",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "strings"
+      ]
+    },
+    {
       "slug": "leap",
+      "uuid": "e62edbd6-861b-4cd6-bb03-6c9bcaa742a4",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
@@ -30,8 +36,30 @@
       ]
     },
     {
-      "uuid": "45f285c2-9358-451d-a931-1dee54df7b67",
+      "slug": "bob",
+      "uuid": "e80b254a-0dd8-4efb-83e4-cee1cfc9431e",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "control_flow_if_else_statements",
+        "strings"
+      ]
+    },
+    {
+      "slug": "raindrops",
+      "uuid": "90a12652-946c-4771-83bd-741f884cd426",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "filtering",
+        "strings"
+      ]
+    },
+    {
       "slug": "two-fer",
+      "uuid": "45f285c2-9358-451d-a931-1dee54df7b67",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
@@ -41,8 +69,19 @@
       ]
     },
     {
-      "uuid": "f55b2158-a8f0-4593-b44a-6e750ebac0a5",
+      "slug": "nucleotide-count",
+      "uuid": "68b0b096-c6c0-493f-9f7f-081a413d7078",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "dictionaries",
+        "strings"
+      ]
+    },
+    {
       "slug": "hamming",
+      "uuid": "f55b2158-a8f0-4593-b44a-6e750ebac0a5",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
