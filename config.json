@@ -15,6 +15,16 @@
       ]
     },
     {
+      "slug": "reverse-string",
+      "uuid": "925e73f0-28a9-4e33-937b-5f328ac50163",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "strings"
+      ]
+    },
+    {
       "slug": "leap",
       "uuid": "e62edbd6-861b-4cd6-bb03-6c9bcaa742a4",
       "core": false,
