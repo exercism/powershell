@@ -2,7 +2,7 @@
   "language": "Windows PowerShell",
   "active": false,
   "blurb": "",
-  "checklist_issue": "4",
+  "checklist_issue": 4,
   "exercises": [
     {
       "slug": "hello-world",
