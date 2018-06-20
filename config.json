@@ -1,7 +1,7 @@
 {
   "language": "Windows PowerShell",
   "active": false,
-  "blurb": "",
+  "blurb": "Task-based command-line shell and scripting language designed especially for system administration.",
   "checklist_issue": 4,
   "exercises": [
     {
