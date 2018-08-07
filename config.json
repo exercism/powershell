@@ -48,13 +48,14 @@
       ]
     },
     {
-     "slug": "sum-of-multiples",
-     "uuid": "df4403d1-3fb2-4c2c-a228-2bdb442d0680",
+      "slug": "sum-of-multiples",
+      "uuid": "df4403d1-3fb2-4c2c-a228-2bdb442d0680",
       "core": true,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": [
         "arrays",
+        "math",
         "transforming"
       ]
     },
