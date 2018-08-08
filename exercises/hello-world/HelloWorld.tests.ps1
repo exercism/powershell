@@ -8,10 +8,10 @@ Describe "HelloWorldTest" {
 	}
 
 	It "Outputs: Hello, Alice!" {
-		Get-HelloWorld('Alice') | Should be 'Hello, Alice!'
+		Get-HelloWorld 'Alice' | Should be 'Hello, Alice!'
 	}
 
 	It "Outpus: Hello, Bob!" {
-		Get-HelloWorld('Bob') | Should be 'Hello, Bob!'
+		Get-HelloWorld -person 'Bob' | Should be 'Hello, Bob!'
 	}
 }
