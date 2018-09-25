@@ -11,7 +11,7 @@ Describe "HelloWorldTest" {
 		Get-HelloWorld 'Alice' | Should be 'Hello, Alice!'
 	}
 
-	It "Outpus: Hello, Bob!" {
+	It "Outputs: Hello, Bob!" {
 		Get-HelloWorld -person 'Bob' | Should be 'Hello, Bob!'
 	}
 }
