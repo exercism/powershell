@@ -27,5 +27,14 @@
             When a grade number is supplied to the GetRoster method, students from that grade will be returned.
 #>
 
-class Student { }
-class Roster { }
+class Student {
+    Student() {
+        Throw "Exercise not implemented"
+    }
+}
+
+class Roster {
+    Roster() {
+        Throw "Exercise not implemented"
+    }
+}
