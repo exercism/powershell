@@ -102,6 +102,17 @@
         "filtering",
         "strings"
       ]
+    },
+    {
+      "slug": "grade-school",
+      "uuid": "2daa9e3e-65c1-4fc3-b6ee-6f477a198fec",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "filtering",
+        "classes"
+      ]
     }
   ]
 }
