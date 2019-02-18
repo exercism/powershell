@@ -1,6 +1,6 @@
 ---
-language: bash
+os: windows
 script:
-- bin/fetch-configlet
-- bin/configlet lint .
-sudo: false
+#- bin/fetch-configlet
+#- bin/configlet lint .
+- powershell bin/RunTests.ps1
