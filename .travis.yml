@@ -1,5 +1,6 @@
 ---
 os: windows
+language: shell
 script:
 #- bin/fetch-configlet
 #- bin/configlet lint .
