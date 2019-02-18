@@ -13,5 +13,8 @@ matrix:
           packages:
             - powershell
 
+before_script:
+  - pwsh -Command {Install-Module -Name Pester -Force -SkipPublisherCheck -Scope CurrentUser}
+
 script:
   - pwsh -f "bin/RunTests.ps1"
