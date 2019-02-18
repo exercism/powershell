@@ -4,7 +4,7 @@ language: generic
 matrix:
   include:
     - os: linux
-      dist: trusty
+      dist: xenial
       sudo: false
       addons:
         apt:
@@ -12,7 +12,6 @@ matrix:
             - sourceline: "deb [arch=amd64] https://packages.microsoft.com/ubuntu/14.04/prod trusty main"
               key_url: "https://packages.microsoft.com/keys/microsoft.asc"
           packages:
-            - expect
             - powershell
   fast_finish: true
 
