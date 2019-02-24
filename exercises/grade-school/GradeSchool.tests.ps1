@@ -23,56 +23,48 @@ Else {
 }
 
 Describe "Grade School Test cases" {
-    It "Creates a Student" {
-        $student = [Student]::new(1,'Josh')
-        $student | Should -Not -BeNullOrEmpty
-        $student | Should -BeOfType Student
-    }
-    It "Creates a Roster" {
+    It "Adding a student adds them to the sorted roster" {
         $roster = [Roster]::new()
-        $roster | Should -Not -BeNullOrEmpty
-        $roster | Should -BeOfType Roster
+        $roster.AddStudent(2,'Aimee')
+        $roster.Student.Name | Should -Be 'Aimee'
     }
-    It "Adds a Student to a Roster" {
+    It "Adding more student adds them to the sorted roster" {
         $roster = [Roster]::new()
-        $roster.AddStudent(1,'Josh')
-        $roster.Student.Grade | Should -Be 1
-        $roster.Student.Name | Should -Be 'Josh'
+        $roster.AddStudent(2,'Blair')
+        $roster.AddStudent(2,'James')
+        $roster.AddStudent(2,'Paul')
+        $roster.GetRoster().Name | Should -Be ('Blair', 'James', 'Paul')
     }
-    It "Returns a list of all enrolled Students" {
+    It "Adding students to different grades adds them to the same sorted roster" {
         $roster = [Roster]::new()
-        $roster.AddStudent(1,'Josh')
-        $roster.AddStudent(2,'Billy')
-        $students = $roster.GetRoster()
-        $students.Count | Should -Be 2
-        $students.Grade | Should -Contain 1
-        $students.Name | Should -Contain 'Josh'
-        $students.Grade | Should -Contain 2
-        $students.Name | Should -Contain 'Billy'
+        $roster.AddStudent(3,'Chelsea')
+        $roster.AddStudent(7,'Logan')
+        $roster.GetRoster().Name | Should -Be ('Chelsea', 'Logan')
     }
-    It "Returns a grade of enrolled students" {
+    It "Roster returns an empty list if there are no students enrolled" {
         $roster = [Roster]::new()
-        $roster.AddStudent(1,'Josh')
-        $roster.AddStudent(2,'Billy')
-        $students = $roster.GetRoster(2)
-        $students.Count | Should -Be 1
-        $students.Grade | Should -Be 2
-        $students.Name | Should -Be 'Billy'
+        $roster.GetRoster() | Should -BeNullOrEmpty
     }
-    It "Returns a sorted list of students" {
+    It "Student names with grades are displayed in the same sorted roster" {
         $roster = [Roster]::new()
-        $roster.AddStudent(1,'Josh')
-        $roster.AddStudent(2,'Billy')
-        $roster.AddStudent(2,'Allison')
-        $students = $roster.GetRoster()
-
-        $students[0].Name | Should -Be 'Josh'
-        $students[0].Grade | Should -Be 1
-
-        $students[1].Name | Should -Be 'Allison'
-        $students[1].Grade | Should -Be 2
-
-        $students[2].Name | Should -Be 'Billy'
-        $students[2].Grade | Should -Be 2
+        $roster.AddStudent(2,'Peter')
+        $roster.AddStudent(1,'Anna')
+        $roster.AddStudent(1,'Barb')
+        $roster.AddStudent(2,'Zoe')
+        $roster.AddStudent(2,'Alex')
+        $roster.AddStudent(3,'Jim')
+        $roster.AddStudent(1,'Charlie')
+        $roster.GetRoster().Name | Should -Be ('Anna', 'Barb', 'Charlie', 'Alex', 'Peter', 'Zoe', 'Jim')
+    }
+    It "Grade returns the students in that grade in alphabetical order" {
+        $roster = [Roster]::new()
+        $roster.AddStudent(5,'Franklin')
+        $roster.AddStudent(5,'Bradley')
+        $roster.AddStudent(1,'Jeff')
+        $roster.GetRoster(5).Name | Should -Be ('Bradley', 'Franklin')
+    }
+    It "Grade returns an empty list if there are no students in that grade" {
+        $roster = [Roster]::new()
+        $roster.GetRoster(1) | Should -BeNullOrEmpty
     }
 }
