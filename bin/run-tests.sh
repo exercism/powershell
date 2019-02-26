@@ -13,7 +13,12 @@ for exercise_directory in $(find ./exercises/* -type d); do
     solution_file=$(find "$exercise_directory" -type f -name '*.example.ps1')
     cp $(printf "%s" "$test_file") "$tmpdir"
     cp $(printf "%s" "$solution_file") "$tmpdir/$(basename "${test_file//.tests}")"
-    results="$("$POWERSHELL" -WorkingDirectory "$tmpdir" -Command 'Invoke-Pester' | tee /dev/tty)"
+    if [ "$OS" == "Windows" ]; then
+        results="$("$POWERSHELL" -WorkingDirectory "$tmpdir" -Command 'Invoke-Pester')"
+        echo "$results"
+    else
+        results="$("$POWERSHELL" -WorkingDirectory "$tmpdir" -Command 'Invoke-Pester' | tee /dev/tty)"
+    fi
     rm -rf "$tmpdir"
     failures="$(grep -oP '(?<=Failed: )[[:digit:]]+' <<< "$results")"
     if [ "$failures" -ne '0' ]; then

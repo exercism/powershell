@@ -6,7 +6,7 @@ else
     POWERSHELL=pwsh
 fi
 
-"$POWERSHELL" --version
+"$POWERSHELL" -Command '$PSVersionTable.PSVersion'
 
 if [ "$OS" == "Windows" ]; then
     choco install Pester
