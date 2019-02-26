@@ -6,4 +6,10 @@ else
     POWERSHELL=pwsh
 fi
 
-"$POWERSHELL" -Command 'Install-Module -Force -SkipPublisherCheck -Scope CurrentUser -Name Pester'
+"$POWERSHELL" --version
+
+if [ "$OS" == "Windows" ]; then
+    choco install Pester
+else
+    "$POWERSHELL" -Command 'Install-Module -Force -SkipPublisherCheck -Scope CurrentUser -Name Pester'
+fi
