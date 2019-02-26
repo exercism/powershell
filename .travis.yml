@@ -1,9 +1,9 @@
-sudo: false
-language: generic
+language: shell
 
 matrix:
   include:
     - os: linux
+      env: OS=Linux
       dist: trusty
       sudo: false
       addons:
@@ -13,10 +13,12 @@ matrix:
               key_url: "https://packages.microsoft.com/keys/microsoft.asc"
           packages:
             - powershell
+    - os: windows
+      env: OS=Windows
   fast_finish: true
 
 install:
-  - pwsh -Command 'Install-Module -Force -SkipPublisherCheck -Scope CurrentUser -Name Pester'
+  - bin/install-pester.sh
 
 before_script:
   - bin/fetch-configlet
