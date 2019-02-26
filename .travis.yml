@@ -15,6 +15,7 @@ matrix:
             - powershell
     - os: windows
       env: OS=Windows
+      before_script: echo "Configlet checks not enabled for Windows builds"
   fast_finish: true
 
 install:
