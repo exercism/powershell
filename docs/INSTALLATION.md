@@ -7,11 +7,14 @@ The Exercism Windows PowerShell language track requires installed on your system
 
 (PS: Support for PowerShell is limited to critical fixes. PowerShell Core is consistently maintained and has greater cross-platform support)
 
-### Installing Windows PowerShell
+### Installing PowerShell
 
 PowerShell comes pre-installed on all Windows operating systems from Windows 7 SP1 onward.
 
-You can find the latest version of PowerShell and installation instructions for all platforms (Linux, macOS and Windows) [here](https://github.com/PowerShell/PowerShell/blob/master/README.md#get-powershell).
+You can find the latest version of PowerShell and installation instructions for all platforms (Linux, macOS and Windows) [here](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-6)
+
+Source code and manual install for [PowerShell](https://github.com/PowerShell/PowerShell/blob/master/README.md#get-powershell)
+
 
 ### Installing and updating the Pester framework
 
