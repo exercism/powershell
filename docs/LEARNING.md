@@ -26,3 +26,6 @@ To see a list of all the approved verbs, simply run:
 ``` PowerShell
 Get-Verb
 ```
+
+## More Topics 
+https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/?view=powershell-6
