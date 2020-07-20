@@ -1,16 +1,22 @@
-Windows PowerShell® is a task-based command-line shell and scripting language designed especially for system administration. Built on the .NET Framework, Windows PowerShell helps IT professionals and power users control and automate the administration of the Windows operating system and applications that run on Windows.
+# PowerShell
 
-Windows PowerShell commands, called cmdlets, let you manage the computers from the command line. Windows PowerShell providers let you access data stores, such as the registry and certificate store, as easily as you access the file system. In addition, Windows PowerShell has a rich expression parser and a fully developed scripting language.
+Automate everything! Script on any OS to manage files, processes, a data center, or cloud services. Interactively explore structured data like JSON, XML and CSV; work with every management interface from web APIs and CIM to commandline apps.
 
-Windows PowerShell includes the following features:
+# About PowerShell
 
-* Cmdlets for performing common system administration tasks, such as managing the registry, services, processes, and event logs, and using Windows Management Instrumentation (WMI).
-* A task-based scripting language and support for existing scripts and command-line tools.
-* Consistent design. Because cmdlets and system data stores use common syntax and naming conventions, data can be shared easily and the output from one cmdlet can be used as the input to another cmdlet without reformatting or manipulation.
-* Simplified, command-based navigation of the operating system, which lets users navigate the registry and other data stores by using the same techniques that they use to navigate the file system.
-* Powerful object manipulation capabilities. Objects can be directly manipulated or sent to other tools or databases.
-* Extensible interface. Independent software vendors and enterprise developers can build custom tools and utilities to administer their software.
+An open-source, cross-platform .NET scripting language, shell, and configuration management framework, PowerShell helps IT professionals and power users control and automate just about anything. 
 
-[PowerShell has been open sourced](https://github.com/PowerShell/PowerShell) and when released, PowerShell Core 6 will be supported on Windows, Linux and MacOS.
+PowerShell is build on top of the .NET Framework, and transforms the classic unix pipe concept, extending it from passing just text or binary streams to support passing object instances which include type information (e.g. dates and times) and complex state with their structured data. Where in a traditional shell you might use text processing to extract particular information from the output of a command, in PowerShell you have access to properties and methods (including ways of inspecting objects to determine which properties and methods are available). You can work with CSV files, convert JSON to hashtables, navigate XML documents, and much more, making many tasks easily composable that would be difficult or impractical with text parsing. 
 
-Detailed documentation on many PowerShell concepts and features can be found at https://docs.microsoft.com/en-us/powershell
+PowerShell is extensible. Not just via stand-along command-line tools, the way other shells are extensible, but via scripts, functions and cmdlets distributed in modules that actually fully integrate with PowerShell's help system, syntax highlighting command-line editor, automatic parameter discovery and tab-completion. You can even extend the simple, explorable property + content syntax of the file system to data stores such as the Windows registry and certificate store, SQL Server, and even Azure!
+
+PowerShell includes many additional features:
+
+* Built-in "cmdlets" for common system administration tasks, such as managing files, services, processes, and even the registry, event logs, and Common Information Model (CIM), web requests, and more.
+* Compatibility with existing scripts and command-line tools
+* Extensible interfaces, and easily discoverable modules and commands
+* Full access to the .NET Framework, and extensibility via .NET assemblies from NuGet
+* A rich command history with information about the success and duration of a command's execution
+* Powerful object manipulation capabilities. Objects can be directly manipulated, serialized, and even sent to other tools or databases.
+
+Detailed documentation on PowerShell, the language, core concepts and features can be found with the installers at https://docs.microsoft.com/en-us/powershell
