@@ -1,6 +1,6 @@
-$here = Split-Path -Parent $MyInvocation.MyCommand.Path
-$sut = (Split-Path -Leaf $MyInvocation.MyCommand.Path) -replace '\.tests\.', '.'
-. "$here\$sut"
+BeforeAll {
+    . ".\LeapYear.ps1"
+}
 
 Describe "LeapYear Tests" {
     It "Year not divisible by 4: common year" {

@@ -1,6 +1,6 @@
-$here = Split-Path -Parent $MyInvocation.MyCommand.Path
-$sut = (Split-Path -Leaf $MyInvocation.MyCommand.Path) -replace '\.tests\.', '.'
-. "$here\$sut"
+BeforeAll {
+    . ".\SumOfMultiples.ps1"
+}
 
 Describe "Get-SumOfMultiples Tests" {
 	It "Given the factors <Multiples> and to a limit of <Limit> the sum of multiples should be <ExpectedResult>" -TestCases @(

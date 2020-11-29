@@ -1,25 +1,26 @@
-$ExercisePath = Split-Path -Parent $MyInvocation.MyCommand.Path
-$ScriptFile = (Split-Path -Leaf $MyInvocation.MyCommand.Path) -replace '\.tests\.', '.'
+BeforeAll {
+    $ScriptFile = '.\GradeSchool.ps1'
 
-# Load the script file
-If (Test-Path "$ExercisePath\$ScriptFile"){
-    Write-Output ("Loading: {0}" -f "$ExercisePath\$ScriptFile")
-    . ("$ExercisePath\$ScriptFile")
+    # Load the script file
+    If (Test-Path "$ScriptFile"){
+        Write-Output ("Loading: {0}" -f "$ScriptFile")
+        . ("$ScriptFile")
 
-    try {
-        $Types = @([Student],[Roster])
-        foreach ($type in $Types) {
-            $type | Out-Null
+        try {
+            $Types = @([Student],[Roster])
+            foreach ($type in $Types) {
+                $type | Out-Null
+            }
+        }
+        catch {
+            # Display an error and stop the tests
+            Write-Error "The file $ScriptFile must implement the two PowerShell classes Student and Roster" -ErrorAction Stop
         }
     }
-    catch {
+    Else {
         # Display an error and stop the tests
-        Write-Error "The file $ScriptFile must implement the two PowerShell classes Student and Roster" -ErrorAction Stop
+        Write-Error "The file $ScriptFile was not found. You need to create your answer in a file named $ScriptFile" -ErrorAction Stop
     }
-}
-Else {
-    # Display an error and stop the tests
-    Write-Error "The file $ScriptFile was not found. You need to create your answer in a file named $ScriptFile" -ErrorAction Stop
 }
 
 Describe "Grade School Test cases" {
