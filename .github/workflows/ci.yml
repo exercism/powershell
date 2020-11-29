@@ -19,5 +19,5 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Run exercism/powershell ci (runs tests) for all exercises
-        shell: bash
-        run: bin/run-tests.sh
+        shell: pwsh
+        run: bin/run-tests.ps1
