@@ -1,6 +1,10 @@
-$here = Split-Path -Parent $MyInvocation.MyCommand.Path
-$sut = (Split-Path -Leaf $MyInvocation.MyCommand.Path) -replace '\.tests\.', '.'
-. "$here\$sut"
+# $here = Split-Path -Parent $MyInvocation.MyCommand.Path
+# $sut = (Split-Path -Leaf $MyInvocation.MyCommand.Path) -replace '\.tests\.', '.'
+# . "$here\$sut"
+
+BeforeAll {
+    . ".\TwoFer.ps1"
+}
 
 Describe "Get-TwoFer Tests" {
 
