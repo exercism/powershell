@@ -22,62 +22,62 @@ BeforeAll {
 Describe "Get-Hamming Test cases" {
 
     It "Empty strands" {
-        Get-HammingDifference '' '' | Should be 0
+        Get-HammingDifference '' '' | Should -Be 0
     }
     
     It "Empty strands" {
-        Get-HammingDifference 'A' 'A' | Should be 0
+        Get-HammingDifference 'A' 'A' | Should -Be 0
     }
 
     It "Long identical strands" {
-        Get-HammingDifference "GGACTGA" "GGACTGA" | Should be 0
+        Get-HammingDifference "GGACTGA" "GGACTGA" | Should -Be 0
     }
 
     It "Complete distance in single nucleotide strands" {
-        Get-HammingDifference "A" "G" | Should be 1
+        Get-HammingDifference "A" "G" | Should -Be 1
     }
 
     It "Complete distance in small strands" {
-        Get-HammingDifference "AG" "CT" | Should be 2
+        Get-HammingDifference "AG" "CT" | Should -Be 2
     }
 
     It "Small distance in small strands" {
-        Get-HammingDifference "AT"  "CT" | Should be 1
+        Get-HammingDifference "AT"  "CT" | Should -Be 1
     }
 
     It "Small distance" {
-        Get-HammingDifference "GGACG" "GGTCG" | Should be 1
+        Get-HammingDifference "GGACG" "GGTCG" | Should -Be 1
     }
 
     It "Small distance in long strands" {
-        Get-HammingDifference "ACCAGGG" "ACTATGG" | Should be 2
+        Get-HammingDifference "ACCAGGG" "ACTATGG" | Should -Be 2
     }
 
     It "Non-unique character in first strand" {
-        Get-HammingDifference "AAG" "AAA" | Should be 1
+        Get-HammingDifference "AAG" "AAA" | Should -Be 1
     }
 
     It "Non-unique character in second strand" {
-        Get-HammingDifference "AAA" "AAG" | Should be 1
+        Get-HammingDifference "AAA" "AAG" | Should -Be 1
     }
 
     It "Same nucleotides in different positions" {
-        Get-HammingDifference "TAG" "GAT" | Should be 2
+        Get-HammingDifference "TAG" "GAT" | Should -Be 2
     }
 
     It "Large distance" {
-        Get-HammingDifference "GATACA" "GCATAA" | Should be 4
+        Get-HammingDifference "GATACA" "GCATAA" | Should -Be 4
     }
 
     It "Large distance in off-by-one strand" {
-        Get-HammingDifference "GGACGGATTCTG" "AGGACGGATTCT" | Should be 9
+        Get-HammingDifference "GGACGGATTCTG" "AGGACGGATTCT" | Should -Be 9
     }
 
     It "Disallow first strand longer" {
-        { Get-HammingDifference "AATG" "AAA" } | Should Throw "Left and right strands must be of equal length."
+        { Get-HammingDifference "AATG" "AAA" } | Should -Throw "Left and right strands must be of equal length."
     }
 
     It "Disallow second strand longer" {
-        { Get-HammingDifference "ATA" "AGTG" } | Should Throw "Left and right strands must be of equal length."
+        { Get-HammingDifference "ATA" "AGTG" } | Should -Throw "Left and right strands must be of equal length."
     }
 }
