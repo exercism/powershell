@@ -18,6 +18,7 @@
   "exercises": [
     {
       "slug": "hello-world",
+      "name": "Hello World",
       "uuid": "83c215e6-4a4e-4302-8d68-47f367478d2c",
       "difficulty": 1,
       "topics": [
@@ -26,6 +27,7 @@
     },
     {
       "slug": "bob",
+      "name": "Bob",
       "uuid": "e80b254a-0dd8-4efb-83e4-cee1cfc9431e",
       "difficulty": 1,
       "topics": [
@@ -35,6 +37,7 @@
     },
     {
       "slug": "sum-of-multiples",
+      "name": "Sum Of Multiples",
       "uuid": "df4403d1-3fb2-4c2c-a228-2bdb442d0680",
       "difficulty": 1,
       "topics": [
@@ -45,6 +48,7 @@
     },
     {
       "slug": "raindrops",
+      "name": "Raindrops",
       "uuid": "90a12652-946c-4771-83bd-741f884cd426",
       "difficulty": 2,
       "topics": [
@@ -54,6 +58,7 @@
     },
     {
       "slug": "nucleotide-count",
+      "name": "Nucleotide Count",
       "uuid": "68b0b096-c6c0-493f-9f7f-081a413d7078",
       "difficulty": 2,
       "topics": [
@@ -63,6 +68,7 @@
     },
     {
       "slug": "hamming",
+      "name": "Hamming",
       "uuid": "f55b2158-a8f0-4593-b44a-6e750ebac0a5",
       "difficulty": 1,
       "topics": [
@@ -72,6 +78,7 @@
     },
     {
       "slug": "leap",
+      "name": "Leap",
       "uuid": "e62edbd6-861b-4cd6-bb03-6c9bcaa742a4",
       "difficulty": 1,
       "topics": [
@@ -81,6 +88,7 @@
     },
     {
       "slug": "reverse-string",
+      "name": "Reverse String",
       "uuid": "925e73f0-28a9-4e33-937b-5f328ac50163",
       "difficulty": 1,
       "topics": [
@@ -89,6 +97,7 @@
     },
     {
       "slug": "two-fer",
+      "name": "Two Fer",
       "uuid": "45f285c2-9358-451d-a931-1dee54df7b67",
       "difficulty": 1,
       "topics": [
@@ -98,6 +107,7 @@
     },
     {
       "slug": "grade-school",
+      "name": "Grade School",
       "uuid": "2daa9e3e-65c1-4fc3-b6ee-6f477a198fec",
       "difficulty": 2,
       "topics": [
