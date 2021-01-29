@@ -2,6 +2,7 @@
   "language": "PowerShell",
   "active": false,
   "blurb": "Task-based command-line shell and scripting language designed especially for system administration.",
+  "version": 3,
   "checklist_issue": 4,
   "exercises": [
     {
