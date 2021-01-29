@@ -1,6 +1,12 @@
 {
   "language": "PowerShell",
   "active": false,
+  "status": {
+    "concept_exercises": false,
+    "test_runner": false,
+    "representer": false,
+    "analyzer": false
+  },
   "blurb": "Task-based command-line shell and scripting language designed especially for system administration.",
   "version": 3,
   "checklist_issue": 4,
