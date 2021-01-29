@@ -1,5 +1,6 @@
 {
   "language": "PowerShell",
+  "slug": "powershell",
   "active": false,
   "status": {
     "concept_exercises": false,
