@@ -15,6 +15,20 @@
     "indent_size": 4
   },
   "checklist_issue": 4,
+  "files": {
+    "solution": [
+      "%{pascal_slug}.ps1"
+    ],
+    "test": [
+      "%{pascal_slug}.tests.ps1"
+    ],
+    "example": [
+      "%{pascal_slug}.example.ps1"
+    ],
+    "exemplar": [
+      ".meta/%{pascal_slug}.exemplar.ps1"
+    ]
+  },
   "exercises": {
     "concept": [],
     "practice": [
