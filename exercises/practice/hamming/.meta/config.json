@@ -3,13 +3,13 @@
   "authors": [],
   "files": {
     "solution": [
-      "Hamming.ps1"
+      "HammingDifference.ps1"
     ],
     "test": [
-      "Hamming.tests.ps1"
+      "HammingDifference.tests.ps1"
     ],
     "example": [
-      "Hamming.example.ps1"
+      "HammingDifference.example.ps1"
     ]
   },
   "source": "The Calculating Point Mutations problem at Rosalind",

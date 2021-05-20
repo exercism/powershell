@@ -3,13 +3,13 @@
   "authors": [],
   "files": {
     "solution": [
-      "Leap.ps1"
+      "LeapYear.ps1"
     ],
     "test": [
-      "Leap.tests.ps1"
+      "LeapYear.tests.ps1"
     ],
     "example": [
-      "Leap.example.ps1"
+      "LeapYear.example.ps1"
     ]
   },
   "source": "JavaRanch Cattle Drive, exercise 3",

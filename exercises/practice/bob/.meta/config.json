@@ -3,13 +3,13 @@
   "authors": [],
   "files": {
     "solution": [
-      "Bob.ps1"
+      "BobResponse.ps1"
     ],
     "test": [
-      "Bob.tests.ps1"
+      "BobResponse.tests.ps1"
     ],
     "example": [
-      "Bob.example.ps1"
+      "BobResponse.example.ps1"
     ]
   },
   "source": "Inspired by the 'Deaf Grandma' exercise in Chris Pine's Learn to Program tutorial.",
