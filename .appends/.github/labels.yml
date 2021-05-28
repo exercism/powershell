@@ -1,0 +1,64 @@
+- name: "Merged to Master"
+  description: "Well done! You can close the issue now..."
+  color: "937ddb"
+
+- name: "Need Code Review"
+  description: "Every code should be reviewed by a 3rd user (Work In Progress->Need Code Review->Ready for Master)"
+  color: "e04e50"
+
+- name: "Ready for Master"
+  description: "Marked to merge to Master (Work In Progress->Need Code Review->Ready for Master)"
+  color: "006b75"
+
+- name: "Work In Progress"
+  description: "When assigned to someone... (Work In Progress->Need Code Review->Ready for Master)"
+  color: "50c43e"
+
+- name: "bug"
+  description: ""
+  color: "fc2929"
+
+- name: "duplicate"
+  description: ""
+  color: "cccccc"
+
+- name: "enhancement"
+  description: ""
+  color: "84b6eb"
+
+- name: "first-timers only"
+  description: ""
+  color: "159818"
+
+- name: "good first issue"
+  description: ""
+  color: "6a119e"
+
+- name: "good first patch"
+  description: ""
+  color: "009248"
+
+- name: "help wanted"
+  description: ""
+  color: "0e8a16"
+
+- name: "invalid"
+  description: ""
+  color: "e6e6e6"
+
+- name: "pinned"
+  description: ""
+  color: "edc85c"
+
+- name: "question"
+  description: ""
+  color: "cc317c"
+
+- name: "v3-migration 🤖"
+  description: "Preparing for Exercism v3"
+  color: "E99695"
+
+- name: "wontfix"
+  description: ""
+  color: "ffffff"
+
