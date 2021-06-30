@@ -1,5 +1,8 @@
 # PowerShell
 
+[![Configlet Status](https://github.com/exercism/powershell/workflows/configlet/badge.svg)]
+[![Exercise Test Status](https://github.com/exercism/powershell/workflows/powershell%20%2F%20main/badge.svg)]
+
 Exercism Exercises for Windows PowerShell
 
 ## Contributing Guide

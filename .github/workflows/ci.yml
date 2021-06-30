@@ -1,0 +1,23 @@
+name: powershell / main
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  ci:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run exercism/powershell ci (runs tests) for all exercises
+        shell: pwsh
+        run: bin/run-tests.ps1

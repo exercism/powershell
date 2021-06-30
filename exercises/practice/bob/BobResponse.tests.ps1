@@ -1,6 +1,6 @@
-$here = Split-Path -Parent $MyInvocation.MyCommand.Path
-$sut = (Split-Path -Leaf $MyInvocation.MyCommand.Path) -replace '\.tests\.', '.'
-. "$here\$sut"
+BeforeAll {
+    . ".\BobResponse.ps1"
+}
 
 Describe "Test Get-BobResponse" {
 

@@ -1,6 +1,6 @@
-$here = Split-Path -Parent $MyInvocation.MyCommand.Path
-$sut = (Split-Path -Leaf $MyInvocation.MyCommand.Path) -replace '\.tests\.', '.'
-. "$here\$sut"
+BeforeAll {
+    . ".\ReverseString.ps1"
+}
 
 Describe "Get-ReverseString Tests" {
 	It "Given <Forward> it outputs <Reverse>" -TestCases @(
