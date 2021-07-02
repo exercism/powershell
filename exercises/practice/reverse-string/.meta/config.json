@@ -1,6 +1,11 @@
 {
   "blurb": "Reverse a string",
-  "authors": [],
+  "authors": [
+    "gyssels"
+  ],
+  "contributors": [
+    "kchenery"
+  ],
   "files": {
     "solution": [
       "ReverseString.ps1"
