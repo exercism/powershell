@@ -18,7 +18,7 @@
       "HelloWorld.tests.ps1"
     ],
     "example": [
-      "HelloWorld.example.ps1"
+      ".meta/HelloWorld.example.ps1"
     ]
   },
   "source": "This is an exercise to introduce users to using Exercism",

@@ -15,7 +15,7 @@
       "BobResponse.tests.ps1"
     ],
     "example": [
-      "BobResponse.example.ps1"
+      ".meta/BobResponse.example.ps1"
     ]
   },
   "source": "Inspired by the 'Deaf Grandma' exercise in Chris Pine's Learn to Program tutorial.",

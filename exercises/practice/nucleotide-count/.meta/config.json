@@ -14,7 +14,7 @@
       "NucleotideCount.tests.ps1"
     ],
     "example": [
-      "NucleotideCount.example.ps1"
+      ".meta/NucleotideCount.example.ps1"
     ]
   },
   "source": "The Calculating DNA Nucleotides_problem at Rosalind",

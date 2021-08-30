@@ -15,7 +15,7 @@
       "LeapYear.tests.ps1"
     ],
     "example": [
-      "LeapYear.example.ps1"
+      ".meta/LeapYear.example.ps1"
     ]
   },
   "source": "JavaRanch Cattle Drive, exercise 3",
