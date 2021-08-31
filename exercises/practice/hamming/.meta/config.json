@@ -19,7 +19,7 @@
       "HammingDifference.tests.ps1"
     ],
     "example": [
-      "HammingDifference.example.ps1"
+      ".meta/HammingDifference.example.ps1"
     ]
   },
   "source": "The Calculating Point Mutations problem at Rosalind",

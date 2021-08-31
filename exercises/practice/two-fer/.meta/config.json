@@ -16,7 +16,7 @@
       "TwoFer.tests.ps1"
     ],
     "example": [
-      "TwoFer.example.ps1"
+      ".meta/TwoFer.example.ps1"
     ]
   },
   "source_url": "https://github.com/exercism/problem-specifications/issues/757"

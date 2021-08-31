@@ -11,7 +11,7 @@
       "GradeSchool.tests.ps1"
     ],
     "example": [
-      "GradeSchool.example.ps1"
+      ".meta/GradeSchool.example.ps1"
     ]
   },
   "source": "A pairing session with Phil Battos at gSchool",

@@ -14,7 +14,7 @@
       "ReverseString.tests.ps1"
     ],
     "example": [
-      "ReverseString.example.ps1"
+      ".meta/ReverseString.example.ps1"
     ]
   },
   "source": "Introductory challenge to reverse an input string",
