@@ -156,5 +156,12 @@
   },
   "concepts": [],
   "key_features": [],
-  "tags": []
+  "tags": [
+    "paradigm/procedural",
+    "typing/dynamic",
+    "execution_mode/interpreted",
+    "platform/windows",
+    "platform/mac",
+    "platform/linux"
+  ]
 }
