@@ -151,6 +151,19 @@
           "filtering",
           "classes"
         ]
+      },
+      {
+        "slug": "accumulate",
+        "name": "Accumulate",
+        "uuid": "069676b6-85bb-404f-9045-ab33903b7e81",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2,
+        "topics": [
+          "scriptblocks",
+          "functions",
+          "arrays"
+        ]
       }
     ]
   },
