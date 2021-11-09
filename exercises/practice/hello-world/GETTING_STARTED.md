@@ -2,7 +2,6 @@
 
 These exercises lean on Test-Driven Development (TDD),
 
-
 For information installing Powershell click [here](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.1).
 
 Once Powershell is installed you will need to install the Pester module by running the following command in Powershell:
