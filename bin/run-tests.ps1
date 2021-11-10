@@ -1,5 +1,5 @@
 $tmpRoot = [System.IO.Path]::GetTempPath()
-$exercises = Get-ChildItem -Path exercises/practice -Directory
+$exercises = Get-ChildItem -Path $PSScriptRoot/../exercises/practice -Directory
 $failed = 0
 Foreach($exercise in $exercises)
 {
