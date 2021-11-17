@@ -163,6 +163,19 @@
           "scriptblocks",
           "functions"
         ]
+      },
+      {
+        "slug": "collatz-conjecture",
+        "name": "Collatz Conjecture",
+        "uuid": "39447c38-8509-45fb-9070-3ff6be50c0d5",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": [
+          "errors",
+          "control_flow_if_else_statements",
+          "integers"
+        ]
       }
     ]
   },
