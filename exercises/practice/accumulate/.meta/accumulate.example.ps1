@@ -29,9 +29,10 @@ Function Get-Accumulation() {
     #>
     [CmdletBinding()]
     Param(
-        [Int64[]]$List,
+        [PSObject[]]$List,
         [scriptblock]$Func
     )
 
-    $Func.Invoke($List)
+
+    Invoke-Command -Scriptblock $Func -ArgumentList @(,$List)
 }

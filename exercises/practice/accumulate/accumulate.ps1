@@ -29,7 +29,7 @@ Function Get-Accumulation() {
     #>
     [CmdletBinding()]
     Param(
-        [Int64[]]$List,
+        [PSObject[]]$List,
         [scriptblock]$Func
     )
 
