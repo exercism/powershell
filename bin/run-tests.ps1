@@ -1,3 +1,10 @@
+if (Get-Module -ListAvailable -Name Pester) {
+    Update-Module -Name Pester
+} 
+else {
+    Install-Module -Name Pester -Force -SkipPublisherCheck
+}
+
 $tmpRoot = [System.IO.Path]::GetTempPath()
 $exercises = Get-ChildItem -Path $PSScriptRoot/../exercises/practice -Directory
 $failed = 0
