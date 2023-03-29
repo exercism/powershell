@@ -1,7 +1,5 @@
-if (Get-Module -ListAvailable -Name Pester) {
-    Update-Module -Name Pester
-} 
-else {
+# Already present in Windows install
+if (-Not (Get-Module -ListAvailable -Name Pester)) {
     Install-Module -Name Pester -Force -SkipPublisherCheck
 }
 
