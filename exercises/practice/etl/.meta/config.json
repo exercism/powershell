@@ -8,7 +8,7 @@
       "Etl.tests.ps1"
     ],
     "example": [
-      "Etl.example.ps1"
+      ".meta/Etl.example.ps1"
     ]
   },
   "blurb": "Change the data format for scoring a game to more easily add other languages.",
