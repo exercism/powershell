@@ -141,6 +141,17 @@
         ]
       },
       {
+        "slug": "binary-search",
+        "name": "Binary Search",
+        "uuid": "0cd45da4-4330-41e7-bc30-77bb56e8c627",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2,
+        "topics": [
+          "arrays"
+        ]
+      },
+      {
         "slug": "grade-school",
         "name": "Grade School",
         "uuid": "2daa9e3e-65c1-4fc3-b6ee-6f477a198fec",
