@@ -1,4 +1,4 @@
-Function Invoke-ProtienTranslation() {
+Function Invoke-ProteinTranslation() {
     <#
     .SYNOPSIS
     Translate RNA sequences into proteins.
@@ -10,7 +10,7 @@ Function Invoke-ProtienTranslation() {
     The RNA sequence to translate.
 
     .EXAMPLE
-    Invoke-ProtienTranslation -Strand "AUG"
+    Invoke-ProteinTranslation -Strand "AUG"
     #>
     [CmdletBinding()]
     Param(
