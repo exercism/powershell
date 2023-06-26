@@ -118,6 +118,18 @@
         ]
       },
       {
+        "slug": "darts",
+        "name": "Darts",
+        "uuid": "65dcaf86-f61f-4576-82a9-1d84552e9d6e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": [
+          "control_flow_if_else_statements",
+          "integers"
+        ]
+      },
+      {
         "slug": "reverse-string",
         "name": "Reverse String",
         "uuid": "925e73f0-28a9-4e33-937b-5f328ac50163",
