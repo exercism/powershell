@@ -165,6 +165,17 @@
         ]
       },
       {
+        "slug": "atbash-cipher",
+        "name": "Atbash Cipher",
+        "uuid": "47da53d4-b6fd-4de0-9fbb-303f5a7d926d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2,
+        "topics": [
+          "strings"
+        ]
+      },
+      {
         "slug": "collatz-conjecture",
         "name": "Collatz Conjecture",
         "uuid": "39447c38-8509-45fb-9070-3ff6be50c0d5",
