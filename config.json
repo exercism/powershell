@@ -180,7 +180,38 @@
     ]
   },
   "concepts": [],
-  "key_features": [],
+  "key_features": [
+        {
+      "title": "Cross Platform",
+      "content": "Powershell runs on Windows, macOS, and Linux.",
+      "icon": "cross-platform"
+    },
+    {
+      "title": "Interop",
+      "content": "Leverage the .NET framework with ease.",
+      "icon": "interop"
+    },
+    {
+      "title": "Pipelines",
+      "content": "Pipelines are a powerful way to chain commands together.",
+      "icon": "concurrency"
+    },
+    {
+      "title": "Cli",
+      "content": "Powerful command line interface, that lets you interact with the system.",
+      "icon": "tooling"
+    },
+    {
+      "title": "Execution Policy",
+      "content": "Set execution policy which allows you to control the level of trust for scripts.",
+      "icon": "safe"
+    },
+    {
+      "title": "Extensible",
+      "content": "Extensible with modules and scripts from the community, or create your own.",
+      "icon": "extensible"
+    }
+  ],
   "tags": [
     "paradigm/procedural",
     "typing/dynamic",
