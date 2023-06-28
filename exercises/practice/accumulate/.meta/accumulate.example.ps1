@@ -34,7 +34,7 @@ Function Get-Accumulation() {
     $result = @()
 
     foreach ($value in $List) {
-        $result += Invoke-Command -Scriptblock $Func -ArgumentList $item
+        $result += Invoke-Command -Scriptblock $Func -ArgumentList $value
     }
 
     return $result
