@@ -27,7 +27,7 @@ function Get-HammingDifference([string]$strand1, [string]$strand2) {
     #>
 
     if ( $strand1.length -ne $strand2.length) {
-        Throw "Left and right strands must be of equal length."
+        Throw "strands must be of equal length."
     }
     $first = [char[]][string]$strand1
     $second = [char[]][string]$strand2

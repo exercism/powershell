@@ -44,11 +44,11 @@ Describe "Test Get-BobResponse" {
         Get-BobResponse -HeyBob "1, 2, 3 GO!" | Should -BeExactly "Whoa, chill out!"
     }
 
-    It "only numbers" {
+    It "no letters" {
         Get-BobResponse -HeyBob "1, 2, 3" | Should -BeExactly "Whatever."
     }
 
-    It "question with only numbers" {
+    It "question with no letters" {
         Get-BobResponse -HeyBob "4?" | Should -BeExactly "Sure."
     }
 
@@ -81,13 +81,11 @@ Describe "Test Get-BobResponse" {
     }
 
     It "alternate silence" {
-        Get-BobResponse -HeyBob "                                                                                " | Should -BeExactly "Fine. Be that way!"
+        Get-BobResponse -HeyBob "`t`t`t`t`t`t`t`t`t`t`t" | Should -BeExactly "Fine. Be that way!"
     }
 
     It "multiple line question" {
-        Get-BobResponse -HeyBob "
-Does this cryogenic chamber make me look fat?
-no" | Should -BeExactly "Whatever."
+        Get-BobResponse -HeyBob "`nDoes this cryogenic chamber make me look fat?`nno" | Should -BeExactly "Whatever."
     }
 
     It "starting with whitespace" {
@@ -99,8 +97,7 @@ no" | Should -BeExactly "Whatever."
     }
 
     It "other whitespace" {
-        Get-BobResponse -HeyBob "
-        " | Should -BeExactly "Fine. Be that way!"
+        Get-BobResponse -HeyBob "`n`r `t" | Should -BeExactly "Fine. Be that way!"
     }
 
     It "non-question ending with whitespace" {

@@ -2,8 +2,6 @@
 .SYNOPSIS
     Given students' names along with the grade that they are in, create a roster for the school.
 .DESCRIPTION
-    In the end, you should be able to:
-
     Add a student's name to the roster for a grade
     "Add Jim to grade 2."
     "OK."
@@ -15,16 +13,16 @@
     "Grade 1: Anna, Barb, and Charlie. Grade 2: Alex, Peter, and Zoe. Grade 3…"
     Note that all our students only have one name. (It's a small town, what do you want?)
 .EXAMPLE
-    PS C:\> $roster = [Roster]::new()
-            $roster.AddStudent(1,'Billy')
-            $roster.AddStudent(1,'Josh')
-            $roster.AddStudent(2,'Allison')
-            $roster.GetRoster()
-            $roster.GetRoster(2)
+    $roster = [Roster]::new()
+    $roster.AddStudent(1,'Billy')
+    $roster.AddStudent(1,'Josh')
+    $roster.AddStudent(2,'Allison')
+    $roster.GetRoster()
+    $roster.GetRoster(2)
 
-            This will create a new roster and add 3 students to it.
-            When no arguments are supplied to the GetRoster method, all students will be returned.
-            When a grade number is supplied to the GetRoster method, students from that grade will be returned.
+    This will create a new roster and add 3 students to it.
+    When no arguments are supplied to the GetRoster method, all students will be returned.
+    When a grade number is supplied to the GetRoster method, students from that grade will be returned.
 #>
 
 class Student {

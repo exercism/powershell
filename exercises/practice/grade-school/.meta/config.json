@@ -1,6 +1,7 @@
 {
   "authors": [
-    "inammathe"
+    "inammathe",
+    "meatball133"
   ],
   "files": {
     "solution": [
@@ -13,7 +14,6 @@
       ".meta/GradeSchool.example.ps1"
     ]
   },
-  "blurb": "Given students' names along with the grade that they are in, create a roster for the school",
-  "source": "A pairing session with Phil Battos at gSchool",
-  "source_url": "http://gschool.it"
+  "blurb": "Given students' names along with the grade that they are in, create a roster for the school.",
+  "source": "A pairing session with Phil Battos at gSchool"
 }
