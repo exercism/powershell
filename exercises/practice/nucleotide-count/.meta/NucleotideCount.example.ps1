@@ -39,7 +39,7 @@ Function Get-NucleotideCount() {
             $nucleotideCount[[string]$nucleotide]++
         }
         else {
-            throw "error: Invalid nucleotide in strand"
+            throw "Invalid nucleotide in strand"
         }
     }
     return $nucleotideCount
