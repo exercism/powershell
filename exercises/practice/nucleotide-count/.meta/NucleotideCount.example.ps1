@@ -36,7 +36,7 @@ Function Get-NucleotideCount() {
 
     foreach ($nucleotide in $Strand.ToCharArray()) {
         if ($nucleotides -contains $nucleotide) {
-            $nucleotideCount[$nucleotide]++
+            $nucleotideCount[[string]$nucleotide]++
         }
         else {
             throw "error: Invalid nucleotide in strand"
