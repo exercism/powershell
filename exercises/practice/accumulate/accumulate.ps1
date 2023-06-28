@@ -1,7 +1,7 @@
 Function Get-Accumulation() {
     <#
     .SYNOPSIS
-    Accumulate a list of numbers based on the operation given.
+    Accumulate a list of values based on the operation given.
 
     .DESCRIPTION
     Given the collection of numbers:
