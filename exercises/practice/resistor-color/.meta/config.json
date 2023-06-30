@@ -8,7 +8,7 @@
       "ResistorColor.tests.ps1"
     ],
     "example": [
-      "ResistorColor.example.ps1"
+      ".meta/ResistorColor.example.ps1"
     ]
   },
   "blurb": "Convert a resistor band's color to its numeric representation.",
