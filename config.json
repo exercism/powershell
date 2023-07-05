@@ -122,7 +122,7 @@
         "name": "Darts",
         "uuid": "65dcaf86-f61f-4576-82a9-1d84552e9d6e",
         "practices": [
-          "control_flow_if_else_statements",
+          "control-flow-if-else-statements",
           "integers"
         ],
         "prerequisites": [],
