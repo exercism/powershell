@@ -15,6 +15,9 @@
     "indent_size": 4,
     "highlightjs_language": "powershell"
   },
+  "test_runner": {
+    "average_run_time": 5.0
+  },
   "checklist_issue": 4,
   "files": {
     "solution": [
