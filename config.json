@@ -141,6 +141,16 @@
         ]
       },
       {
+        "slug": "armstrong-numbers",
+        "name": "Armstrong Numbers",
+        "uuid": "1a204c41-7aea-41ff-8069-917ed65177ed",
+        "practices": [
+          "numbers"
+        ],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "etl",
         "name": "Etl",
         "uuid": "85148e36-583b-4eba-9f66-daeb0c865daa",
