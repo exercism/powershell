@@ -2,7 +2,7 @@
 
 The exercises all use the [Pester][pester] framework for mocking and testing.
 All tests will be in a file named `[exercise].tests.ps1` as is the standard for the Pester framework.
-If you're in the right directory (i.e. the one containing `[exercise].ps1` and `[exercise].tests.ps1`).
+If you're in the right directory (i.e. the one containing `[Exercise].ps1` and `[Exercise].tests.ps1`).
 You can run the tests from PowerShell by calling:
 
 ``` PowerShell
