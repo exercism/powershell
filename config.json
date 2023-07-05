@@ -144,12 +144,11 @@
         "slug": "armstrong-numbers",
         "name": "Armstrong Numbers",
         "uuid": "1a204c41-7aea-41ff-8069-917ed65177ed",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 1,
-        "topics": [
+        "practices": [
           "numbers"
-        ]
+        ],
+        "prerequisites": [],
+        "difficulty": 1
       },
       {
         "slug": "grade-school",
