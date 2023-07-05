@@ -202,7 +202,7 @@
       "icon": "tooling"
     },
     {
-      "title": "Execution Policy",
+      "title": "Customizable Trust Levels",
       "content": "Set execution policy which allows you to control the level of trust for scripts.",
       "icon": "safe"
     },
