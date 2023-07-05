@@ -187,6 +187,16 @@
         ]
       },
       {
+        "slug": "protein-translation",
+        "name": "Protein Translation",
+        "uuid": "e297bc30-22c5-4ffb-ad44-8a36a9f238d2",
+        "practices": [
+          "strings"
+        ],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "accumulate",
         "name": "Accumulate",
         "uuid": "6554629d-0fb9-442a-89b7-c39192b2562c",
