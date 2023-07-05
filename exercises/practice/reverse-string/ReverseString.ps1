@@ -25,5 +25,5 @@ Function Get-ReverseString {
         [string]$Forward
 	)
 	
-	Throw "Function not implemented"
+	Throw "Please implement this function"
 }

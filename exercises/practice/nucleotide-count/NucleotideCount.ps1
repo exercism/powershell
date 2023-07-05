@@ -26,5 +26,5 @@ Function Get-NucleotideCount() {
         [string]$Strand
     )
 
-    Throw "Not implemented exception"
+    Throw "Please implement this function"
 }
