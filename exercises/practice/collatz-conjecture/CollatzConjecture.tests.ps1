@@ -34,13 +34,13 @@ Describe "Test Invoke-CollatzConjecture.ps1" {
         }
     }
     
-    Context "Failing Tests" {
+    Context "Invalid Inputs" {
         It "zero is an error" {
             { Invoke-CollatzConjecture -Number 0 } | Should -Throw "error: Only positive numbers are allowed"
         }
     
         It "negative value is an error" {
-            { Invoke-CollatzConjecture -Number 0 } | Should -Throw "error: Only positive numbers are allowed"
+            { Invoke-CollatzConjecture -Number -15 } | Should -Throw "error: Only positive numbers are allowed"
         }
     }
 }
