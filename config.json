@@ -132,7 +132,9 @@
         "slug": "reverse-string",
         "name": "Reverse String",
         "uuid": "925e73f0-28a9-4e33-937b-5f328ac50163",
-        "practices": [],
+        "practices": [
+          "strings"
+        ],
         "prerequisites": [],
         "difficulty": 1,
         "topics": [
@@ -195,6 +197,16 @@
           "scriptblocks",
           "functions"
         ]
+      },
+      {
+        "slug": "perfect-numbers",
+        "name": "Perfect Numbers",
+        "uuid": "298adaf6-5063-41d6-b27c-a0f34c457a2d",
+        "practices": [
+          "math"
+        ],
+        "prerequisites": [],
+        "difficulty": 2
       },
       {
         "slug": "collatz-conjecture",
