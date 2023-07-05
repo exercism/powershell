@@ -24,7 +24,7 @@
       "%{pascal_slug}.tests.ps1"
     ],
     "example": [
-      "%{pascal_slug}.example.ps1"
+      ".meta/%{pascal_slug}.example.ps1"
     ],
     "exemplar": [
       ".meta/%{pascal_slug}.exemplar.ps1"
