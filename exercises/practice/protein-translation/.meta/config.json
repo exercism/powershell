@@ -1,0 +1,18 @@
+{
+  "authors": [
+    "meatball133"
+  ],
+  "files": {
+    "solution": [
+      "ProteinTranslation.ps1"
+    ],
+    "test": [
+      "ProteinTranslation.tests.ps1"
+    ],
+    "example": [
+      ".meta/ProteinTranslation.example.ps1"
+    ]
+  },
+  "blurb": "Translate RNA sequences into proteins.",
+  "source": "Tyler Long"
+}

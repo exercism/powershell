@@ -118,10 +118,23 @@
         ]
       },
       {
+        "slug": "darts",
+        "name": "Darts",
+        "uuid": "65dcaf86-f61f-4576-82a9-1d84552e9d6e",
+        "practices": [
+          "control-flow-if-else-statements",
+          "integers"
+        ],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "reverse-string",
         "name": "Reverse String",
         "uuid": "925e73f0-28a9-4e33-937b-5f328ac50163",
-        "practices": [],
+        "practices": [
+          "strings"
+        ],
         "prerequisites": [],
         "difficulty": 1,
         "topics": [
@@ -148,6 +161,27 @@
           "arrays"
         ],
         "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "armstrong-numbers",
+        "name": "Armstrong Numbers",
+        "uuid": "1a204c41-7aea-41ff-8069-917ed65177ed",
+        "practices": [
+          "numbers"
+        ],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "etl",
+        "name": "Etl",
+        "uuid": "85148e36-583b-4eba-9f66-daeb0c865daa",
+        "practices": [
+          "objects",
+          "strings"
+        ],
+        "prerequisites": [],
         "difficulty": 2
       },
       {
@@ -163,6 +197,16 @@
         ]
       },
       {
+        "slug": "protein-translation",
+        "name": "Protein Translation",
+        "uuid": "e297bc30-22c5-4ffb-ad44-8a36a9f238d2",
+        "practices": [
+          "strings"
+        ],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "accumulate",
         "name": "Accumulate",
         "uuid": "6554629d-0fb9-442a-89b7-c39192b2562c",
@@ -173,6 +217,26 @@
           "scriptblocks",
           "functions"
         ]
+      },
+      {
+        "slug": "prime-factors",
+        "name": "Prime Factors",
+        "uuid": "e22e6595-b407-4e6e-b8df-00bbbb75af60",
+        "practices": [
+          "numbers"
+        ],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "perfect-numbers",
+        "name": "Perfect Numbers",
+        "uuid": "298adaf6-5063-41d6-b27c-a0f34c457a2d",
+        "practices": [
+          "math"
+        ],
+        "prerequisites": [],
+        "difficulty": 2
       },
       {
         "slug": "collatz-conjecture",

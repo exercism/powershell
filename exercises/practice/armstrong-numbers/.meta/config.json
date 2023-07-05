@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "meatball133"
+  ],
+  "files": {
+    "solution": [
+      "ArmstrongNumbers.ps1"
+    ],
+    "test": [
+      "ArmstrongNumbers.tests.ps1"
+    ],
+    "example": [
+      ".meta/ArmstrongNumbers.example.ps1"
+    ]
+  },
+  "blurb": "Determine if a number is an Armstrong number.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Narcissistic_number"
+}
