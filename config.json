@@ -192,7 +192,7 @@
       "icon": "interop"
     },
     {
-      "title": "Pipelines",
+      "title": "Composable",
       "content": "Pipelines are a powerful way to chain commands together.",
       "icon": "concurrency"
     },
