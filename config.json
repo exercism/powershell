@@ -154,6 +154,16 @@
         ]
       },
       {
+        "slug": "binary-search",
+        "name": "Binary Search",
+        "uuid": "0cd45da4-4330-41e7-bc30-77bb56e8c627",
+        "practices": [
+          "arrays"
+        ],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "armstrong-numbers",
         "name": "Armstrong Numbers",
         "uuid": "1a204c41-7aea-41ff-8069-917ed65177ed",
