@@ -23,5 +23,5 @@ Function Invoke-Darts() {
         [Double]$Y
     )
     
-    Throw "Exercise not implemented"
+    Throw "Please implement this function"
 }
