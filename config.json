@@ -219,6 +219,16 @@
         ]
       },
       {
+        "slug": "atbash-cipher",
+        "name": "Atbash Cipher",
+        "uuid": "47da53d4-b6fd-4de0-9fbb-303f5a7d926d",
+        "practices": [
+          "strings"
+        ],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "prime-factors",
         "name": "Prime Factors",
         "uuid": "e22e6595-b407-4e6e-b8df-00bbbb75af60",

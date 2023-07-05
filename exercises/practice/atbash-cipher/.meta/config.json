@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "meatball133"
+  ],
+  "files": {
+    "solution": [
+      "AtbashCipher.ps1"
+    ],
+    "test": [
+      "AtbashCipher.tests.ps1"
+    ],
+    "example": [
+      ".meta/AtbashCipher.example.ps1"
+    ]
+  },
+  "blurb": "Create an implementation of the atbash cipher, an ancient encryption system created in the Middle East.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Atbash"
+}
