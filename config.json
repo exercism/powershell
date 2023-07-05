@@ -197,7 +197,7 @@
       "icon": "concurrency"
     },
     {
-      "title": "Cli",
+      "title": "CLI",
       "content": "Powerful command line interface, that lets you interact with the system.",
       "icon": "tooling"
     },
