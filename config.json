@@ -168,12 +168,11 @@
         "slug": "prime-factors",
         "name": "Prime Factors",
         "uuid": "e22e6595-b407-4e6e-b8df-00bbbb75af60",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2,
-        "topics": [
+        "practices": [
           "numbers"
-        ]
+        ],
+        "prerequisites": [],
+        "difficulty": 2
       },
       {
         "slug": "collatz-conjecture",

@@ -18,5 +18,5 @@ Function Invoke-PrimeFactors() {
         [Int64]$Number
     )
     
-    throw "Exercise not implemented"
+    throw "Please implement this function"
 }
