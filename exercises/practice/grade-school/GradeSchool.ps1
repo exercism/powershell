@@ -27,12 +27,12 @@
 
 class Student {
     Student() {
-        Throw "Exercise not implemented"
+        Throw "Please implement this class"
     }
 }
 
 class Roster {
     Roster() {
-        Throw "Exercise not implemented"
+        Throw "Please implement this class"
     }
 }

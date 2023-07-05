@@ -25,7 +25,7 @@ Describe "Get-Hamming Test cases" {
         }
     }
 
-    Context "Failing Tests" {
+    Context "Invalid Inputs" {
         It "disallow first strand longer" {
             { Get-HammingDifference "AATG" "AAA" } | Should -Throw "strands must be of equal length."
         }

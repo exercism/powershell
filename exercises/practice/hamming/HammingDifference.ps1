@@ -26,5 +26,5 @@ function Get-HammingDifference([string]$strand1, [string]$strand2) {
     This will return a difference of 7.
     #>
     
-    Throw "Exercise not implemented"
+    Throw "Please implement this function"
 }

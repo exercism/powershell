@@ -28,5 +28,5 @@ Function Get-BobResponse() {
         [string]$HeyBob
     )
 
-    Throw "Function not implemented"
+    Throw "Please implement this function"
 }
