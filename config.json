@@ -193,7 +193,7 @@
     },
     {
       "title": "Composable",
-      "content": "Pipelines are a powerful way to chain commands together.",
+      "content": "Leverage pipelines to chain commands together.",
       "icon": "concurrency"
     },
     {
