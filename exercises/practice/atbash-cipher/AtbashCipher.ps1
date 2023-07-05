@@ -19,7 +19,7 @@ Function Invoke-Encode() {
         [string]$Phrase
     )
     
-    throw "Exercise not implemented"
+    throw "Please implement this function"
 }
 
 Function Invoke-Decode(){
@@ -43,5 +43,5 @@ Function Invoke-Decode(){
         [string]$Phrase
     )
 
-    throw "Exercise not implemented"
+    throw "Please implement this function"
 }
