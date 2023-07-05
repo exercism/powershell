@@ -118,10 +118,23 @@
         ]
       },
       {
+        "slug": "darts",
+        "name": "Darts",
+        "uuid": "65dcaf86-f61f-4576-82a9-1d84552e9d6e",
+        "practices": [
+          "control-flow-if-else-statements",
+          "integers"
+        ],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "reverse-string",
         "name": "Reverse String",
         "uuid": "925e73f0-28a9-4e33-937b-5f328ac50163",
-        "practices": [],
+        "practices": [
+          "strings"
+        ],
         "prerequisites": [],
         "difficulty": 1,
         "topics": [
@@ -141,6 +154,37 @@
         ]
       },
       {
+        "slug": "binary-search",
+        "name": "Binary Search",
+        "uuid": "0cd45da4-4330-41e7-bc30-77bb56e8c627",
+        "practices": [
+          "arrays"
+        ],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "armstrong-numbers",
+        "name": "Armstrong Numbers",
+        "uuid": "1a204c41-7aea-41ff-8069-917ed65177ed",
+        "practices": [
+          "numbers"
+        ],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "etl",
+        "name": "Etl",
+        "uuid": "85148e36-583b-4eba-9f66-daeb0c865daa",
+        "practices": [
+          "objects",
+          "strings"
+        ],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "grade-school",
         "name": "Grade School",
         "uuid": "2daa9e3e-65c1-4fc3-b6ee-6f477a198fec",
@@ -151,6 +195,16 @@
           "filtering",
           "classes"
         ]
+      },
+      {
+        "slug": "protein-translation",
+        "name": "Protein Translation",
+        "uuid": "e297bc30-22c5-4ffb-ad44-8a36a9f238d2",
+        "practices": [
+          "strings"
+        ],
+        "prerequisites": [],
+        "difficulty": 2
       },
       {
         "slug": "accumulate",
@@ -170,6 +224,26 @@
         "uuid": "47da53d4-b6fd-4de0-9fbb-303f5a7d926d",
         "practices": [
           "strings"
+        ],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "prime-factors",
+        "name": "Prime Factors",
+        "uuid": "e22e6595-b407-4e6e-b8df-00bbbb75af60",
+        "practices": [
+          "numbers"
+        ],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "perfect-numbers",
+        "name": "Perfect Numbers",
+        "uuid": "298adaf6-5063-41d6-b27c-a0f34c457a2d",
+        "practices": [
+          "math"
         ],
         "prerequisites": [],
         "difficulty": 2

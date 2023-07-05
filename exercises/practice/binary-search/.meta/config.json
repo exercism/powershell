@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "meatball133"
+  ],
+  "files": {
+    "solution": [
+      "BinarySearch.ps1"
+    ],
+    "test": [
+      "BinarySearch.tests.ps1"
+    ],
+    "example": [
+      ".meta/BinarySearch.example.ps1"
+    ]
+  },
+  "blurb": "Implement a binary search algorithm.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Binary_search_algorithm"
+}

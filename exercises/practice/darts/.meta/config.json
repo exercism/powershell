@@ -1,0 +1,18 @@
+{
+  "authors": [
+    "meatball133"
+  ],
+  "files": {
+    "solution": [
+      "Darts.ps1"
+    ],
+    "test": [
+      "Darts.tests.ps1"
+    ],
+    "example": [
+      ".meta/Darts.example.ps1"
+    ]
+  },
+  "blurb": "Write a function that returns the earned points in a single toss of a Darts game.",
+  "source": "Inspired by an exercise created by a professor Della Paolera in Argentina"
+}
