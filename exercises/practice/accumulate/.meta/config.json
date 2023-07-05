@@ -1,6 +1,10 @@
 {
   "authors": [
-    "Kryo"
+    "Kryo",
+    "meatball133"
+  ],
+  "contributors": [
+    "glennj"
   ],
   "files": {
     "solution": [

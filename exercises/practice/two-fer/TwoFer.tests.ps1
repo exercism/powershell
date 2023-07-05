@@ -3,16 +3,15 @@ BeforeAll {
 }
 
 Describe "Get-TwoFer Tests" {
+    It "no name given"{
+        Get-TwoFer | Should -BeExactly "One for you, one for me"
+    }
 
-    It "Given <Name> expects <Expected>" -TestCases @(
-        @{ Name = $null; Expected = "One for you, one for me" },
-        @{ Name = ""; Expected = "One for you, one for me" },
-        @{ Name = "Alice"; Expected = "One for Alice, one for me" }
-    ) {
-        Param(
-            $Name, $Expected
-        )
+    It "a name given"{
+        Get-TwoFer -Name "Alice" | Should -BeExactly "One for Alice, one for me"
+    }
 
-        Get-TwoFer -Name $Name | Should -Be $Expected
+    It "another name given"{
+        Get-TwoFer -Name "Bob" | Should -BeExactly "One for Bob, one for me"
     }
 }

@@ -1,7 +1,7 @@
 Function Get-Accumulation() {
     <#
     .SYNOPSIS
-    Accumulate a list of numbers based on the operation given.
+    Accumulate a list of values based on the operation given.
 
     .DESCRIPTION
     Given the collection of numbers:
@@ -27,12 +27,16 @@ Function Get-Accumulation() {
     .EXAMPLE
     Get-Accumulation -List 1,2,3,4,5 -Func { <some code here> }
     #>
-    [CmdletBinding()]
     Param(
         [PSObject[]]$List,
         [scriptblock]$Func
     )
+    $result = @()
 
+    foreach ($value in $List) {
+        $result += Invoke-Command -Scriptblock $Func -ArgumentList $value
+    }
 
-    Invoke-Command -Scriptblock $Func -ArgumentList @(,$List)
+    return $result
+
 }
