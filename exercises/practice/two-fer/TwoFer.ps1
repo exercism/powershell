@@ -25,5 +25,5 @@ Function Get-TwoFer(){
         [string]$Name
     )
 
-    Throw "Exercise not implemented"
+    Throw "Please implement this function"
 }

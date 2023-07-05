@@ -25,5 +25,5 @@ Function Get-SumOfMultiples {
         [int]$Limit
     )
 
-    Throw "Function not implemented"
+    Throw "Please implement this function"
 }

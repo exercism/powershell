@@ -33,5 +33,5 @@ Function Get-Accumulation() {
         [scriptblock]$Func
     )
 
-    Throw "Function not implemented"
+    Throw "Please implement this function"
 }
