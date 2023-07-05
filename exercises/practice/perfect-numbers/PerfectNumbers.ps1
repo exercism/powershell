@@ -19,5 +19,5 @@ Function Invoke-PerfectNumbers() {
         [Int64]$Number
     )
 
-    Throw "Exercise not implemented"
+    Throw "Please implement this function"
 }
