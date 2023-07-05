@@ -141,6 +141,17 @@
         ]
       },
       {
+        "slug": "etl",
+        "name": "Etl",
+        "uuid": "85148e36-583b-4eba-9f66-daeb0c865daa",
+        "practices": [
+          "objects",
+          "strings"
+        ],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "grade-school",
         "name": "Grade School",
         "uuid": "2daa9e3e-65c1-4fc3-b6ee-6f477a198fec",

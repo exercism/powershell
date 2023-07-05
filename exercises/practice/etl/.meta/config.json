@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "meatball133"
+  ],
+  "files": {
+    "solution": [
+      "Etl.ps1"
+    ],
+    "test": [
+      "Etl.tests.ps1"
+    ],
+    "example": [
+      ".meta/Etl.example.ps1"
+    ]
+  },
+  "blurb": "Change the data format for scoring a game to more easily add other languages.",
+  "source": "Based on an exercise by the JumpstartLab team for students at The Turing School of Software and Design.",
+  "source_url": "https://turing.edu"
+}
