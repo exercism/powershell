@@ -60,12 +60,11 @@
         "slug": "resistor-color",
         "name": "Resistor Color",
         "uuid": "09637d15-2f1e-45a1-9654-1b783147676e",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 1,
-        "topics": [
+        "practices": [
           "strings"
-        ]
+        ],
+        "prerequisites": [],
+        "difficulty": 1
       },
       {
         "slug": "sum-of-multiples",

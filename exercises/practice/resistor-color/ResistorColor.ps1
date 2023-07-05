@@ -17,7 +17,7 @@ Function Get-ColorCode() {
         [string]$Color
     )
     
-    throw "Function not implemented"
+    throw "Please implement this function"
 }
 
 Function Get-Colors() {
@@ -32,5 +32,5 @@ Function Get-Colors() {
     Get-Colors
     #>
     
-    throw "Function not implemented"
+    throw "Please implement this function"
 }
