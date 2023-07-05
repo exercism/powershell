@@ -4,7 +4,6 @@ BeforeAll {
 
 Describe "Test Invoke-BinarySearch.ps1" {
     Context "Passing Tests" {
-
         It "finds a value in an array with one element" {
             $got = Invoke-BinarySearch -Array @(6) -Value 6
             $want = 0
@@ -48,7 +47,7 @@ Describe "Test Invoke-BinarySearch.ps1" {
         }
     }
     
-    Context "Failing Tests" {
+    Context "Invalid Inputs" {
         It "identifies that a value is not included in the array" {
             { Invoke-BinarySearch -Array @(1, 3, 4, 6, 8, 9, 11) -Value 7  } | Should -Throw "error: value not in array"
         }

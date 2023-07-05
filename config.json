@@ -144,12 +144,11 @@
         "slug": "binary-search",
         "name": "Binary Search",
         "uuid": "0cd45da4-4330-41e7-bc30-77bb56e8c627",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2,
-        "topics": [
+        "practices": [
           "arrays"
-        ]
+        ],
+        "prerequisites": [],
+        "difficulty": 2
       },
       {
         "slug": "grade-school",

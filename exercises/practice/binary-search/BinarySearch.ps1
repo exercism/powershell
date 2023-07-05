@@ -21,5 +21,5 @@ Function Invoke-BinarySearch() {
         [Int64]$Value
     )
 
-    throw "Exercise not implemented"
+    throw "Please implement this function"
 }
