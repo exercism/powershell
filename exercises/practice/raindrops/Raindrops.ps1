@@ -29,5 +29,5 @@ Function Get-Raindrops() {
         [int]$Rain
     )
 
-    Throw "Not implemented exception"
+    Throw "Please implement this function"
 }

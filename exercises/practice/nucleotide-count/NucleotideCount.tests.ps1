@@ -4,22 +4,38 @@ BeforeAll {
 
 Describe "NucleotideCountTests" {
 	It "empty strand" {
-        Get-NucleotideCount -Strand "" | Should -BeExactly "A:0 C:0 G:0 T:0"
+        $got = Get-NucleotideCount -Strand ""
+		$want = @{ A = 0; C = 0; G = 0; T = 0 }
+
+		$want.Keys | Should -HaveCount $got.Keys.Count
+        $want.Keys | % {$want[$_] | Should -Be $got[$_]}
 	}
 
 	It "can count one nucleotide in single-character input" {
-		Get-NucleotideCount -Strand "G" | Should -BeExactly "A:0 C:0 G:1 T:0"
+		$got = Get-NucleotideCount -Strand "G"
+		$want = @{ A = 0; C = 0; G = 1; T = 0 }
+
+		$want.Keys | Should -HaveCount $got.Keys.Count
+		$want.Keys | % {$want[$_] | Should -Be $got[$_]}
 	}
 
 	It "strand with repeated nucleotide" {
-		Get-NucleotideCount -Strand "GGGGGGG" | Should -BeExactly "A:0 C:0 G:7 T:0"
+		$got = Get-NucleotideCount -Strand "GGGGGGG"
+		$want = @{ A = 0; C = 0; G = 7; T = 0 }
+
+		$want.Keys | Should -HaveCount $got.Keys.Count
+		$want.Keys | % {$want[$_] | Should -Be $got[$_]}
 	}
 
 	It "strand with multiple nucleotides" {
-		Get-NucleotideCount -Strand "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC" | Should -BeExactly "A:20 C:12 G:17 T:21"
+		$got = Get-NucleotideCount -Strand "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC"
+		$want = @{ A = 20; C = 12; G = 17; T = 21 }
+
+		$want.Keys | Should -HaveCount $got.Keys.Count
+		$want.Keys | % {$want[$_] | Should -Be $got[$_]}
 	}
 
 	It "strand with invalid nucleotides" {
-		{ Get-NucleotideCount -Strand "AGXXACT" } | Should -Throw
+		{ Get-NucleotideCount -Strand "AGXXACT" } | Should -Throw "Invalid nucleotide in strand"
 	}	
 }
