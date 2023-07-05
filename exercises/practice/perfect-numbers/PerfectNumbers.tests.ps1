@@ -82,7 +82,7 @@ Describe "Test Invoke-PerfectNumbers.ps1" {
         }
     }
 
-    Context "Failing Tests" {
+    Context "Invalid Inputs" {
         It "Zero is rejected (not a natural number)" {
             { Invoke-PerfectNumbers -Number 0 } | Should -Throw "error: Classification is only possible for positive integers."
         }
