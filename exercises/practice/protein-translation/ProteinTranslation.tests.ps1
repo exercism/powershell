@@ -187,7 +187,7 @@ Describe "Test Invoke-ProteinTranslation.ps1" {
         }
     }
     
-    Context "Failing Tests" {
+    Context "Invalid Inputs" {
         It "Non-existing codon can't translate" {
             { Invoke-ProteinTranslation -Strand "AAA" } | Should -Throw "error: Invalid codon"
         }

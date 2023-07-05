@@ -17,5 +17,5 @@ Function Invoke-ProteinTranslation() {
         [string]$Strand
     )
     
-    throw "Exercise not implemented"
+    throw "Please implement this function"
 }
