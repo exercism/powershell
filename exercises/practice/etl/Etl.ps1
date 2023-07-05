@@ -17,5 +17,5 @@ Function Invoke-Etl() {
         [object]$Legacy
     )
 
-    Throw "Exercise not implemented"
+    Throw "Please implement this function"
 }
