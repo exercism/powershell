@@ -95,6 +95,14 @@
         ]
       },
       {
+        "slug": "gigasecond",
+        "name": "Gigasecond",
+        "uuid": "b1465d38-77af-407d-9298-c222ade4182c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "nucleotide-count",
         "name": "Nucleotide Count",
         "uuid": "68b0b096-c6c0-493f-9f7f-081a413d7078",
