@@ -70,6 +70,13 @@
         "difficulty": 1
       },
       {
+        "slug": "resistor-color-duo",
+        "name": "Resistor Color Duo",
+        "uuid": "43ea84ff-6525-497e-b871-b205bb1b429d",
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "sum-of-multiples",
         "name": "Sum Of Multiples",
         "uuid": "df4403d1-3fb2-4c2c-a228-2bdb442d0680",
