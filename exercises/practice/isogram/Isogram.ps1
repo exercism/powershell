@@ -21,18 +21,5 @@ Function Invoke-Isogram() {
         [string]$Phrase
     )
 
-    $Phrase = $Phrase.ToLower()
-    $Phrase = $Phrase.Replace(" ", "")
-    $Phrase = $Phrase.Replace("-", "")
-
-    $FoundLetters = @()
-    $Letters = $Phrase.ToCharArray() 
-    foreach ($item in $Letters) {
-        if ($FoundLetters -contains $item) {
-            return $false
-        }
-        $FoundLetters += $item
-    }
-    return $true
+    Throw "Please implement this function"
 }
-
