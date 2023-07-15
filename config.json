@@ -186,6 +186,14 @@
         "prerequisites": [],
         "difficulty": 1
       },
+            {
+        "slug": "isogram",
+        "name": "Isogram",
+        "uuid": "96c13659-37b2-4776-901e-ba4b9cc92984",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
       {
         "slug": "etl",
         "name": "Etl",
