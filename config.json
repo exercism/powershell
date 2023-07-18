@@ -16,7 +16,7 @@
     "highlightjs_language": "powershell"
   },
   "test_runner": {
-    "average_run_time": 5.0
+    "average_run_time": 5
   },
   "checklist_issue": 4,
   "files": {
