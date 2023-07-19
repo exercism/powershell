@@ -1,0 +1,17 @@
+{
+  "authors": ["meatball133"],
+  "files": {
+    "solution": [
+      "DifferenceOfSquares.ps1"
+    ],
+    "test": [
+      "DifferenceOfSquares.tests.ps1"
+    ],
+    "example": [
+      ".meta/DifferenceOfSquares.example.ps1"
+    ]
+  },
+  "blurb": "Find the difference between the square of the sum and the sum of the squares of the first N natural numbers.",
+  "source": "Problem 6 at Project Euler",
+  "source_url": "https://projecteuler.net/problem=6"
+}

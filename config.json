@@ -252,6 +252,16 @@
         "difficulty": 2
       },
       {
+        "slug": "difference-of-squares",
+        "name": "Difference Of Squares",
+        "uuid": "b2eb59e2-f3ec-49aa-bcd0-2e9cb86e62bc",
+        "practices": [
+          "numbers"
+        ],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "perfect-numbers",
         "name": "Perfect Numbers",
         "uuid": "298adaf6-5063-41d6-b27c-a0f34c457a2d",
