@@ -173,6 +173,14 @@
         ]
       },
       {
+        "slug": "anagram",
+        "name": "Anagram",
+        "uuid": "304f117c-3868-41e0-a904-08ca3d90ea80",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "two-fer",
         "name": "Two Fer",
         "uuid": "45f285c2-9358-451d-a931-1dee54df7b67",
