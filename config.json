@@ -1,7 +1,7 @@
 {
   "language": "PowerShell",
   "slug": "powershell",
-  "active": false,
+  "active": true,
   "status": {
     "concept_exercises": false,
     "test_runner": true,
@@ -153,6 +153,16 @@
         "topics": [
           "strings"
         ]
+      },
+      {
+        "slug": "rna-transcription",
+        "name": "Rna Transcription",
+        "uuid": "4ec88a7f-7a15-4e61-8db7-acf8b7f7086d",
+        "practices": [
+          "strings"
+        ],
+        "prerequisites": [],
+        "difficulty": 1
       },
       {
         "slug": "two-fer",
