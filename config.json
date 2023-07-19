@@ -95,6 +95,14 @@
         ]
       },
       {
+        "slug": "difference-of-squares",
+        "name": "Difference Of Squares",
+        "uuid": "137bc42a-29bd-497f-9656-f820c13712ab",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "nucleotide-count",
         "name": "Nucleotide Count",
         "uuid": "68b0b096-c6c0-493f-9f7f-081a413d7078",
