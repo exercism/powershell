@@ -186,7 +186,7 @@
         "prerequisites": [],
         "difficulty": 1
       },
-            {
+      {
         "slug": "isogram",
         "name": "Isogram",
         "uuid": "96c13659-37b2-4776-901e-ba4b9cc92984",
@@ -286,7 +286,7 @@
   },
   "concepts": [],
   "key_features": [
-      {
+    {
       "title": "Cross Platform",
       "content": "Powershell runs on Windows, macOS, and Linux.",
       "icon": "cross-platform"
