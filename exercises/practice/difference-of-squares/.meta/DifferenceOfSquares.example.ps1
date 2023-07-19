@@ -21,7 +21,7 @@ Function Get-SquareOfSum() {
     for ($i = 1; $i -le $Number; $i++) {
         $sum += $i
     }
-    return $sum * $sums
+    return $sum * $sum
 }
 
 Function Get-SumOfSquares() {
