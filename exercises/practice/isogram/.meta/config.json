@@ -1,0 +1,17 @@
+{
+  "authors": ["meatball133"],
+  "files": {
+    "solution": [
+      "Isogram.ps1"
+    ],
+    "test": [
+      "Isogram.tests.ps1"
+    ],
+    "example": [
+      ".meta/Isogram.example.ps1"
+    ]
+  },
+  "blurb": "Determine if a word or phrase is an isogram.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Isogram"
+}

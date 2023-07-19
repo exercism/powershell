@@ -16,7 +16,7 @@
     "highlightjs_language": "powershell"
   },
   "test_runner": {
-    "average_run_time": 5.0
+    "average_run_time": 5
   },
   "checklist_issue": 4,
   "files": {
@@ -70,6 +70,16 @@
         "difficulty": 1
       },
       {
+        "slug": "resistor-color-duo",
+        "name": "Resistor Color Duo",
+        "uuid": "43ea84ff-6525-497e-b871-b205bb1b429d",
+        "practices": [
+          "strings"
+        ],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "sum-of-multiples",
         "name": "Sum Of Multiples",
         "uuid": "df4403d1-3fb2-4c2c-a228-2bdb442d0680",
@@ -93,6 +103,14 @@
           "filtering",
           "strings"
         ]
+      },
+      {
+        "slug": "gigasecond",
+        "name": "Gigasecond",
+        "uuid": "b1465d38-77af-407d-9298-c222ade4182c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
       },
       {
         "slug": "nucleotide-count",
@@ -131,6 +149,14 @@
         ]
       },
       {
+        "slug": "pangram",
+        "name": "Pangram",
+        "uuid": "2673f9af-29a9-48b5-96f3-30588a402cd2",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "darts",
         "name": "Darts",
         "uuid": "65dcaf86-f61f-4576-82a9-1d84552e9d6e",
@@ -161,6 +187,14 @@
         "practices": [
           "strings"
         ],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "anagram",
+        "name": "Anagram",
+        "uuid": "304f117c-3868-41e0-a904-08ca3d90ea80",
+        "practices": [],
         "prerequisites": [],
         "difficulty": 1
       },
@@ -197,11 +231,29 @@
         "difficulty": 1
       },
       {
+        "slug": "isogram",
+        "name": "Isogram",
+        "uuid": "96c13659-37b2-4776-901e-ba4b9cc92984",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "etl",
         "name": "Etl",
         "uuid": "85148e36-583b-4eba-9f66-daeb0c865daa",
         "practices": [
           "objects",
+          "strings"
+        ],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "series",
+        "name": "Series",
+        "uuid": "e8af8cb0-2c9f-4ba7-9045-82c08e9d700f",
+        "practices": [
           "strings"
         ],
         "prerequisites": [],
@@ -288,7 +340,7 @@
   },
   "concepts": [],
   "key_features": [
-      {
+    {
       "title": "Cross Platform",
       "content": "Powershell runs on Windows, macOS, and Linux.",
       "icon": "cross-platform"
