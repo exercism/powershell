@@ -19,5 +19,18 @@ Function Invoke-Panagram() {
         [string]$Sentence
     )
 
-    Throw "Please implement this function"
+    $Sentence = $Sentence.ToLower()
+
+    $FoundLetters = @()
+    $Letters = $Sentence.ToCharArray()
+    foreach ($item in $Letters) {
+        if ($FoundLetters -notcontains $item -and $item -match "[a-z]") {
+            $FoundLetters += $item
+        }
+    }
+
+    if ($FoundLetters.Count -eq 26) {
+        return $true
+    }
+    return $false
 }
