@@ -16,6 +16,10 @@ Function Get-NthPrime() {
     Param(
         [Int64]$Number
     )
+
+    if ($Number -eq 0) {
+        throw "error: there is no zeroth prime"
+    }
     
     $primes = @()
     $i = 2
