@@ -17,11 +17,7 @@ Function Get-SquareOfSum() {
         [Int64]$Number
     )
 
-    $sum = 0
-    for ($i = 1; $i -le $Number; $i++) {
-        $sum += $i
-    }
-    return $sum * $sums
+    throw "Please implement this function"
 }
 
 Function Get-SumOfSquares() {
@@ -43,11 +39,7 @@ Function Get-SumOfSquares() {
         [Int64]$Number
     )
 
-    $sum = 0
-    for ($i = 1; $i -le $Number; $i++) {
-        $sum += $i * $i
-    }
-    return $sum
+    throw "Please implement this function"
 }
 
 Function Get-DifferenceOfSquares() {
@@ -69,5 +61,5 @@ Function Get-DifferenceOfSquares() {
         [Int64]$Number
     )
 
-    return (Get-SquareOfSum -Number $Number) - (Get-SumOfSquares -Number $Number)
+    throw "Please implement this function"
 }
