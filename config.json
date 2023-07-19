@@ -221,6 +221,14 @@
         "difficulty": 1
       },
       {
+        "slug": "isogram",
+        "name": "Isogram",
+        "uuid": "96c13659-37b2-4776-901e-ba4b9cc92984",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "etl",
         "name": "Etl",
         "uuid": "85148e36-583b-4eba-9f66-daeb0c865daa",
@@ -322,7 +330,7 @@
   },
   "concepts": [],
   "key_features": [
-      {
+    {
       "title": "Cross Platform",
       "content": "Powershell runs on Windows, macOS, and Linux.",
       "icon": "cross-platform"
