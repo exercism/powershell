@@ -17,17 +17,19 @@ Function Invoke-RotationalCipher() {
     #>
     [CmdletBinding()]
     Param(
-        [string]$Strand
+        [string]$Text, 
+        [int]$Shift
     )
     
     $result = ""
-    $cipher = @{}
-    $alphabet = "abcdefghijklmnopqrstuvwxyz"
-    $alphabet.ToCharArray() | ForEach-Object -Begin { $i = 0 } -Process { $cipher[$_] = $alphabet[($i + 13) % 26]; $i++ }
-
-    foreach ($letter in $Strand.ToCharArray()) {
-        $result += $cipher[$letter]
+    $Text.ToCharArray() | ForEach-Object {
+        $char = $_
+        if ($char -match "[a-z]") {
+            $result += [char]([int]$char + $Shift - 97) % 26 + 97
+        } elseif ($char -match "[A-Z]") {
+            $result += [char]([int]$char + $Shift - 65) % 26 + 65
+        } else {
+            $result += $char
+        }
     }
-
-    return $result
 }

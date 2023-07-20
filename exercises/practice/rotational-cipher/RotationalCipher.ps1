@@ -17,7 +17,8 @@ Function Invoke-RotationalCipher() {
     #>
     [CmdletBinding()]
     Param(
-        [string]$Strand
+        [string]$Text, 
+        [int]$Shift
     )
     
     Throw "Please implement this function"
