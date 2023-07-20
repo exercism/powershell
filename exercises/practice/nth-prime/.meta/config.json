@@ -1,0 +1,17 @@
+{
+  "authors": ["meatball13"],
+  "files": {
+    "solution": [
+      "NthPrime.ps1"
+    ],
+    "test": [
+      "NthPrime.tests.ps1"
+    ],
+    "example": [
+      ".meta/NthPrime.example.ps1"
+    ]
+  },
+  "blurb": "Given a number n, determine what the nth prime is.",
+  "source": "A variation on Problem 7 at Project Euler",
+  "source_url": "https://projecteuler.net/problem=7"
+}

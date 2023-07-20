@@ -324,6 +324,16 @@
         "difficulty": 2
       },
       {
+        "slug": "nth-prime",
+        "name": "Nth Prime",
+        "uuid": "1a7f48e6-df5c-4618-8046-d4674ff0ba1a",
+        "practices": [
+          "math"
+        ],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "collatz-conjecture",
         "name": "Collatz Conjecture",
         "uuid": "39447c38-8509-45fb-9070-3ff6be50c0d5",
