@@ -1,0 +1,17 @@
+{
+  "authors": ["meatball133"],
+  "files": {
+    "solution": [
+      "RotationalCipher.ps1"
+    ],
+    "test": [
+      "RotationalCipher.tests.ps1"
+    ],
+    "example": [
+      ".meta/RotationalCipher.example.ps1"
+    ]
+  },
+  "blurb": "Create an implementation of the rotational cipher, also sometimes called the Caesar cipher.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Caesar_cipher"
+}
