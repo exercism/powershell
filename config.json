@@ -181,6 +181,16 @@
         ]
       },
       {
+        "slug": "rna-transcription",
+        "name": "Rna Transcription",
+        "uuid": "4ec88a7f-7a15-4e61-8db7-acf8b7f7086d",
+        "practices": [
+          "strings"
+        ],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "anagram",
         "name": "Anagram",
         "uuid": "304f117c-3868-41e0-a904-08ca3d90ea80",
