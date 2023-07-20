@@ -32,4 +32,6 @@ Function Invoke-RotationalCipher() {
             $result += $char
         }
     }
+
+    return $result
 }
