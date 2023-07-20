@@ -24,10 +24,10 @@ Function Invoke-RotationalCipher() {
     $result = ""
     $Text.ToCharArray() | ForEach-Object {
         $char = $_
-        if ($char -match "[a-z]") {
-            $result += [char]([int]$char + $Shift - 97) % 26 + 97
+        if ($char -cmatch '^[a-z]$') {
+            $result += [char]((([int]$char) + $Shift - 97) % 26 + 97)
         } elseif ($char -match "[A-Z]") {
-            $result += [char]([int]$char + $Shift - 65) % 26 + 65
+            $result += [char]((([int]$char) + $Shift - 65) % 26 + 65)
         } else {
             $result += $char
         }
