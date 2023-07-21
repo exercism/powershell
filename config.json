@@ -342,6 +342,16 @@
         "difficulty": 2
       },
       {
+        "slug": "grains",
+        "name": "Grains",
+        "uuid": "5bfe0f8f-2341-403b-9600-fb44789fa8be",
+        "practices": [
+          "numbers"
+        ],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "nth-prime",
         "name": "Nth Prime",
         "uuid": "1a7f48e6-df5c-4618-8046-d4674ff0ba1a",
