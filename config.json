@@ -60,6 +60,19 @@
         ]
       },
       {
+        "slug": "collatz-conjecture",
+        "name": "Collatz Conjecture",
+        "uuid": "39447c38-8509-45fb-9070-3ff6be50c0d5",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": [
+          "errors",
+          "control_flow_if_else_statements",
+          "integers"
+        ]
+      },
+      {
         "slug": "resistor-color",
         "name": "Resistor Color",
         "uuid": "09637d15-2f1e-45a1-9654-1b783147676e",
@@ -352,6 +365,16 @@
         "difficulty": 2
       },
       {
+        "slug": "acronym",
+        "name": "Acronym",
+        "uuid": "84e522fc-d042-43fe-8dd2-84c9f1150d1e",
+        "practices": [
+            "regular-expressions"
+        ],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "nth-prime",
         "name": "Nth Prime",
         "uuid": "1a7f48e6-df5c-4618-8046-d4674ff0ba1a",
@@ -360,19 +383,6 @@
         ],
         "prerequisites": [],
         "difficulty": 3
-      },
-      {
-        "slug": "collatz-conjecture",
-        "name": "Collatz Conjecture",
-        "uuid": "39447c38-8509-45fb-9070-3ff6be50c0d5",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 1,
-        "topics": [
-          "errors",
-          "control_flow_if_else_statements",
-          "integers"
-        ]
       }
     ]
   },
