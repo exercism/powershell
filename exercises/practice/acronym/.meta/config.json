@@ -1,0 +1,17 @@
+{
+  "authors": ["glaxxie"],
+  "files": {
+    "solution": [
+      "Acronym.ps1"
+    ],
+    "test": [
+      "Acronym.tests.ps1"
+    ],
+    "example": [
+      ".meta/Acronym.example.ps1"
+    ]
+  },
+  "blurb": "Convert a long phrase to its acronym.",
+  "source": "Julien Vanier",
+  "source_url": "https://github.com/monkbroc"
+}
