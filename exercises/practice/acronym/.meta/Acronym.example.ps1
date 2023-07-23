@@ -7,7 +7,7 @@ Function Get-Acronym() {
     Given a phrase, return the string acronym of that phrase.
     "As Soon As Possible" => "ASAP"
     
-    .PARAMETER String
+    .PARAMETER Phrase
     The phrase to get the acronym from.
     
     .EXAMPLE
@@ -17,6 +17,5 @@ Function Get-Acronym() {
     Param (
         [string]$Phrase
     )
-    #return ($Phrase -split '\W+|_' | ForEach-Object {[char]::ToUpper($_[0])}) -join "" #split method
     return ([regex]::Matches($Phrase, "\p{L}+'?\p{L}*") | ForEach-Object { $_.Value[0] }) -join ""
 }

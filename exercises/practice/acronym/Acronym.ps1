@@ -7,7 +7,7 @@ Function Get-Acronym() {
     Given a phrase, return the string acronym of that phrase.
     "As Soon As Possible" => "ASAP"
     
-    .PARAMETER String
+    .PARAMETER Phrase
     The phrase to get the acronym from.
     
     .EXAMPLE
