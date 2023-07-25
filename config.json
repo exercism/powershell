@@ -375,6 +375,17 @@
         "difficulty": 2
       },
       {
+        "slug": "dnd-character",
+        "name": "D&D Character",
+        "uuid": "e7702910-5a0a-4180-bef9-9962304ef6c5",
+        "practices": [
+            "classes",
+            "random"
+        ],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "nth-prime",
         "name": "Nth Prime",
         "uuid": "1a7f48e6-df5c-4618-8046-d4674ff0ba1a",
