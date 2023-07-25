@@ -11,12 +11,12 @@ Function Get-Triangle() {
 
     .EXAMPLE
     Get-Triangle -Sides @(1,2,3)
+    Return: [Triangle]::SCALENE
     #>
     
     [CmdletBinding()]
     Param (
         [double[]]$Sides
     )
-    
     Throw "Please implement this function"
 }
