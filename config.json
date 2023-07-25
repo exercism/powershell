@@ -375,6 +375,14 @@
         "difficulty": 2
       },
       {
+        "slug": "matrix",
+        "name": "Matrix",
+        "uuid": "87aceeaa-3969-4ae0-b5ea-488837fcc15b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "nth-prime",
         "name": "Nth Prime",
         "uuid": "1a7f48e6-df5c-4618-8046-d4674ff0ba1a",
