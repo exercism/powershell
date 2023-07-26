@@ -1,10 +1,8 @@
 # About Enum
 The enum statement allows you to create a strongly typed set of labels.
-
 You can use that enumeration in the code without having to parse or check for spelling errors.
 
 Enumerations are internally represented as integers with a starting value of zero.
-
 By default, PowerShell assigns the first label in the list the value zero, and assigns the remaining labels with consecutive integers.
 
 Example:
