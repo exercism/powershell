@@ -1,5 +1,5 @@
 BeforeAll {
-    . "./DnDCharacter.ps1"
+    . "./DndCharacter.ps1"
 }
 
 Describe "DnD Character test cases" {
