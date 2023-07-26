@@ -386,12 +386,29 @@
         "difficulty": 2
       },
       {
+        "slug": "matrix",
+        "name": "Matrix",
+        "uuid": "87aceeaa-3969-4ae0-b5ea-488837fcc15b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+
+      },
+      {
         "slug": "nth-prime",
         "name": "Nth Prime",
         "uuid": "1a7f48e6-df5c-4618-8046-d4674ff0ba1a",
         "practices": [
           "math"
         ],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "luhn",
+        "name": "Luhn",
+        "uuid": "091aa0d4-cb3a-46f3-a184-b8c8a6f6e2e5",
+        "practices": [],
         "prerequisites": [],
         "difficulty": 3
       }
