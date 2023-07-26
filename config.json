@@ -252,6 +252,16 @@
         "difficulty": 1
       },
       {
+        "slug": "triangle",
+        "name": "Triangle",
+        "uuid": "b439d97f-3661-45d4-903d-6c739e4ab05f",
+        "practices": [
+            "bools"
+        ],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "etl",
         "name": "Etl",
         "uuid": "85148e36-583b-4eba-9f66-daeb0c865daa",
