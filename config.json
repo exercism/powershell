@@ -396,6 +396,14 @@
         "difficulty": 2
       },
       {
+        "slug": "word-count",
+        "name": "Word Count",
+        "uuid": "0c5a329e-fb07-4c6e-abbf-039b9fc17fcb",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "matrix",
         "name": "Matrix",
         "uuid": "87aceeaa-3969-4ae0-b5ea-488837fcc15b",
