@@ -396,6 +396,30 @@
         "difficulty": 2
       },
       {
+        "slug": "word-count",
+        "name": "Word Count",
+        "uuid": "0c5a329e-fb07-4c6e-abbf-039b9fc17fcb",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "high-scores",
+        "name": "High Scores",
+        "uuid": "c21d45bc-2217-40cc-86ee-24e6938cfeca",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "proverb",
+        "name": "Proverb",
+        "uuid": "f44f56dd-5220-4304-9214-e02b159868e6",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "matrix",
         "name": "Matrix",
         "uuid": "87aceeaa-3969-4ae0-b5ea-488837fcc15b",
