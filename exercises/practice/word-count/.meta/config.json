@@ -1,5 +1,5 @@
 {
-  "authors": [],
+  "authors": ["glaxxie"],
   "files": {
     "solution": [
       "WordCount.ps1"

@@ -96,14 +96,7 @@ Describe "Word Count Test Cases" {
 
     It "with apostrophes" {
         $got = (Get-WordCount -Phrase "'First: don't laugh. Then: don't cry. You're getting it.'").GetEnumerator() | Sort-Object Name
-        $want = @{  first = 1;
-        "don't" = 2;
-        laugh = 1;
-        then = 1;
-        cry= 1;
-        "you're" = 1;
-        getting = 1;
-        it = 1}.GetEnumerator() | Sort-Object Name
+        $want = @{  first = 1; "don't" = 2; laugh = 1; then = 1; cry= 1; "you're" = 1; getting = 1; it = 1}.GetEnumerator() | Sort-Object Name
 
         $got | Should -BeExactly $want
     }
