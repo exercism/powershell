@@ -396,6 +396,14 @@
         "difficulty": 2
       },
       {
+        "slug": "isbn-verifier",
+        "name": "Isbn Verifier",
+        "uuid": "c71cfb54-746a-492a-88f8-4258ee9bfe44",
+        "prerequisites": [],
+        "practices": [],
+        "difficulty": 2
+      },
+      {
         "slug": "word-count",
         "name": "Word Count",
         "uuid": "0c5a329e-fb07-4c6e-abbf-039b9fc17fcb",
