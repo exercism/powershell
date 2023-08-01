@@ -7,7 +7,7 @@
     Your task is to write methods that return the highest score from the list, the last added score and the three highest scores.
 
 .EXAMPLE
-    $roster = [Roster]::new(@(30, 50, 40, 90, 80))
+    $roster = [HighScores]::new(@(30, 50, 40, 90, 80))
     $roster.GetTopThree()
     return : @(90, 80, 50)
 #>
