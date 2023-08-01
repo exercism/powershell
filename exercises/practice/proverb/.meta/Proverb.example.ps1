@@ -10,9 +10,9 @@ Function Get-Proverb() {
     The list of inputs to generate the proverb.
 
     .EXAMPLE
-    Get-Proverb -Input @("nail", "shoe", "horse", "rider", "message", "battle", "kingdom")
+    Get-Proverb -Data @("nail", "shoe", "horse", "rider", "message", "battle", "kingdom")
 
-    ```
+    @"
     For want of a nail the shoe was lost.
     For want of a shoe the horse was lost.
     For want of a horse the rider was lost.
@@ -20,7 +20,7 @@ Function Get-Proverb() {
     For want of a message the battle was lost.
     For want of a battle the kingdom was lost.
     And all for the want of a nail.
-    ```
+    "@
     #>
     [CmdletBinding()]
     Param(
