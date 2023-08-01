@@ -1,0 +1,16 @@
+{
+  "authors": ["glaxxie"],
+  "files": {
+    "solution": [
+      "HighScores.ps1"
+    ],
+    "test": [
+      "HighScores.tests.ps1"
+    ],
+    "example": [
+      ".meta/HighScores.example.ps1"
+    ]
+  },
+  "blurb": "Manage a player's High Score list.",
+  "source": "Tribute to the eighties' arcade game Frogger"
+}

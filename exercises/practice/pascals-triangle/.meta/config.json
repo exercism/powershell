@@ -1,0 +1,17 @@
+{
+  "authors": ["meatball133"],
+  "files": {
+    "solution": [
+      "PascalsTriangle.ps1"
+    ],
+    "test": [
+      "PascalsTriangle.tests.ps1"
+    ],
+    "example": [
+      ".meta/PascalsTriangle.example.ps1"
+    ]
+  },
+  "blurb": "Compute Pascal's triangle up to a given number of rows.",
+  "source": "Pascal's Triangle at Wolfram Math World",
+  "source_url": "https://www.wolframalpha.com/input/?i=Pascal%27s+triangle"
+}
