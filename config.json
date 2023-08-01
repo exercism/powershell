@@ -404,6 +404,14 @@
         "difficulty": 2
       },
       {
+        "slug": "high-scores",
+        "name": "High Scores",
+        "uuid": "c21d45bc-2217-40cc-86ee-24e6938cfeca",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "matrix",
         "name": "Matrix",
         "uuid": "87aceeaa-3969-4ae0-b5ea-488837fcc15b",
