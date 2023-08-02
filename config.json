@@ -420,6 +420,14 @@
         "difficulty": 2
       },
       {
+        "slug": "proverb",
+        "name": "Proverb",
+        "uuid": "f44f56dd-5220-4304-9214-e02b159868e6",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "matrix",
         "name": "Matrix",
         "uuid": "87aceeaa-3969-4ae0-b5ea-488837fcc15b",
