@@ -436,6 +436,16 @@
         "difficulty": 3
       },
       {
+        "slug": "phone-number",
+        "name": "Phone Number",
+        "uuid": "bc5112c7-3c1c-4f10-8d02-90dd100a2180",
+        "practices": [
+          "regular-expressions"
+        ],
+        "prerequisites": [],
+        "difficulty": 3
+      },             
+      {
         "slug": "nth-prime",
         "name": "Nth Prime",
         "uuid": "1a7f48e6-df5c-4618-8046-d4674ff0ba1a",
@@ -453,30 +463,6 @@
         "prerequisites": [],
         "difficulty": 3
       },
-      {
-        "slug": "roman-numerals",
-        "name": "Roman Numerals",
-        "uuid": "acac5b87-4691-467a-8f64-9bbe1ffa9959",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 3
-      },
-      {
-        "slug": "phone-number",
-        "name": "Phone Number",
-        "uuid": "bc5112c7-3c1c-4f10-8d02-90dd100a2180",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 3
-      },             
-      {
-        "slug": "queen-attack",
-        "name": "Queen Attack",
-        "uuid": "d116b6c3-9a79-4b03-9dbb-0499d9e6d112",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 4
-      },   
       {
         "slug": "pascals-triangle",
         "name": "Pascals Triangle",
