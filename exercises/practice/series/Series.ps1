@@ -15,7 +15,7 @@ Function Get-Slices() {
     .EXAMPLE
     Get-Slices -Series "01234" -SliceLength 2
     
-    Retuns: @("01", "12", "23", "34")
+    Returns: @("01", "12", "23", "34")
     #>
     [CmdletBinding()]
     Param(

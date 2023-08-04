@@ -12,7 +12,7 @@ Function Get-PascalsTriangleRows() {
     .EXAMPLE
     Get-PascalsTriangleRows -Count 1
     
-    Retuns: @(
+    Returns: @(
         @(1)
     )
     #>

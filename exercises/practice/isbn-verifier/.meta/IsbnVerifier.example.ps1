@@ -12,7 +12,7 @@ Function Test-Isbn() {
     .EXAMPLE
     Test-Isbn -Isbn "3-598-21508-8"
     
-    Retuns: $true
+    Returns: $true
     #>
     [CmdletBinding()]
     Param(
