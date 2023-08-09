@@ -262,6 +262,16 @@
         "difficulty": 1
       },
       {
+        "slug": "space-age",
+        "name": "Space Age",
+        "uuid": "76c5078c-9255-44a6-97dd-aab7a1099907",
+        "practices": [
+            "dictionaries"
+        ],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "etl",
         "name": "Etl",
         "uuid": "85148e36-583b-4eba-9f66-daeb0c865daa",
