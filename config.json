@@ -422,6 +422,16 @@
         "difficulty": 2
       },
       {
+        "slug": "square-root",
+        "name": "Square Root",
+        "uuid": "84ab45f7-243e-43ee-bd56-4ac6267f4206",
+        "practices": [
+            "math"
+        ],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "high-scores",
         "name": "High Scores",
         "uuid": "c21d45bc-2217-40cc-86ee-24e6938cfeca",

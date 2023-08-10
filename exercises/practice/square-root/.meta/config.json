@@ -1,0 +1,17 @@
+{
+  "authors": ["glaxxie"],
+  "files": {
+    "solution": [
+      "SquareRoot.ps1"
+    ],
+    "test": [
+      "SquareRoot.tests.ps1"
+    ],
+    "example": [
+      ".meta/SquareRoot.example.ps1"
+    ]
+  },
+  "blurb": "Given a natural radicand, return its square root.",
+  "source": "wolf99",
+  "source_url": "https://github.com/exercism/problem-specifications/pull/1582"
+}
