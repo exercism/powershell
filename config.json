@@ -406,6 +406,14 @@
         "difficulty": 2
       },
       {
+        "slug": "sublist",
+        "name": "Sublist",
+        "uuid": "e52a52e8-a08e-4060-9413-198c931d52d2",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "isbn-verifier",
         "name": "Isbn Verifier",
         "uuid": "c71cfb54-746a-492a-88f8-4258ee9bfe44",
