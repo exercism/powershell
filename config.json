@@ -448,6 +448,14 @@
         "difficulty": 2
       },
       {
+        "slug": "diamond",
+        "name": "Diamond",
+        "uuid": "2ff69e4a-e939-483e-95da-11c01b2b983b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "matrix",
         "name": "Matrix",
         "uuid": "87aceeaa-3969-4ae0-b5ea-488837fcc15b",
