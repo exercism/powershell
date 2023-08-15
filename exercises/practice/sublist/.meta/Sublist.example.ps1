@@ -14,29 +14,29 @@ Function Invoke-Sublist() {
     There are four possible categories: EQUAL, UNEQUAL, SUBLIST and SUPERLIST.
     Note: This exercise use Enum values for return.
     
-    .PARAMETER Arr1
+    .PARAMETER Data1
     The first array
 
-    .PARAMETER Arr2
+    .PARAMETER Data2
     The second array
 
     .EXAMPLE
-    Invoke-Sublist -Arr1 @(1,2,3) -Arr2 @(1,2,3)
+    Invoke-Sublist -Data1 @(1,2,3) -Data2 @(1,2,3)
     Return: [Sublist]::EQUAL
 
-    Invoke-Sublist -Arr1 @(1,2) -Arr2 @(1,2,3)
+    Invoke-Sublist -Data1 @(1,2) -Data2 @(1,2,3)
     Return: [Sublist]::SUBLIST
     #>
     [CmdletBinding()]
     Param (
-        [object[]]$Arr1,
-        [object[]]$Arr2
+        [object[]]$Data1,
+        [object[]]$Data2
     )
-    if ($Arr1.Count -eq $Arr2.Count -and (Test-Equal $Arr1 $Arr2)) {
+    if ($Data1.Count -eq $Data2.Count -and (Test-Equal $Data1 $Data2)) {
         return [Sublist]::EQUAL
-    }elseif ($Arr1.Count -eq 0 -or (Test-SubList $Arr1 $Arr2)) {
+    }elseif ($Data1.Count -eq 0 -or (Test-SubList $Data1 $Data2)) {
         return [Sublist]::SUBLIST
-    }elseif ($Arr2.Count -eq 0 -or (Test-SubList $Arr2 $Arr1)) {
+    }elseif ($Data2.Count -eq 0 -or (Test-SubList $Data2 $Data1)) {
         return [Sublist]::SUPERLIST
     }
     return [Sublist]::UNEQUAL
