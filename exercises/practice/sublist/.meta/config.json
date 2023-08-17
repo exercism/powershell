@@ -1,0 +1,15 @@
+{
+  "authors": ["glaxxie"],
+  "files": {
+    "solution": [
+      "Sublist.ps1"
+    ],
+    "test": [
+      "Sublist.tests.ps1"
+    ],
+    "example": [
+      ".meta/Sublist.example.ps1"
+    ]
+  },
+  "blurb": "Write a function to determine if a list is a sublist of another list."
+}
