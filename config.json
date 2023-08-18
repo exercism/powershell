@@ -500,6 +500,16 @@
         "difficulty": 3
       },
       {
+        "slug": "kindergarten-garden",
+        "name": "Kindergarten Garden",
+        "uuid": "3cbb336f-9824-46a2-817d-d7a6810f5778",
+        "practices": [
+            "classes"
+        ],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "roman-numerals",
         "name": "Roman Numerals",
         "uuid": "acac5b87-4691-467a-8f64-9bbe1ffa9959",
