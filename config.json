@@ -480,6 +480,16 @@
         ],
         "prerequisites": [],
         "difficulty": 3
+      },
+      {
+        "slug": "allergies",
+        "name": "Allergies",
+        "uuid": "ed2cb05a-97e9-4a4c-b6d6-a9748d7436e8",
+        "practices": [
+            "bitwise-operators"
+        ],
+        "prerequisites": [],
+        "difficulty": 3
       },             
       {
         "slug": "nth-prime",

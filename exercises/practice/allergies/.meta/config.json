@@ -1,0 +1,17 @@
+{
+  "authors": ["glaxxie"],
+  "files": {
+    "solution": [
+      "Allergies.ps1"
+    ],
+    "test": [
+      "Allergies.tests.ps1"
+    ],
+    "example": [
+      ".meta/Allergies.example.ps1"
+    ]
+  },
+  "blurb": "Given a person's allergy score, determine whether or not they're allergic to a given item, and their full list of allergies.",
+  "source": "Exercise by the JumpstartLab team for students at The Turing School of Software and Design.",
+  "source_url": "https://turing.edu"
+}
