@@ -1,0 +1,16 @@
+{
+  "authors": ["glaxxie"],
+  "files": {
+    "solution": [
+      "MatchingBrackets.ps1"
+    ],
+    "test": [
+      "MatchingBrackets.tests.ps1"
+    ],
+    "example": [
+      ".meta/MatchingBrackets.example.ps1"
+    ]
+  },
+  "blurb": "Make sure the brackets and braces all match.",
+  "source": "Ginna Baker"
+}
