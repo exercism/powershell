@@ -524,6 +524,16 @@
         "difficulty": 4
       },
       {
+        "slug": "tournament",
+        "name": "Tournament",
+        "uuid": "242648c1-c6d8-440f-afe6-55f8d614452c",
+        "practices": [
+          "string"
+        ],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "queen-attack",
         "name": "Queen Attack",
         "uuid": "d116b6c3-9a79-4b03-9dbb-0499d9e6d112",

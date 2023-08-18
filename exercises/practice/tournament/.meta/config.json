@@ -1,0 +1,15 @@
+{
+  "authors": ["glaxxie"],
+  "files": {
+    "solution": [
+      "Tournament.ps1"
+    ],
+    "test": [
+      "Tournament.tests.ps1"
+    ],
+    "example": [
+      ".meta/Tournament.example.ps1"
+    ]
+  },
+  "blurb": "Tally the results of a small football competition."
+}
