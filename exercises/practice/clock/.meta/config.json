@@ -1,0 +1,17 @@
+{
+  "authors": ["glaxxie"],
+  "files": {
+    "solution": [
+      "Clock.ps1"
+    ],
+    "test": [
+      "Clock.tests.ps1"
+    ],
+    "example": [
+      ".meta/Clock.example.ps1"
+    ]
+  },
+  "blurb": "Implement a clock that handles times without dates.",
+  "source": "Pairing session with Erin Drummond",
+  "source_url": "https://twitter.com/ebdrummond"
+}
