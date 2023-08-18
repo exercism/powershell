@@ -12,7 +12,7 @@ Function Invoke-Panagram() {
     .EXAMPLE
     Invoke-Panagram -Sentence "The quick brown fox jumps over the lazy dog"
     
-    Retuns: $true
+    Returns: $true
     #>
     [CmdletBinding()]
     Param(

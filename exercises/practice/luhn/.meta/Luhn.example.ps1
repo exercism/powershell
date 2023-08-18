@@ -13,7 +13,7 @@ Function Test-Luhn() {
     .EXAMPLE
     Test-Luhn -Value "59"
     
-    Retuns: $true
+    Returns: $true
     #>
     [CmdletBinding()]
     Param(

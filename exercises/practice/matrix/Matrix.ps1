@@ -15,7 +15,7 @@ Function Invoke-Row() {
     .EXAMPLE
     Invoke-Row -String "1 2\n3 4" -Index 2
     
-    Retuns: @(3, 4)
+    Returns: @(3, 4)
     #>
     [CmdletBinding()]
     Param(
@@ -43,7 +43,7 @@ Function Invoke-Column() {
     .EXAMPLE
     Invoke-Column -String "1 2 3\n4 5 6\n7 8 9" -Index 3
     
-    Retuns: @(3, 6, 9)
+    Returns: @(3, 6, 9)
     #>
     [CmdletBinding()]
     Param(

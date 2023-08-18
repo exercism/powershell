@@ -14,7 +14,7 @@ Function Invoke-Isogram() {
     .EXAMPLE
     Invoke-Isogram -Phrase "isogram"
     
-    Retuns: $true
+    Returns: $true
     #>
     [CmdletBinding()]
     Param(

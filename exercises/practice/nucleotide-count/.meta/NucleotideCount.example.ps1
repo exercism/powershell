@@ -19,7 +19,7 @@ Function Get-NucleotideCount() {
     .EXAMPLE
     Get-NucleotideCount -Strand "ACGTAGCTT"
     
-    Retuns: @{ A = 2; C = 2; G = 2; T = 3 }
+    Returns: @{ A = 2; C = 2; G = 2; T = 3 }
     #>
     [CmdletBinding()]
     Param(
