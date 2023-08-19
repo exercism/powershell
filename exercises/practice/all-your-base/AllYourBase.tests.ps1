@@ -5,85 +5,85 @@ BeforeAll {
 Describe "All your base test cases" {
     Context "passing tests" {
         It "single bit one to decimal" {
-            $got = -join (Invoke-Rebase -Digits @(1) -InputBase 2 -OutputBase 10)
-            $want = "1"
+            $got  = Invoke-Rebase -Digits @(1) -InputBase 2 -OutputBase 10
+            $want = @(1)
 
             $got | Should -BeExactly $want
         }
         
         It "binary to single decimal" {
-            $got = -join (Invoke-Rebase -Digits @(1,0,1) -InputBase 2 -OutputBase 10)
-            $want = "5"
+            $got  = (Invoke-Rebase -Digits @(1,0,1) -InputBase 2 -OutputBase 10)
+            $want = @(5)
 
             $got | Should -BeExactly $want
         }
         
         It "single decimal to binary" {
-            $got = -join (Invoke-Rebase -Digits @(5) -InputBase 10 -OutputBase 2)
-            $want = "101"
+            $got  = (Invoke-Rebase -Digits @(5) -InputBase 10 -OutputBase 2)
+            $want = @(1,0,1)
 
             $got | Should -BeExactly $want
         }
         
         It "binary to multiple decimal" {
-            $got = -join (Invoke-Rebase -Digits @(1, 0, 1, 0, 1, 0) -InputBase 2 -OutputBase 10)
-            $want = "42"
+            $got  = (Invoke-Rebase -Digits @(1, 0, 1, 0, 1, 0) -InputBase 2 -OutputBase 10)
+            $want = @(4,2)
 
             $got | Should -BeExactly $want
         }
         
         It "decimal to binary" {
-            $got = -join (Invoke-Rebase -Digits @(4, 2) -InputBase 10 -OutputBase 2)
-            $want = "101010"
+            $got  = (Invoke-Rebase -Digits @(4, 2) -InputBase 10 -OutputBase 2)
+            $want = @(1,0,1,0,1,0)
 
             $got | Should -BeExactly $want
         }
         
         It "trinary to hexadecimal" {
-            $got = -join (Invoke-Rebase -Digits @(1, 1, 2, 0) -InputBase 3 -OutputBase 16)
-            $want = "210"
+            $got  = (Invoke-Rebase -Digits @(1, 1, 2, 0) -InputBase 3 -OutputBase 16)
+            $want = @(2,10)
 
             $got | Should -BeExactly $want
         }
         
         It "hexadecimal to trinary" {
-            $got = -join (Invoke-Rebase -Digits @(2, 10) -InputBase 16 -OutputBase 3)
-            $want = "1120"
+            $got  = (Invoke-Rebase -Digits @(2, 10) -InputBase 16 -OutputBase 3)
+            $want = @(1,1,2,0)
 
             $got | Should -BeExactly $want
         }
         
         It "15-bit integer" {
-            $got = -join (Invoke-Rebase -Digits @(3, 46, 60) -InputBase 97 -OutputBase 73)
-            $want = "61045"
+            $got  = (Invoke-Rebase -Digits @(3, 46, 60) -InputBase 97 -OutputBase 73)
+            $want = @(6,10,45)
 
             $got | Should -BeExactly $want
         }
         
         It "empty list" {
-            $got = -join (Invoke-Rebase -Digits @() -InputBase 2 -OutputBase 10)
-            $want = "0"
+            $got  = (Invoke-Rebase -Digits @() -InputBase 2 -OutputBase 10)
+            $want = @(0)
 
             $got | Should -BeExactly $want
         }
         
         It "single zero" {
-            $got = -join (Invoke-Rebase -Digits @(0) -InputBase 10 -OutputBase 2)
-            $want = "0"
+            $got  = (Invoke-Rebase -Digits @(0) -InputBase 10 -OutputBase 2)
+            $want = @(0)
 
             $got | Should -BeExactly $want
         }
         
         It "multiple zeros" {
-            $got = -join (Invoke-Rebase -Digits @(0, 0, 0, 0) -InputBase 10 -OutputBase 2)
-            $want = "0"
+            $got  = (Invoke-Rebase -Digits @(0, 0, 0, 0) -InputBase 10 -OutputBase 2)
+            $want = @(0)
 
             $got | Should -BeExactly $want
         }
         
         It "leading zeros" {
-            $got = -join (Invoke-Rebase -Digits @(0, 6, 0) -InputBase 7 -OutputBase 10)
-            $want = "42"
+            $got  = (Invoke-Rebase -Digits @(0, 6, 0) -InputBase 7 -OutputBase 10)
+            $want = @(4,2)
 
             $got | Should -BeExactly $want
         }
