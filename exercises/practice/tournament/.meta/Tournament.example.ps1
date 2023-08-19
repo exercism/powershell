@@ -71,7 +71,7 @@ Function DrawTable($Table) {
     $header = $formatFrame -f @("Team", "MP", "W", "D", "L", "P")
     $body = $sortedTeamsArray | ForEach-Object {
         $scores = @($_.Key) + $_.Value
-        $formattedFrame -f $scores
+        $formatFrame -f $scores
     }
     return @($header) + $body -join "`n"
 }
