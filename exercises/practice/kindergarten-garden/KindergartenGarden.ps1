@@ -19,6 +19,6 @@
 #>
 Class Garden {
     Garden() {
-        Throw "Please implement this function"
+        Throw "Please implement this class"
     }
 }
