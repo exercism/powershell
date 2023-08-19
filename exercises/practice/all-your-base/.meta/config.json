@@ -1,0 +1,15 @@
+{
+  "authors": ["glaxxie"],
+  "files": {
+    "solution": [
+      "AllYourBase.ps1"
+    ],
+    "test": [
+      "AllYourBase.tests.ps1"
+    ],
+    "example": [
+      ".meta/AllYourBase.example.ps1"
+    ]
+  },
+  "blurb": "Convert a number, represented as a sequence of digits in one base, to any other base."
+}
