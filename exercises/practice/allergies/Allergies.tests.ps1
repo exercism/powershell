@@ -95,71 +95,71 @@ Describe "Allergy test cases" {
 
     Context "get allergies list" {
         It "no allergies" {
-            $got  = [Allergies]::new(0).GetAllergies() -join " "
-            $want = ""
+            $got  = [Allergies]::new(0).GetAllergies()
+            $want = @()
 
             $got | Should -BeExactly $want
         }
 
         It "just eggs" {
-            $got  = [Allergies]::new(1).GetAllergies() -join " "
-            $want = "eggs"
+            $got  = [Allergies]::new(1).GetAllergies()
+            $want = @("eggs")
 
             $got | Should -BeExactly $want
         }
 
         It "just peanuts" {
-            $got  = [Allergies]::new(2).GetAllergies() -join " "
-            $want = "peanuts"
+            $got  = [Allergies]::new(2).GetAllergies()
+            $want = @("peanuts")
 
             $got | Should -BeExactly $want
         }
 
         It "just strawberries" {
-            $got  = [Allergies]::new(8).GetAllergies() -join " "
-            $want = "strawberries"
+            $got  = [Allergies]::new(8).GetAllergies()
+            $want = @("strawberries")
 
             $got | Should -BeExactly $want
         }
 
         It "eggs and peanuts" {
-            $got  = [Allergies]::new(3).GetAllergies() -join " "
-            $want = "eggs peanuts"
+            $got  = [Allergies]::new(3).GetAllergies()
+            $want = @("eggs", "peanuts")
 
             $got | Should -BeExactly $want
         }
 
         It "more than eggs but not peanuts" {
-            $got  = [Allergies]::new(5).GetAllergies() -join " "
-            $want = "eggs shellfish"
+            $got  = [Allergies]::new(5).GetAllergies()
+            $want = @("eggs", "shellfish")
 
             $got | Should -BeExactly $want
         }
 
         It "lots of stuffs" {
-            $got  = [Allergies]::new(248).GetAllergies() -join " "
-            $want = "strawberries tomatoes chocolate pollen cats"
+            $got  = [Allergies]::new(248).GetAllergies()
+            $want = @("strawberries", "tomatoes", "chocolate", "pollen", "cats")
             
             $got | Should -BeExactly $want
         }
 
         It "everything" {
-            $got  = [Allergies]::new(255).GetAllergies() -join " "
-            $want = "eggs peanuts shellfish strawberries tomatoes chocolate pollen cats"
+            $got  = [Allergies]::new(255).GetAllergies()
+            $want = @("eggs", "peanuts", "shellfish", "strawberries", "tomatoes", "chocolate", "pollen", "cats")
             
             $got | Should -BeExactly $want
         }
 
         It "no allergen score parts" {
-            $got  = [Allergies]::new(509).GetAllergies() -join " "
-            $want = "eggs shellfish strawberries tomatoes chocolate pollen cats"
+            $got  = [Allergies]::new(509).GetAllergies()
+            $want = @("eggs", "shellfish", "strawberries", "tomatoes", "chocolate", "pollen", "cats")
             
             $got | Should -BeExactly $want
         }
 
         It "no allergen score parts without highest valid score" {
-            $got  = [Allergies]::new(257).GetAllergies() -join " "
-            $want = "eggs"
+            $got  = [Allergies]::new(257).GetAllergies()
+            $want = @("eggs")
             
             $got | Should -BeExactly $want
         }
