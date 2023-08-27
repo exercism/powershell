@@ -10,12 +10,15 @@
 
 .EXAMPLE
     $clock1 = [Clock]::new(5,0)
-    $clock1.ToString()  => "05:00"
+    $clock1.ToString()
+    Return: "05:00"
 
     $clock2 = [Clock]::new(6,-120)
-    $clock2.Add(60).ToString() => "05:00"
+    $clock2.Add(60).ToString()
+    Return: "05:00"
 
-    $clock1 -eq $clock2 => True
+    $clock1 -eq $clock2
+    Return: $true
 #>
 
 class Clock {
