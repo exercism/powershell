@@ -8,13 +8,11 @@ Function Invoke-SecretHandshake() {
     Start at the right-most digit and move left.
 
     The actions for each number place are:
-    ```plaintext
     00001 = wink
     00010 = double blink
     00100 = close your eyes
     01000 = jump
     10000 = Reverse the order of the operations in the secret handshake.
-    ```
 
     .PARAMETER Number
     The value to be converted into a sequence of actions.
