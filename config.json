@@ -564,6 +564,14 @@
         "difficulty": 4
       },
       {
+        "slug": "meetup",
+        "name": "Meetup",
+        "uuid": "a5aff23f-7829-403f-843a-d3312dca31e8",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "queen-attack",
         "name": "Queen Attack",
         "uuid": "d116b6c3-9a79-4b03-9dbb-0499d9e6d112",
