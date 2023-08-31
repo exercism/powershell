@@ -73,6 +73,14 @@
         ]
       },
       {
+        "slug": "strain",
+        "name": "Strain",
+        "uuid": "c142d262-ae74-4a41-9a99-e2a00194619d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "resistor-color",
         "name": "Resistor Color",
         "uuid": "09637d15-2f1e-45a1-9654-1b783147676e",
