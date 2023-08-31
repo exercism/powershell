@@ -1,0 +1,17 @@
+{
+  "authors": ["glaxxie"],
+  "files": {
+    "solution": [
+      "FlattenArray.ps1"
+    ],
+    "test": [
+      "FlattenArray.tests.ps1"
+    ],
+    "example": [
+      ".meta/FlattenArray.example.ps1"
+    ]
+  },
+  "blurb": "Take a nested list and return a single list with all values except nil/null.",
+  "source": "Interview Question",
+  "source_url": "https://reference.wolfram.com/language/ref/Flatten.html"
+}
