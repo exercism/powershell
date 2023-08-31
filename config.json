@@ -106,6 +106,14 @@
         ]
       },
       {
+        "slug": "secret-handshake",
+        "name": "Secret Handshake",
+        "uuid": "d2378d74-bfb7-4f80-ad3e-dc0db0d90352",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "raindrops",
         "name": "Raindrops",
         "uuid": "90a12652-946c-4771-83bd-741f884cd426",
