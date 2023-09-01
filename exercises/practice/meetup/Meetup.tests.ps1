@@ -4,7 +4,7 @@ BeforeAll {
 
 Describe "Meetup test cases" {
     Context "Monday tests" {
-        It "The <schedule> <weekday> of <month> in <year>" -TestCases @(
+        It "The <schedule> <weekday> of month <month> in <year>" -TestCases @(
             @{ year = 2013; month = 5; weekday = 'Monday'; schedule = 'teenth'; expect = '2013-05-13' }
             @{ year = 2013; month = 8; weekday = 'Monday'; schedule = 'teenth'; expect = '2013-08-19' }
             @{ year = 2013; month = 9; weekday = 'Monday'; schedule = 'teenth'; expect = '2013-09-16' }
@@ -27,7 +27,7 @@ Describe "Meetup test cases" {
     }
 
     Context "Tuesday tests" {
-        It "The <schedule> <weekday> of <month> in <year>" -ForEach @(
+        It "The <schedule> <weekday> of month <month> in <year>" -ForEach @(
             @{ year = 2013; month = 3; weekday = 'Tuesday'; schedule = 'teenth'; expect = '2013-03-19' }
             @{ year = 2013; month = 4; weekday = 'Tuesday'; schedule = 'teenth'; expect = '2013-04-16' }
             @{ year = 2013; month = 8; weekday = 'Tuesday'; schedule = 'teenth'; expect = '2013-08-13' }
@@ -50,7 +50,7 @@ Describe "Meetup test cases" {
     }
 
     Context "Wednesday tests" {
-        It "The <schedule> <weekday> of <month> in <year>" -ForEach @(
+        It "The <schedule> <weekday> of month <month> in <year>" -ForEach @(
             @{ year = 2013; month = 1 ; weekday = 'Wednesday'; schedule = 'teenth'; expect = '2013-01-16' }
             @{ year = 2013; month = 2 ; weekday = 'Wednesday'; schedule = 'teenth'; expect = '2013-02-13' }
             @{ year = 2013; month = 6 ; weekday = 'Wednesday'; schedule = 'teenth'; expect = '2013-06-19' }
@@ -76,7 +76,7 @@ Describe "Meetup test cases" {
     }
 
     Context "Thursday tests" {
-        It "The <schedule> <weekday> of <month> in <year>" -ForEach @(
+        It "The <schedule> <weekday> of month <month> in <year>" -ForEach @(
             @{ year = 2013; month = 5 ; weekday = 'Thursday'; schedule = 'teenth'; expect = '2013-05-16' }
             @{ year = 2013; month = 6 ; weekday = 'Thursday'; schedule = 'teenth'; expect = '2013-06-13' }
             @{ year = 2013; month = 9 ; weekday = 'Thursday'; schedule = 'teenth'; expect = '2013-09-19' }
@@ -99,7 +99,7 @@ Describe "Meetup test cases" {
     }
 
     Context "Friday tests" {
-        It "The <schedule> <weekday> of <month> in <year>" -ForEach @(
+        It "The <schedule> <weekday> of month <month> in <year>" -ForEach @(
             @{ year = 2013; month = 4 ; weekday = 'Friday'; schedule = 'teenth'; expect = '2013-04-19' }
             @{ year = 2013; month = 8 ; weekday = 'Friday'; schedule = 'teenth'; expect = '2013-08-16' }
             @{ year = 2013; month = 9 ; weekday = 'Friday'; schedule = 'teenth'; expect = '2013-09-13' }
@@ -123,7 +123,7 @@ Describe "Meetup test cases" {
     }
 
     Context "Saturday tests" {
-        It "The <schedule> <weekday> of <month> in <year>" -ForEach @(
+        It "The <schedule> <weekday> of month <month> in <year>" -ForEach @(
             @{ year = 2013; month = 2 ; weekday = 'Saturday'; schedule = 'teenth'; expect = '2013-02-16' }
             @{ year = 2013; month = 4 ; weekday = 'Saturday'; schedule = 'teenth'; expect = '2013-04-13' }
             @{ year = 2013; month = 10; weekday = 'Saturday'; schedule = 'teenth'; expect = '2013-10-19' }
@@ -146,7 +146,7 @@ Describe "Meetup test cases" {
     }
 
     Context "Sunday tests" {
-        It "The <schedule> <weekday> of <month> in <year>" -ForEach @(
+        It "The <schedule> <weekday> of month <month> in <year>" -ForEach @(
             @{ year = 2013; month = 5 ; weekday = 'Sunday'; schedule = 'teenth'; expect = '2013-05-19' }
             @{ year = 2013; month = 6 ; weekday = 'Sunday'; schedule = 'teenth'; expect = '2013-06-16' }
             @{ year = 2013; month = 10; weekday = 'Sunday'; schedule = 'teenth'; expect = '2013-10-13' }
