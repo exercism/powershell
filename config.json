@@ -73,6 +73,14 @@
         ]
       },
       {
+        "slug": "strain",
+        "name": "Strain",
+        "uuid": "c142d262-ae74-4a41-9a99-e2a00194619d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "resistor-color",
         "name": "Resistor Color",
         "uuid": "09637d15-2f1e-45a1-9654-1b783147676e",
@@ -93,6 +101,14 @@
         "difficulty": 1
       },
       {
+        "slug": "flatten-array",
+        "name": "Flatten Array",
+        "uuid": "5edb37eb-2903-48de-9f0e-83d8aceae03b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "sum-of-multiples",
         "name": "Sum Of Multiples",
         "uuid": "df4403d1-3fb2-4c2c-a228-2bdb442d0680",
@@ -104,6 +120,14 @@
           "math",
           "transforming"
         ]
+      },
+      {
+        "slug": "secret-handshake",
+        "name": "Secret Handshake",
+        "uuid": "d2378d74-bfb7-4f80-ad3e-dc0db0d90352",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       },
       {
         "slug": "raindrops",
@@ -538,6 +562,17 @@
         "difficulty": 3
       },
       {
+        "slug": "clock",
+        "name": "Clock",
+        "uuid": "31a5ba31-3f86-4957-87cd-8200eee0a0f4",
+        "practices": [
+          "classes",
+          "string"
+        ],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "pascals-triangle",
         "name": "Pascals Triangle",
         "uuid": "a2563791-b482-4f73-a9d1-4ba7c2870d67",
@@ -586,6 +621,14 @@
         "slug": "change",
         "name": "Change",
         "uuid": "352d9205-5f01-4755-8844-e2a44d7b667b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "state-of-tic-tac-toe",
+        "name": "State of Tic-Tac-Toe",
+        "uuid": "c07e6ad9-9172-4dc8-871d-7d0581e1504f",
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
