@@ -1,0 +1,17 @@
+{
+  "authors": ["glaxxie"],
+  "files": {
+    "solution": [
+      "Meetup.ps1"
+    ],
+    "test": [
+      "Meetup.tests.ps1"
+    ],
+    "example": [
+      ".meta/Meetup.example.ps1"
+    ]
+  },
+  "blurb": "Calculate the date of meetups.",
+  "source": "Jeremy Hinegardner mentioned a Boulder meetup that happens on the Wednesteenth of every month",
+  "source_url": "https://twitter.com/copiousfreetime"
+}
