@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "BinarySearchTree.ps1"
+    ],
+    "test": [
+      "BinarySearchTree.tests.ps1"
+    ],
+    "example": [
+      ".meta/BinarySearchTree.example.ps1"
+    ]
+  },
+  "blurb": "Insert and search for numbers in a binary tree.",
+  "source": "Josh Cheek",
+  "source_url": "https://twitter.com/josh_cheek"
+}
