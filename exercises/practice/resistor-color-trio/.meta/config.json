@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "ResistorColorTrio.ps1"
+    ],
+    "test": [
+      "ResistorColorTrio.tests.ps1"
+    ],
+    "example": [
+      ".meta/ResistorColorTrio.example.ps1"
+    ]
+  },
+  "blurb": "Convert color codes, as used on resistors, to a human-readable label.",
+  "source": "Maud de Vries, Erik Schierboom",
+  "source_url": "https://github.com/exercism/problem-specifications/issues/1549"
+}
