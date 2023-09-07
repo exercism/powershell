@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "SimpleCipher.ps1"
+    ],
+    "test": [
+      "SimpleCipher.tests.ps1"
+    ],
+    "example": [
+      ".meta/SimpleCipher.example.ps1"
+    ]
+  },
+  "blurb": "Implement a simple shift cipher like Caesar and a more secure substitution cipher.",
+  "source": "Substitution Cipher at Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Substitution_cipher"
+}
