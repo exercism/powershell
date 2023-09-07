@@ -10,31 +10,22 @@ Please implement the circular buffer class with these methods:
 - Clear     : clear all elements in the buffer, it is now empty.
 - Read      : read the oldest element in the buffer, and return its value.
 
-There is a predefined ToString method to help debugging and print out the buffer just like in instruction.
-
 .EXAMPLE
-$buffer = [CircularBuffer]::new(5)
+$buffer = [CircularBuffer]::new(2)
 
-$buffer.ToString()
-Return: [ ][ ][ ][ ][ ]
-
-1..5 | Foreach-Object {$buffer.Write($_)}
-$buffer.ToString()
-Return: [1][2][3][4][5]
-
+$buffer.Write(1)
 $buffer.Read()
 Return: 1
 
-$buffer.ToString()
-Return: [ ][2][3][4][5]
+$buffer.Write(2)
+$buffer.Write(3)
+$buffer.Overwrite(5)
+$buffer.Read()
+Return: 5
 
-$buffer.Write('A')
-$buffer.ToString()
-Return: [A][2][3][4][5]
-
-$buffer.Overwrite('B')
-$buffer.ToString()
-Return: [A][B][3][4][5]
+$buffer.Clear()
+$buffer.Read()
+Throw "BufferError: Circular buffer is empty"
 #>
 
 Class CircularBuffer {

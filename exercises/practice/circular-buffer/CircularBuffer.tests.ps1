@@ -116,11 +116,4 @@ Describe "CircularBuffer test cases" {
         $buffer.Read() | Should -BeExactly 4
         { $buffer.Read() } | Should -Throw "BufferError: Circular buffer is empty"
     }
-
-    It "fun bonus test" -Skip {
-        $arr = @(69, 88, 69, 82, 67, 73, 83, 77)
-        $buffer = [CircularBuffer]::new($arr.Count)
-        $arr | ForEach-Object {$buffer.Write([char]$_)}
-        $buffer.ToString() | Should -BeExactly "[E][X][E][R][C][I][S][M]"
-    }
 }
