@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "House.ps1"
+    ],
+    "test": [
+      "House.tests.ps1"
+    ],
+    "example": [
+      ".meta/House.example.ps1"
+    ]
+  },
+  "blurb": "Output the nursery rhyme 'This is the House that Jack Built'.",
+  "source": "British nursery rhyme",
+  "source_url": "https://en.wikipedia.org/wiki/This_Is_The_House_That_Jack_Built"
+}

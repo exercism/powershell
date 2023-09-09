@@ -306,6 +306,16 @@
         "difficulty": 1
       },
       {
+        "slug": "house",
+        "name": "House",
+        "uuid": "e0be6456-880b-4cb4-8c62-4479f045fa93",
+        "practices": [
+            "loops"
+        ],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "etl",
         "name": "Etl",
         "uuid": "85148e36-583b-4eba-9f66-daeb0c865daa",
