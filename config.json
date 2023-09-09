@@ -590,6 +590,14 @@
         "difficulty": 3
       },
       {
+        "slug": "sieve",
+        "name": "Sieve",
+        "uuid": "b3f29283-9204-488a-8b8c-6552e7d4edfa",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "clock",
         "name": "Clock",
         "uuid": "31a5ba31-3f86-4957-87cd-8200eee0a0f4",
