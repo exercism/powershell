@@ -130,6 +130,16 @@
         "difficulty": 1
       },
       {
+        "slug": "resistor-color-trio",
+        "name": "Resistor Color Trio",
+        "uuid": "666f7921-e650-4c6d-9f4c-f9a653c33a1d",
+        "practices": [
+            "strings"
+        ],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "raindrops",
         "name": "Raindrops",
         "uuid": "90a12652-946c-4771-83bd-741f884cd426",
