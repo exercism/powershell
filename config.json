@@ -108,7 +108,7 @@
           "strings"
         ],
         "prerequisites": [],
-        "difficulty": 1
+        "difficulty": 2
       },
       {
         "slug": "flatten-array",
