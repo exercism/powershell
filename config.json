@@ -684,6 +684,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
+      },
+      {
+        "slug": "binary-search-tree",
+        "name": "Binary Search Tree",
+        "uuid": "3cf07ef7-5445-4f5d-b60d-cca72ef07935",
+        "practices": ["classes"],
+        "prerequisites": [],
+        "difficulty": 5
       }
     ]
   },
