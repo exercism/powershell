@@ -101,6 +101,16 @@
         "difficulty": 1
       },
       {
+        "slug": "resistor-color-expert",
+        "name": "Resistor Color Expert",
+        "uuid": "ef3e6f0e-4981-4f18-8e6c-14abd4d1d897",
+        "practices": [
+          "strings"
+        ],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "flatten-array",
         "name": "Flatten Array",
         "uuid": "5edb37eb-2903-48de-9f0e-83d8aceae03b",
