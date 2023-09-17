@@ -460,6 +460,14 @@
         "difficulty": 2
       },
       {
+        "slug": "scrabble-score",
+        "name": "Scrabble Score",
+        "uuid": "70878de3-5da3-4ab6-bf14-e7c5edd53b5c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "sublist",
         "name": "Sublist",
         "uuid": "e52a52e8-a08e-4060-9413-198c931d52d2",

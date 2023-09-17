@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "ScrabbleScore.ps1"
+    ],
+    "test": [
+      "ScrabbleScore.tests.ps1"
+    ],
+    "example": [
+      ".meta/ScrabbleScore.example.ps1"
+    ]
+  },
+  "blurb": "Given a word, compute the Scrabble score for that word.",
+  "source": "Inspired by the Extreme Startup game",
+  "source_url": "https://github.com/rchatley/extreme_startup"
+}
