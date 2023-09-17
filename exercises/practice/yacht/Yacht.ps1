@@ -17,7 +17,7 @@ Enum Category {
 Function Get-Score() {
     <#
     .SYNOPSIS
-    Implement a function to get the score of a yatch game.
+    Implement a function to get the score of a yacht game.
 
     .DESCRIPTION
     Given a list of values for five dice and a category, your solution should return the score of the dice for that category.
@@ -29,7 +29,7 @@ Function Get-Score() {
     An array of 5 integer, each represent a dice value.
 
     .PARAMETER Category
-    An Enum value represent a category in the game of yatch.
+    An Enum value represent a category in the game of yacht.
 
     .EXAMPLE
     Get-Score -Dice @(1,2,3,4,5) -Category CHOICE
