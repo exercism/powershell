@@ -536,6 +536,16 @@
         "difficulty": 2
       },
       {
+        "slug": "yacht",
+        "name": "Yacht",
+        "uuid": "48571314-77a4-4b7a-b4d1-9c1626cf2e14",
+        "practices": [
+            "enums"
+        ],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "matrix",
         "name": "Matrix",
         "uuid": "87aceeaa-3969-4ae0-b5ea-488837fcc15b",
