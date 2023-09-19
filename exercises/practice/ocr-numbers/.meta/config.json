@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "OcrNumbers.ps1"
+    ],
+    "test": [
+      "OcrNumbers.tests.ps1"
+    ],
+    "example": [
+      ".meta/OcrNumbers.example.ps1"
+    ]
+  },
+  "blurb": "Given a 3 x 4 grid of pipes, underscores, and spaces, determine which number is represented, or whether it is garbled.",
+  "source": "Inspired by the Bank OCR kata",
+  "source_url": "https://codingdojo.org/kata/BankOCR/"
+}
