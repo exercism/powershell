@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "RationalNumbers.ps1"
+    ],
+    "test": [
+      "RationalNumbers.tests.ps1"
+    ],
+    "example": [
+      ".meta/RationalNumbers.example.ps1"
+    ]
+  },
+  "blurb": "Implement rational numbers.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Rational_number"
+}
