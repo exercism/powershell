@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "Dominoes.ps1"
+    ],
+    "test": [
+      "Dominoes.tests.ps1"
+    ],
+    "example": [
+      ".meta/Dominoes.example.ps1"
+    ]
+  },
+  "blurb": "Make a chain of dominoes."
+}
