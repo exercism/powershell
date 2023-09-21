@@ -546,6 +546,14 @@
         "difficulty": 2
       },
       {
+        "slug": "twelve-days",
+        "name": "Twelve Days",
+        "uuid": "afa5764e-7bc5-4d3f-88f0-9ac430d65423",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "matrix",
         "name": "Matrix",
         "uuid": "87aceeaa-3969-4ae0-b5ea-488837fcc15b",
