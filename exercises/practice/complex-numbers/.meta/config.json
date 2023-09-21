@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "ComplexNumbers.ps1"
+    ],
+    "test": [
+      "ComplexNumbers.tests.ps1"
+    ],
+    "example": [
+      ".meta/ComplexNumbers.example.ps1"
+    ]
+  },
+  "blurb": "Implement complex numbers.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Complex_number"
+}
