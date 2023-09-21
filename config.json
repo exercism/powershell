@@ -728,6 +728,14 @@
         "practices": ["classes"],
         "prerequisites": [],
         "difficulty": 5
+      },
+      {
+        "slug": "rational-numbers",
+        "name": "Rational Numbers",
+        "uuid": "5d76a98a-f130-41b3-af1f-1b8d32d2f6e6",
+        "practices": ["operator-overloading"],
+        "prerequisites": [],
+        "difficulty": 5
       }
     ]
   },
