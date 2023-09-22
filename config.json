@@ -738,6 +738,14 @@
         "difficulty": 5
       },
       {
+        "slug": "dominoes",
+        "name": "Dominoes",
+        "uuid": "c3ba77dc-ca14-4d76-b449-f9cabad16d00",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "binary-search-tree",
         "name": "Binary Search Tree",
         "uuid": "3cf07ef7-5445-4f5d-b60d-cca72ef07935",
