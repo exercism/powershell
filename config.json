@@ -661,6 +661,14 @@
         "difficulty": 3
       },
       {
+        "slug": "crypto-square",
+        "name": "Crypto Square",
+        "uuid": "169d1a37-1f0f-42ea-9b1d-8cff7e6f2ffc",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "pascals-triangle",
         "name": "Pascals Triangle",
         "uuid": "a2563791-b482-4f73-a9d1-4ba7c2870d67",
