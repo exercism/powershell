@@ -536,6 +536,14 @@
         "difficulty": 2
       },
       {
+        "slug": "transpose",
+        "name": "Transpose",
+        "uuid": "a7f94e61-5689-45e2-ad22-24721a6f6abd",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "yacht",
         "name": "Yacht",
         "uuid": "48571314-77a4-4b7a-b4d1-9c1626cf2e14",
