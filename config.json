@@ -722,6 +722,14 @@
         "difficulty": 4
       },
       {
+        "slug": "spiral-matrix",
+        "name": "Spiral Matrix",
+        "uuid": "37534530-58c2-4993-ae27-9e743058dc8f",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "complex-numbers",
         "name": "Complex Numbers",
         "uuid": "c84d1aaa-639b-4af6-88ec-6a1b0180b752",
