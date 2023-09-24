@@ -1,4 +1,4 @@
-function Get-HelloWorld {
+Function Get-HelloWorld {
     <#
     .SYNOPSIS
     Outputs "Hello, World!"
@@ -10,5 +10,5 @@ function Get-HelloWorld {
     Get-HelloWorld
     #>	
     
-    return "Goodbye, Mars!"
+    Return "Goodbye, Mars!"
 }
