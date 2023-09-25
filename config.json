@@ -661,6 +661,14 @@
         "difficulty": 3
       },
       {
+        "slug": "pythagorean-triplet",
+        "name": "Pythagorean Triplet",
+        "uuid": "7d3309b4-8efb-4357-8893-c654ccee7e79",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "ocr-numbers",
         "name": "OCR Numbers",
         "uuid": "15fdacc6-2da7-42ae-bc59-98740fdbfa80",
