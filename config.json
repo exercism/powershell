@@ -736,6 +736,13 @@
         ],
         "prerequisites": [],
         "difficulty": 4
+      },{
+        "slug": "rail-fence-cipher",
+        "name": "Rail Fence Cipher",
+        "uuid": "33012310-6494-47ff-a29f-6cc168fe12b4",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
       },
       {
         "slug": "all-your-base",
