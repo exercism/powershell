@@ -7,9 +7,8 @@ Function Invoke-Isogram() {
     An isogram (also known as a "nonpattern word") is a word or phrase without a repeating letter,
     however spaces and hyphens are allowed to appear multiple times.
     
-    
     .PARAMETER Phrase
-    The DNA strand to count
+    The phrase to check if it is an isogram.
     
     .EXAMPLE
     Invoke-Isogram -Phrase "isogram"
