@@ -33,6 +33,3 @@ Function Invoke-KillerSudokuHelper() {
 
     Throw "Please implement this function"
 }
-
-
-
