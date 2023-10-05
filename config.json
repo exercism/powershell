@@ -570,6 +570,14 @@
         "difficulty": 2
       },
       {
+        "slug": "pig-latin",
+        "name": "Pig Latin",
+        "uuid": "8f632676-65c7-4edf-a395-5b6f6d0ca84e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "matrix",
         "name": "Matrix",
         "uuid": "87aceeaa-3969-4ae0-b5ea-488837fcc15b",
