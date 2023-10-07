@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "Minesweeper.ps1"
+    ],
+    "test": [
+      "Minesweeper.tests.ps1"
+    ],
+    "example": [
+      ".meta/Minesweeper.example.ps1"
+    ]
+  },
+  "blurb": "Add the numbers to a minesweeper board."
+}

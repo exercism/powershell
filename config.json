@@ -817,6 +817,14 @@
         "difficulty": 4
       },
       {
+        "slug": "minesweeper",
+        "name": "Minesweeper",
+        "uuid": "23508af2-2bf3-4ef9-aac4-f41471afe76d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "change",
         "name": "Change",
         "uuid": "352d9205-5f01-4755-8844-e2a44d7b667b",
