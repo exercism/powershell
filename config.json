@@ -863,6 +863,14 @@
         "practices": ["operator-overloading"],
         "prerequisites": [],
         "difficulty": 5
+      },
+      {
+        "slug": "connect",
+        "name": "Connect",
+        "uuid": "97aafbc5-da65-4539-aaeb-0d4507b1bf44",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
       }
     ]
   },

@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "Connect.ps1"
+    ],
+    "test": [
+      "Connect.tests.ps1"
+    ],
+    "example": [
+      ".meta/Connect.example.ps1"
+    ]
+  },
+  "blurb": "Compute the result for a game of Hex / Polygon."
+}
