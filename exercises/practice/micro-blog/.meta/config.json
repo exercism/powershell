@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "MicroBlog.ps1"
+    ],
+    "test": [
+      "MicroBlog.tests.ps1"
+    ],
+    "example": [
+      ".meta/MicroBlog.example.ps1"
+    ]
+  },
+  "blurb": "Given an input string, truncate it to 5 characters."
+}
