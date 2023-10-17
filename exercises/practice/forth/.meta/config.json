@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "Forth.ps1"
+    ],
+    "test": [
+      "Forth.tests.ps1"
+    ],
+    "example": [
+      ".meta/Forth.example.ps1"
+    ]
+  },
+  "blurb": "Implement an evaluator for a very simple subset of Forth."
+}
