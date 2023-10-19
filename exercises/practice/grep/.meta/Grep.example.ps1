@@ -3,7 +3,8 @@ Function Get-FilePath([string]$File) {
     .DESCRIPTION
     This is a helper function that take in a string name of a file, and return a full path of the file to be used.
     #>
-    return Join-Path -Path $PSScriptRoot -ChildPath "/data/$($File)"
+    $main = Split-Path -Path $PSScriptRoot -Parent #added for example to source the data folder correct to pass github check
+    return Join-Path -Path $main -ChildPath "/data/$($File)"
 }
 
 Function Invoke-Grep() {
