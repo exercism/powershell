@@ -3,8 +3,8 @@ Function Get-FilePath([string]$File) {
     .DESCRIPTION
     This is a helper function that take in a string name of a file, and return a full path of the file to be used.
     #>
-    $main = Split-Path -Path $PSScriptRoot -Parent #added for example to source the data folder correct to pass github check
-    return Join-Path -Path $main -ChildPath "/data/$($File)"
+     #added for example to source the data folder correct to pass github check
+    return Join-Path -Path $PSScriptRoot -ChildPath "/$($File)"
 }
 
 Function Invoke-Grep() {
@@ -72,8 +72,7 @@ Function Invoke-Grep() {
 
     foreach ($file in $Files) {
         $filePath = Get-FilePath $file
-
-        if (-not (Test-Path $filePath)) {Throw "This file doesn't exist. Test path: $filePath"}
+        if (-not (Test-Path $filePath)) {Throw "This file doesn't exist. Currnet path: $filePath"}
 
         $content = Get-Content -Path $filePath
         $name = ($List -or $Files.Count -gt 1) ? $file : ""
