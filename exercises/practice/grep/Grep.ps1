@@ -6,7 +6,6 @@ Function Get-FilePath([string]$File) {
     return Join-Path -Path $PSScriptRoot -ChildPath "/data/$($File)"
 }
 
-$DebugPreference = 'Continue'
 Function Invoke-Grep() {
     <#
     .SYNOPSIS

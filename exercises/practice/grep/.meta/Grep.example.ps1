@@ -73,6 +73,8 @@ Function Invoke-Grep() {
     foreach ($file in $Files) {
         $filePath = Get-FilePath $file
 
+        Write-Host "currnet path: $filePath"
+        Write-Output "currnet path: $filePath"
         if (-not (Test-Path $filePath)) {Throw "This file doesn't exist"}
 
         $content = Get-Content -Path $filePath
