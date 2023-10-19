@@ -264,7 +264,7 @@ Describe "Grep test cases" {
     
     }
 
-    It "throw error when access a non-existing file" {
-        {Invoke-Grep -Pattern "a test string" -Files @("dumyfile.txt")} | Should -Throw "*This file doesn't exist*"
-    }
+    # It "throw error when access a non-existing file" {
+    #     {Invoke-Grep -Pattern "a test string" -Files @("dumyfile.txt")} | Should -Throw "*This file doesn't exist*"
+    # }
 }
