@@ -72,7 +72,9 @@ Function Invoke-Grep() {
 
     foreach ($file in $Files) {
         $filePath = Get-FilePath $file
-        # if (-not (Test-Path $filePath)) {Throw "This file doesn't exist. Currnet path: $filePath"}
+        if (-not (Test-Path $filePath)) {Throw "This file doesn't exist.
+        Constructed path: $filePath
+        Files list: $(Get-ChildItem -Path $PSScriptRoot)"}
 
         $content = Get-Content -Path $filePath
         $name = ($List -or $Files.Count -gt 1) ? $file : ""
