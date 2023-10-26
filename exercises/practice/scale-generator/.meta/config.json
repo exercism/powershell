@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "ScaleGenerator.ps1"
+    ],
+    "test": [
+      "ScaleGenerator.tests.ps1"
+    ],
+    "example": [
+      ".meta/ScaleGenerator.example.ps1"
+    ]
+  },
+  "blurb": "Generate musical scales, given a starting note and a set of intervals."
+}
