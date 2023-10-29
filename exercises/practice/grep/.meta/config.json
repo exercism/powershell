@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "Grep.ps1"
+    ],
+    "test": [
+      "Grep.tests.ps1"
+    ],
+    "example": [
+      ".meta/Grep.example.ps1"
+    ]
+  },
+  "blurb": "Search a file for lines matching a regular expression pattern. Return the line number and contents of each matching line.",
+  "source": "Conversation with Nate Foster.",
+  "source_url": "https://www.cs.cornell.edu/Courses/cs3110/2014sp/hw/0/ps0.pdf"
+}
