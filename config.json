@@ -841,6 +841,14 @@
         "difficulty": 4
       },
       {
+        "slug": "say",
+        "name": "Say",
+        "uuid": "e7ae59c8-29af-428b-929d-eec268e3a3e9",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "scale-generator",
         "name": "Scale Generator",
         "uuid": "c2eaec94-826e-44e2-b92d-827a713dd373",
@@ -892,6 +900,14 @@
         "slug": "connect",
         "name": "Connect",
         "uuid": "97aafbc5-da65-4539-aaeb-0d4507b1bf44",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "grep",
+        "name": "Grep",
+        "uuid": "7eec693f-d1b3-48c1-b599-2cd168da3dbc",
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
