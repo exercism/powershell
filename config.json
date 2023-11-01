@@ -905,6 +905,14 @@
         "difficulty": 5
       },
       {
+        "slug": "two-bucket",
+        "name": "Two Bucket",
+        "uuid": "f16d5ba7-e15f-49e6-a391-e6a60c7171ff",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
+      },
+      {
         "slug": "forth",
         "name": "Forth",
         "uuid": "a66c762e-77fa-413d-a84b-03eb099700c2",
