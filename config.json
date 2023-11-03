@@ -849,6 +849,14 @@
         "difficulty": 4
       },
       {
+        "slug": "scale-generator",
+        "name": "Scale Generator",
+        "uuid": "c2eaec94-826e-44e2-b92d-827a713dd373",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "change",
         "name": "Change",
         "uuid": "352d9205-5f01-4755-8844-e2a44d7b667b",
