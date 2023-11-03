@@ -1,6 +1,6 @@
 # Learning PowerShell
 
-A great place to start learning PowerShell is at the PowerShell Github repository where it has a [learning section][].
+A great place to start learning PowerShell is picking a learning resource at the [learning section][] on Powershells website.
 This has a huge amount of information and links to a wide range of PowerShell topics.
 
 PowerShell also has a very complete self documenting help system.
@@ -36,5 +36,5 @@ Get-Verb
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/][powershell.core]
 
-[powershell.core]: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/
-[learning section]: https://github.com/PowerShell/PowerShell/tree/master/docs/learning-powershell
+[powershell.core]: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/
+[learning section]: https://learn.microsoft.com/en-us/powershell/scripting/learn/more-powershell-learning

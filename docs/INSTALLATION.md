@@ -34,7 +34,7 @@ For subsequent updates, run:
 Update-Module -Name Pester
 ```
 
-Ff necessary, further instructions for installation are available at: https://github.com/pester/Pester/wiki/Installation-and-Update
+If necessary, further instructions for installation are available at: [https://github.com/pester/Pester/wiki/Installation-and-Update]()
 
 ## Using an IDE
 
