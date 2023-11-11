@@ -905,6 +905,14 @@
         "difficulty": 5
       },
       {
+        "slug": "custom-set",
+        "name": "Custom Set",
+        "uuid": "8643e825-bdbf-4a18-8559-5974a7e1585c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "grep",
         "name": "Grep",
         "uuid": "7eec693f-d1b3-48c1-b599-2cd168da3dbc",
