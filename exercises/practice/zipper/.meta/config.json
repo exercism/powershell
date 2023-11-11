@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "Zipper.ps1"
+    ],
+    "test": [
+      "Zipper.tests.ps1"
+    ],
+    "example": [
+      ".meta/Zipper.example.ps1"
+    ]
+  },
+  "blurb": "Creating a zipper for a binary tree."
+}
