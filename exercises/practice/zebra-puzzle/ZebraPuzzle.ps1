@@ -1,4 +1,3 @@
-# Based values
 Enum Color { Blue ; Green ; Ivory ; Red ; Yellow }
 Enum Nationality { English ; Japanese ; Norwegian ; Spaniard ; Ukrainian }
 Enum Pet { Dog ; Fox ; Horse ; Snails ; Zebra }
