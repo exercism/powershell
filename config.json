@@ -586,6 +586,14 @@
         "difficulty": 2
       },
       {
+        "slug": "wordy",
+        "name": "Wordy",
+        "uuid": "5c84e3b4-d6d1-42e5-9614-c0c394a6b08f",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "matrix",
         "name": "Matrix",
         "uuid": "87aceeaa-3969-4ae0-b5ea-488837fcc15b",
