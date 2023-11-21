@@ -921,6 +921,14 @@
         "difficulty": 6
       },
       {
+        "slug": "zipper",
+        "name": "Zipper",
+        "uuid": "ed6dc7be-1a8b-4261-a28a-0e4fe06ef466",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 8
+      },
+      {
         "slug": "forth",
         "name": "Forth",
         "uuid": "a66c762e-77fa-413d-a84b-03eb099700c2",
