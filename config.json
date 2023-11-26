@@ -586,6 +586,14 @@
         "difficulty": 2
       },
       {
+        "slug": "wordy",
+        "name": "Wordy",
+        "uuid": "5c84e3b4-d6d1-42e5-9614-c0c394a6b08f",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "matrix",
         "name": "Matrix",
         "uuid": "87aceeaa-3969-4ae0-b5ea-488837fcc15b",
@@ -849,14 +857,6 @@
         "difficulty": 4
       },
       {
-        "slug": "scale-generator",
-        "name": "Scale Generator",
-        "uuid": "c2eaec94-826e-44e2-b92d-827a713dd373",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
         "slug": "change",
         "name": "Change",
         "uuid": "352d9205-5f01-4755-8844-e2a44d7b667b",
@@ -905,6 +905,14 @@
         "difficulty": 5
       },
       {
+        "slug": "custom-set",
+        "name": "Custom Set",
+        "uuid": "8643e825-bdbf-4a18-8559-5974a7e1585c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "grep",
         "name": "Grep",
         "uuid": "7eec693f-d1b3-48c1-b599-2cd168da3dbc",
@@ -929,12 +937,29 @@
         "difficulty": 7
       },
       {
+        "slug": "zipper",
+        "name": "Zipper",
+        "uuid": "ed6dc7be-1a8b-4261-a28a-0e4fe06ef466",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 8
+      },
+      {
         "slug": "forth",
         "name": "Forth",
         "uuid": "a66c762e-77fa-413d-a84b-03eb099700c2",
         "practices": [],
         "prerequisites": [],
         "difficulty": 8
+      },
+      {
+        "slug": "scale-generator",
+        "name": "Scale Generator",
+        "uuid": "c2eaec94-826e-44e2-b92d-827a713dd373",
+        "status": "deprecated",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
       }
     ]
   },
