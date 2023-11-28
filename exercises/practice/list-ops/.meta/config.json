@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "ListOps.ps1"
+    ],
+    "test": [
+      "ListOps.tests.ps1"
+    ],
+    "example": [
+      ".meta/ListOps.example.ps1"
+    ]
+  },
+  "blurb": "Implement basic list operations."
+}

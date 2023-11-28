@@ -1,0 +1,15 @@
+{
+  "authors": ["glaxxie"],
+  "files": {
+    "solution": [
+      "CustomSet.ps1"
+    ],
+    "test": [
+      "CustomSet.tests.ps1"
+    ],
+    "example": [
+      ".meta/CustomSet.example.ps1"
+    ]
+  },
+  "blurb": "Create a custom set type."
+}
