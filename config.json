@@ -929,6 +929,14 @@
         "difficulty": 6
       },
       {
+        "slug": "book-store",
+        "name": "Book Store",
+        "uuid": "890df47f-19d8-406a-b124-9d0613db486d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 7
+      },
+      {
         "slug": "zipper",
         "name": "Zipper",
         "uuid": "ed6dc7be-1a8b-4261-a28a-0e4fe06ef466",
