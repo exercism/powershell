@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "BookStore.ps1"
+    ],
+    "test": [
+      "BookStore.tests.ps1"
+    ],
+    "example": [
+      ".meta/BookStore.example.ps1"
+    ]
+  },
+  "blurb": "To try and encourage more sales of different books from a popular 5 book series, a bookshop has decided to offer discounts of multiple-book purchases.",
+  "source": "Inspired by the harry potter kata from Cyber-Dojo.",
+  "source_url": "https://cyber-dojo.org"
+}
