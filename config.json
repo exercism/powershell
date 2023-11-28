@@ -594,6 +594,14 @@
         "difficulty": 3
       },
       {
+        "slug": "list-ops",
+        "name": "List Ops",
+        "uuid": "83d28b1b-7ae5-4fdb-b3ec-47fe889827b4",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "matrix",
         "name": "Matrix",
         "uuid": "87aceeaa-3969-4ae0-b5ea-488837fcc15b",
