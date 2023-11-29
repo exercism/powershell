@@ -961,6 +961,14 @@
         "difficulty": 8
       },
       {
+        "slug": "zebra-puzzle",
+        "name": "Zebra Puzzle",
+        "uuid": "66946bd7-5b80-4889-9de6-c0a02fa9df92",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 8
+      },
+      {
         "slug": "scale-generator",
         "name": "Scale Generator",
         "uuid": "c2eaec94-826e-44e2-b92d-827a713dd373",

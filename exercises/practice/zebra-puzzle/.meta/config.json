@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "ZebraPuzzle.ps1"
+    ],
+    "test": [
+      "ZebraPuzzle.tests.ps1"
+    ],
+    "example": [
+      ".meta/ZebraPuzzle.example.ps1"
+    ]
+  },
+  "blurb": "Solve the zebra puzzle.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Zebra_Puzzle"
+}
