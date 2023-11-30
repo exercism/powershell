@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "PalindromeProducts.ps1"
+    ],
+    "test": [
+      "PalindromeProducts.tests.ps1"
+    ],
+    "example": [
+      ".meta/PalindromeProducts.example.ps1"
+    ]
+  },
+  "blurb": "Detect palindrome products in a given range.",
+  "source": "Problem 4 at Project Euler",
+  "source_url": "https://projecteuler.net/problem=4"
+}

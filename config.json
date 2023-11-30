@@ -865,6 +865,14 @@
         "difficulty": 4
       },
       {
+        "slug": "palindrome-products",
+        "name": "Palindrome Products",
+        "uuid": "59929243-2d63-4434-8734-90d7401034e4",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "change",
         "name": "Change",
         "uuid": "352d9205-5f01-4755-8844-e2a44d7b667b",
