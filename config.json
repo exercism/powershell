@@ -937,6 +937,14 @@
         "difficulty": 5
       },
       {
+        "slug": "ledger",
+        "name": "Ledger",
+        "uuid": "20bad781-7c4b-4133-8ce3-2160ab12a3a0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "two-bucket",
         "name": "Two Bucket",
         "uuid": "f16d5ba7-e15f-49e6-a391-e6a60c7171ff",
