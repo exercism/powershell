@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "Markdown.ps1"
+    ],
+    "test": [
+      "Markdown.tests.ps1"
+    ],
+    "example": [
+      ".meta/Markdown.example.ps1"
+    ]
+  },
+  "blurb": "Refactor a Markdown parser."
+}

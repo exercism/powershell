@@ -873,6 +873,14 @@
         "difficulty": 4
       },
       {
+        "slug": "markdown",
+        "name": "Markdown",
+        "uuid": "125b3f79-6485-4e5a-af0c-0238f4128dc6",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "change",
         "name": "Change",
         "uuid": "352d9205-5f01-4755-8844-e2a44d7b667b",
