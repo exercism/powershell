@@ -5,10 +5,7 @@
 .DESCRIPTION
     The code below is an attempt of creating a printer for a ledger.
     It barely works (only passed some of the tests), and is generally quite messy.
-    Your job here is to refactor the code and finish the needed functionalities:
-    - The amount of money using the correct ',' or '.' depend on locale.
-    - Entries in the ledger should be in correct order. Sorted by date, then desc and finally amount of money.
-    - Description that are too long need to be shortern down.
+    Your job here is to refactor the code.
 
 .EXAMPLE
     $entry1 = CreateEntry -Date '2011-12-13' -Desc 'Birthday present' -Amount 1234
@@ -36,16 +33,16 @@ Class LedgerEntry{
 
     [string] Format([string] $Currency, [string] $Locale) {
         $format   = $this.GetFrame($Locale, $this.Change)
-        $culture  = $this.GetCulture($Currency, $Locale)
+        $dateFormat  = $this.GetDateFormat($Currency, $Locale)
 
-        $dateStr  = $this.Date.ToString($culture.Date)
-        $moneyStr = ($this.Change / 100).ToString("C2", $culture.Currency)
+        $dateStr  = $this.Date.ToString($dateFormat)
+        $moneyStr = ($this.Change / 100).ToString("C2", [cultureinfo]$Locale)
 
-        if ($Currency -eq "USD" -and $Locale -eq "nl-NL") {
-            $moneyStr = $moneyStr.Substring(2)
-        }
         if ($Currency -eq "EUR" -and $Locale -eq "en-US") {
             $moneyStr = $moneyStr -replace '\$', '€'
+        }
+        if ($Currency -eq "USD" -and $Locale -eq "nl-NL") {
+            $moneyStr = $moneyStr -replace '€', '$'
         }
         if ($this.Desc.Length -gt 25) {
             $this.Desc = $this.Desc.Substring(0,22) + "..."
@@ -60,25 +57,13 @@ Class LedgerEntry{
         return "{0,-10} | {1,-25} | {2,13}"
     }
 
-
-    [object] hidden GetCulture([string] $Currency, [string] $Locale) {
+    [object] hidden GetDateFormat([string] $Currency, [string] $Locale) {
         $dateFrm = switch ($Locale) {
             "en-US" { "MM\/dd\/yyyy" }
             "nl-NL" { "dd-MM-yyyy" }
             Default {Throw "Locale not supported"}
         }
-
-        $moneyFrm = switch ("$currency$locale") {
-            "USDen-US" { [cultureinfo]'en-US' }
-            "USDnl-NL" { [cultureinfo]'nl-US' }
-            "EURen-US" { [cultureinfo]'en-US' }
-            "EURnl-NL" { [cultureinfo]'nl-NL' }
-            Default {Throw "Currency not supported"}
-        }
-        return [PSCustomObject]@{
-            Date = $dateFrm
-            Currency = $moneyFrm
-        }
+        return $dateFrm
     }
 
     [string] static Header($Locale) {

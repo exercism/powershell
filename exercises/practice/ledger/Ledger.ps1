@@ -5,10 +5,7 @@
 .DESCRIPTION
     The code below is an attempt of creating a printer for a ledger.
     It barely works (only passed some of the tests), and is generally quite messy.
-    Your job here is to refactor the code and finish the needed functionalities:
-    - The amount of money using the correct ',' or '.' depend on locale.
-    - Entries in the ledger should be in correct order. Sorted by date, then desc and finally amount of money.
-    - Description that are too long need to be shortern down.
+    Your job here is to refactor the code.
 
 .EXAMPLE
     $entry1 = CreateEntry -Date '2011-12-13' -Desc 'Birthday present' -Amount 1234
