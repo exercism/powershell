@@ -733,6 +733,14 @@
         "difficulty": 3
       },
       {
+        "slug": "robot-simulator",
+        "name": "Robot Simulator",
+        "uuid": "8e2f7042-da01-42ec-84ce-38930ed6e8b3",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "crypto-square",
         "name": "Crypto Square",
         "uuid": "169d1a37-1f0f-42ea-9b1d-8cff7e6f2ffc",
