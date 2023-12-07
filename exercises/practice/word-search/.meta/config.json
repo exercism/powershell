@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "WordSearch.ps1"
+    ],
+    "test": [
+      "WordSearch.tests.ps1"
+    ],
+    "example": [
+      ".meta/WordSearch.example.ps1"
+    ]
+  },
+  "blurb": "Create a program to solve a word search puzzle."
+}

@@ -961,6 +961,14 @@
         "difficulty": 6
       },
       {
+        "slug": "word-search",
+        "name": "Word Search",
+        "uuid": "246b4736-2a13-4298-a989-fb7ebc394c1b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
+      },
+      {
         "slug": "book-store",
         "name": "Book Store",
         "uuid": "890df47f-19d8-406a-b124-9d0613db486d",
