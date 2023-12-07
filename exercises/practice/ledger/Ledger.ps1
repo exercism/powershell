@@ -165,8 +165,8 @@ Function MakeEntry {
             $dateStr = $date.ToString("MM\/dd\/yyyy")
             if($Entry.Change -lt 0) {
                 $money = $entry.Change / 100
-                $money = $money.ToString("N2", [cultureinfo]"en-US")
-                $change = "(" + $symbol + $money.Substring(1) + ")"
+                $money = $money.ToString("C2")
+                $change = $money
             }else {
                 $money = $entry.Change / 100
                 $money = $money.ToString("N2", [cultureinfo]"en-US")
@@ -195,8 +195,8 @@ Function MakeEntry {
             $dateStr = $date.ToString("MM\/dd\/yyyy")
             if($Entry.Change -lt 0) {
                 $money = $entry.Change / 100
-                $money = $money.ToString("N2", [cultureinfo]"en-US")
-                $change = "(" + $symbol + $money.Substring(1) + ")"
+                $money = $money.ToString("C2")
+                $change = $money -replace "\$", $symbol
             }else {
                 $money = $entry.Change / 100
                 $money = $money.ToString("N2", [cultureinfo]"en-US")
