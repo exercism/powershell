@@ -100,6 +100,7 @@ Function FormatEntries {
     )
     $table = @()
     $table += MakeHeader $Locale
+    $Entries = $Entries | Sort-Object Date, Desc, Change
     foreach ($entry in $Entries) {
         $table += MakeEntry $Currency $Locale $entry
     }
@@ -163,13 +164,13 @@ Function MakeEntry {
             $date = [datetime]$Entry.Date
             $dateStr = $date.ToString("MM\/dd\/yyyy")
             if($Entry.Change -lt 0) {
-                $money = [math]::Abs($entry.Change / 100)
-                $money = "{0:F2}" -f $money
-                $change = "($($symbol)$($money))"
+                $money = $entry.Change / 100
+                $money = $money.ToString("N2", [cultureinfo]"en-US")
+                $change = "(" + $symbol + $money.Substring(1) + ")"
             }else {
                 $money = $entry.Change / 100
-                $money = "{0:F2}" -f $money
-                $change = "$($symbol)$($money)"
+                $money = $money.ToString("N2", [cultureinfo]"en-US")
+                $change = "$symbol$money "
             }
 
         }elseif ($Locale -eq "nl-NL") {
@@ -178,12 +179,12 @@ Function MakeEntry {
             $dateStr = $date.ToString("dd-MM-yyyy")
             if($Entry.Change -lt 0) {
                 $money = $entry.Change / 100
-                $money = "{0:F2}" -f $money
-                $change = "$($symbol) $($money)"
+                $money = $money.ToString("N2", [cultureinfo]"nl-NL")
+                $change = "$symbol $money "
             }else {
                 $money = $entry.Change / 100
-                $money = "{0:F2}" -f $money
-                $change = "$($symbol) $($money)"
+                $money = $money.ToString("N2", [cultureinfo]"nl-NL")
+                $change = "$symbol $money "
             }
         }
         
@@ -193,13 +194,13 @@ Function MakeEntry {
             $date = [datetime]$Entry.Date
             $dateStr = $date.ToString("MM\/dd\/yyyy")
             if($Entry.Change -lt 0) {
-                $money = [math]::Abs($entry.Change / 100)
-                $money = "{0:F2}" -f $money
-                $change = "($($symbol)$($money))"
+                $money = $entry.Change / 100
+                $money = $money.ToString("N2", [cultureinfo]"en-US")
+                $change = "(" + $symbol + $money.Substring(1) + ")"
             }else {
                 $money = $entry.Change / 100
-                $money = "{0:F2}" -f $money
-                $change = "$($symbol)$($money)"
+                $money = $money.ToString("N2", [cultureinfo]"en-US")
+                $change = "$symbol$money"
             }
         }elseif ($Locale -eq "nl-NL") {
             $symbol = "€"
@@ -207,21 +208,28 @@ Function MakeEntry {
             $dateStr = $date.ToString("dd-MM-yyyy")
             if($Entry.Change -lt 0) {
                 $money = $entry.Change / 100
-                $money = "{0:F2}" -f $money
-                $change = "$($symbol) $($money)"
+                $money = $money.ToString("N2", [cultureinfo]"nl-NL")
+                $change = "$symbol $money "
             }else {
                 $money = $entry.Change / 100
-                $money = "{0:F2}" -f $money
-                $change = "$($symbol) $($money)"
+                $money = $money.ToString("N2", [cultureinfo]"nl-NL")
+                $change = "$symbol $money "
             }
         }
     }
 
+    #Truncated too long desc
+    $desc = ""
     if ($Entry.Desc.Length -gt 25) {
-        $desc = $Entry.Desc[0..1] -join "" + "..."
+        for ($i = 0; $i -lt 22; $i++) {
+            $desc += $Entry.Desc[$i]
+        }
+        $desc += "..."
     }else {
         $desc = $Entry.Desc
     }
+
+    #Format the text into correct space
     $desc = "{0,-25}" -f $desc
     $change = "{0,13}" -f $change
 
