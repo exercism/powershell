@@ -586,6 +586,14 @@
         "difficulty": 2
       },
       {
+        "slug": "pop-count",
+        "name": "Pop Count",
+        "uuid": "65fa1796-64de-4da7-8050-41b2a9addd9c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "wordy",
         "name": "Wordy",
         "uuid": "5c84e3b4-d6d1-42e5-9614-c0c394a6b08f",
