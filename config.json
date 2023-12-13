@@ -881,6 +881,14 @@
         "difficulty": 4
       },
       {
+        "slug": "affine-cipher",
+        "name": "Affine Cipher",
+        "uuid": "0db7efd5-2ece-481a-b706-0e011aad52aa",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "markdown",
         "name": "Markdown",
         "uuid": "125b3f79-6485-4e5a-af0c-0238f4128dc6",
