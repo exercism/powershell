@@ -969,6 +969,14 @@
         "difficulty": 5
       },
       {
+        "slug": "rectangles",
+        "name": "Rectangles",
+        "uuid": "0c624e88-1baf-4760-b0ff-6a138e62113f",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
+      },
+      {
         "slug": "two-bucket",
         "name": "Two Bucket",
         "uuid": "f16d5ba7-e15f-49e6-a391-e6a60c7171ff",
