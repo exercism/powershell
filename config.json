@@ -1009,6 +1009,14 @@
         "difficulty": 6
       },
       {
+        "slug": "poker",
+        "name": "Poker",
+        "uuid": "12a4321d-886e-437f-8bf8-fc5d70b85c5c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 7
+      },
+      {
         "slug": "book-store",
         "name": "Book Store",
         "uuid": "890df47f-19d8-406a-b124-9d0613db486d",
