@@ -889,6 +889,14 @@
         "difficulty": 4
       },
       {
+        "slug": "hangman",
+        "name": "Hangman",
+        "uuid": "20058254-0d41-486f-99d9-d7ee3f3ccb44",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "affine-cipher",
         "name": "Affine Cipher",
         "uuid": "0db7efd5-2ece-481a-b706-0e011aad52aa",
