@@ -594,6 +594,14 @@
         "difficulty": 2
       },
       {
+        "slug": "error-handling",
+        "name": "Error Handling",
+        "uuid": "1813c9f6-a653-43b1-a835-5b9edcbd1c68",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "wordy",
         "name": "Wordy",
         "uuid": "5c84e3b4-d6d1-42e5-9614-c0c394a6b08f",
