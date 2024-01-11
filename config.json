@@ -1025,6 +1025,14 @@
         "difficulty": 7
       },
       {
+        "slug": "satellite",
+        "name": "Satellite",
+        "uuid": "8f4635fb-a904-4cbf-badb-859d4aa9f84b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 7
+      },
+      {
         "slug": "zipper",
         "name": "Zipper",
         "uuid": "ed6dc7be-1a8b-4261-a28a-0e4fe06ef466",
