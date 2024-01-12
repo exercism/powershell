@@ -1073,6 +1073,14 @@
         "difficulty": 8
       },
       {
+        "slug": "go-counting",
+        "name": "Go Counting",
+        "uuid": "11cba495-68a1-4871-88cd-48a6acc7b4f4",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 8
+      },
+      {
         "slug": "scale-generator",
         "name": "Scale Generator",
         "uuid": "c2eaec94-826e-44e2-b92d-827a713dd373",
