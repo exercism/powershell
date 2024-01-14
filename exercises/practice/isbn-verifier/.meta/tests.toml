@@ -9,6 +9,9 @@
 # As user-added comments (using the # character) will be removed when this file
 # is regenerated, comments can be added via a `comment` key.
 
+[0caa3eac-d2e3-4c29-8df8-b188bc8c9292]
+description = "valid isbn"
+
 [19f76b53-7c24-45f8-87b8-4604d0ccd248]
 description = "invalid isbn check digit"
 

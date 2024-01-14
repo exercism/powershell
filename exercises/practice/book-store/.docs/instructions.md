@@ -1,6 +1,6 @@
 # Instructions
 
-To try and encourage more sales of different books from a popular 5 books series, a bookshop has decided to offer discounts on multiple book purchases.
+To try and encourage more sales of different books from a popular 5 book series, a bookshop has decided to offer discounts on multiple book purchases.
 
 One copy of any of the five books costs $8.
 
