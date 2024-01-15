@@ -130,7 +130,7 @@ Describe "Poker test cases" {
 
     It "with multiple decks, two players can have the same three of a kind, ties go to highest remaining cards" {
         $got  = Get-BestHand -Hands @(
-            "4S AH AS 7C AD",
+            "5S AH AS 7C AD",
             "4S AH AS 8C AD")
         $want = @("4S AH AS 8C AD")
     
@@ -202,9 +202,9 @@ Describe "Poker test cases" {
     
     It "both hands have a flush, tie goes to the high card, down to the last one if necessary" {
         $got  = Get-BestHand -Hands @(
-            "4H 7H 8H 9H 6H",
-            "2S 4S 5S 6S 7S")
-        $want = @("4H 7H 8H 9H 6H")
+            "2H 7H 8H 9H 6H",
+            "3S 5S 6S 7S 8S")
+        $want = @("2H 7H 8H 9H 6H")
     
         $got | Should -BeExactly $want
     }
@@ -313,6 +313,24 @@ Describe "Poker test cases" {
             "2H 3H 4H 5H 6H",
             "4D AD 3D 2D 5D")
         $want = @("2H 3H 4H 5H 6H")
+    
+        $got | Should -BeExactly $want
+    }
+
+    It "winning high card hand also has the lowest card" {
+        $got  = Get-BestHand -Hands @(
+            "2S 5H 6S 8D 7H",
+            "3S 4D 6D 8C 7S")
+        $want = @("2S 5H 6S 8D 7H")
+    
+        $got | Should -BeExactly $want
+    }
+
+    It "both hands have the same pair, high card wins" {
+        $got  = Get-BestHand -Hands @(
+            "4H 4S AH JC 3D",
+            "4C 4D AS 5D 6C")
+        $want = @("4H 4S AH JC 3D")
     
         $got | Should -BeExactly $want
     }

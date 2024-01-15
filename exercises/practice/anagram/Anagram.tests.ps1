@@ -74,7 +74,7 @@ Describe "Test Invoke-Anagram.ps1" {
     }
 
     It "does not detect a anagram if the original word is repeated" {
-        $got = Invoke-Anagram -Subject "go" -Candidates @("go Go GO")
+        $got = Invoke-Anagram -Subject "go" -Candidates @("goGoGO")
         $want = @()
 
         $got | Should -Be $want
