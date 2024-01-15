@@ -184,6 +184,14 @@ Describe "custom set test cases" {
 
             $got | Should -BeFalse
         }
+
+        It "equality ->  set is equal to a set constructed from an array with duplicates" {
+            $set1 = [CustomSet]::new(@(1))
+            $set2 = [CustomSet]::new(@(1, 1))
+            $got  = $set1 -eq $set2
+
+            $got | Should -BeFalse
+        }
     }
 
     Context "operation methods" {

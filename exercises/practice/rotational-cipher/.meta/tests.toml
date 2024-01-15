@@ -24,6 +24,9 @@ description = "rotate m by 13"
 [19f9eb78-e2ad-4da4-8fe3-9291d47c1709]
 description = "rotate n by 13 with wrap around alphabet"
 
+[a116aef4-225b-4da9-884f-e8023ca6408a]
+description = "rotate capital letters"
+
 [71b541bb-819c-4dc6-a9c3-132ef9bb737b]
 description = "rotate spaces"
 
