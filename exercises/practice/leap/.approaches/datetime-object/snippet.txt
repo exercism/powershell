@@ -1,0 +1,3 @@
+function Test-Leap([int] $year) {
+    (Get-Time -Year $year -Month 2 -Day 29).Month -eq 2
+}
