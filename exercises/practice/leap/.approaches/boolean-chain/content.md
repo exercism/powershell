@@ -13,9 +13,9 @@ If one of those condition return `true` then our chain will return `true`, but i
 
 You can visualize the chain like this:
 
-divisible by 4          | not divisible by 100 | divisible by 400   |
-false (short circuit)   |                      |                    | => false 
-true                    |      only one of these need to be true    | => true
-true                    |   false              |   false            | => false
+|divisible by 4          | not divisible by 100 | divisible by 400   |          |
+|------------------------|----------------------|--------------------|----------|
+|false (short circuit)   |                      |                    | => false |
+|true                    |either this is true   | or this to be true | => true  |
 
 [Arithmetic operators](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arithmetic_operators)
