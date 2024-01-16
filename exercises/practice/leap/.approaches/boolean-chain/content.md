@@ -17,5 +17,6 @@ You can visualize the chain like this:
 |------------------------|----------------------|--------------------|----------|
 |false (short circuit)   |                      |                    | => false |
 |true                    |either this is true   | or this to be true | => true  |
+|true                    |   false              |   false            | => false |
 
 [Arithmetic operators](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arithmetic_operators)
