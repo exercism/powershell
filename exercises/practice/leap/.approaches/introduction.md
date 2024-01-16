@@ -45,4 +45,4 @@ function Test-Leap([int] $year) {
 }
 ```
 
-For more information, check the [`built-in method` approach][approach-isleapyear-method].
+For more information, check the [`built-in method` approach][approach-built-in-method].
