@@ -1,0 +1,8 @@
+function ReverseString([char[]] $String) {
+    $last = $String.Count - 1
+    $mid  = [Math]::Ceiling($String.Count / 2)
+    for ($i = 0; $i -lt $mid; $i++) {
+        $String[$i], $String[$last - $i] = $String[$last - $i], $String[$i]
+    }
+    -join $String
+}

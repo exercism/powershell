@@ -1,0 +1,3 @@
+function ReverseString([string] $String) {
+    -join $String[$String.Length..0]
+}
