@@ -1,4 +1,4 @@
-# Using `Boolean logic`
+# Using `Boolean` chain
 
 ```powershell
 function Test-Leap([int] $year) {

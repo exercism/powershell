@@ -5,9 +5,11 @@ You can use a chain of Boolean expressions to tests for conditions.
 You can use a datetime object and test for condition of the month.
 Or you can "cheat" and use the built-in function.
 
+
 ## General guidance
 
 The goal of this exercise is to check if a year is a leap year by testing if it is divisible by `4`, `100` and `400`.
+
 
 ## Approach: Using `Boolean` chain
 
@@ -20,12 +22,13 @@ function Test-Leap([int] $year) {
 }
 ```
 
-For more information, check the [`Boolean logic` approach][approach-boolean-chain].
+For more information, check the [`Boolean` chain approach][approach-boolean-chain].
 
-## Approach: Using `datetime` object
+
+## Approach: Using `DateTime` object
 
 We know for a fact that in a leap year, the second month (February) has 29 days.
-For this approach we leverage this fact along with the cmdlet `Get-Time` to interact with a datetime object.
+For this approach we leverage this fact along with the cmdlet `Get-Date` to interact with a datetime object.
 
 ```powershell
 function Test-Leap([int] $year) {
@@ -33,11 +36,12 @@ function Test-Leap([int] $year) {
 }
 ```
 
-For more information, check the [`datetime object` approach][approach-datetime-object].
+For more information, check the [`DateTime` object approach][approach-datetime-object].
 
-## Approach: Using built-in `IsLeapYear` method
 
-Using the `DateTime` class, we can just utilize the `IsLeapYear` static method and check if a year is a leap year or not.
+## Approach: # Using `IsLeapYear` method
+
+Using the `DateTime` class, we can just utilize the built-in `IsLeapYear` static method and check if a year is leap or not.
 
 ```powershell
 function Test-Leap([int] $year) {
@@ -45,4 +49,4 @@ function Test-Leap([int] $year) {
 }
 ```
 
-For more information, check the [`built-in method` approach][approach-built-in-method].
+For more information, check the [`IsLeapYear` method approach][approach-built-in-method].
