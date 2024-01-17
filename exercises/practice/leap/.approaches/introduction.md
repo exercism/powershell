@@ -39,7 +39,7 @@ function Test-Leap([int] $year) {
 For more information, check the [`DateTime` object approach][approach-datetime-object].
 
 
-## Approach: # Using `IsLeapYear` method
+## Approach: Using `IsLeapYear` method
 
 Using the `DateTime` class, we can just utilize the built-in `IsLeapYear` static method and check if a year is leap or not.
 
@@ -50,3 +50,10 @@ function Test-Leap([int] $year) {
 ```
 
 For more information, check the [`IsLeapYear` method approach][approach-built-in-method].
+
+
+## Which approach to use?
+
+- The chain of boolean expressions should be the most efficient, as it proceeds from the most to least likely conditions and takes advantage of short-circuiting. It has a maximum of three checks. It is the fastest approach when testing a year that is not evenly divisible by 100 that is not a leap year. Since most years fit those conditions, it is overall the most efficient approach.
+
+- For idiomatic and convenience while coding, consider using the built-int `IsLeapYear` method despite it seems to be a "cheat" for the purpose of learning here.
