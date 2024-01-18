@@ -1,0 +1,36 @@
+{
+    "introduction": {
+      "authors": ["glaxxie"],
+      "contributors": ["erikschierboom"]
+    },
+    "approaches": [
+      {
+        "uuid": "158c23e8-a0dc-4049-816c-770a2d4c1499",
+        "slug": "built-in-reverse",
+        "title": "built-in reverse",
+        "blurb": "Using the built-in reverse method of the array class.",
+        "authors": ["glaxxie"]
+      },
+      {
+        "uuid": "359c607e-ed4b-4870-b90c-f6cfd6487827",
+        "slug": "join-range-operator",
+        "title": "join range operator",
+        "blurb": "Reverse the string using foreach loop.",
+        "authors": ["glaxxie"]
+      },
+      {
+        "uuid": "80f36bf0-07a4-434b-9049-a29d4dfe857a",
+        "slug": "string-builder",
+        "title": "string builder",
+        "blurb": "Build a new string using string builder.",
+        "authors": ["glaxxie"]
+      },
+      {
+        "uuid": "9890555f-89b1-4f8f-8efa-042f4ff05c7e",
+        "slug": "reverse-in-place",
+        "title": "reverse in place",
+        "blurb": "Reverse the char array in place.",
+        "authors": ["glaxxie"]
+      }
+    ]
+  } 
