@@ -8,7 +8,9 @@ Or we can manipulate the char array before returning it into the reversed string
 
 ## General guidance
 
-The goal of this exercise is to reverse a string.
+String is an immutable datatype, to reverse a string basically mean creating a new string.
+The most common way to create a new string without hardcoding it is to call the `-join` operator on an array of strings/chars (without argument follow it will default to empty space).
+You can also build up a string by concatenation, using `StringBuilder` or call the `ToString()` method, each have their own behavior and trade off.
 
 
 ## Approach: Using `range` operator and `-join`
