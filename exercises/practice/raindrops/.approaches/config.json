@@ -1,0 +1,29 @@
+{
+    "introduction": {
+      "authors": ["glaxxie"],
+      "contributors": []
+    },
+    "approaches": [
+      {
+        "uuid": "a546a1fd-de5d-4e67-b0b3-32b859a93c57",
+        "slug": "if-statements",
+        "title": "if statements",
+        "blurb": "Multiple if statements.",
+        "authors": ["glaxxie"]
+      },
+      {
+        "uuid": "9a42fa53-6317-4373-8142-73e332fdee30",
+        "slug": "switch-statement",
+        "title": "switch statement",
+        "blurb": "Utilizing switch statement.",
+        "authors": ["glaxxie"]
+      },
+      {
+        "uuid": "82dcf626-c254-4d01-8ffc-766270ab8778",
+        "slug": "ordered-hashtable",
+        "title": "ordered hashtable",
+        "blurb": "Utilizing ordered hastable and foreach loop.",
+        "authors": ["glaxxie"]
+      }
+    ]
+  } 
