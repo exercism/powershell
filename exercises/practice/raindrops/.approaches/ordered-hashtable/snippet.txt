@@ -1,0 +1,7 @@
+$table = [ordered]@{3 = "Pling"; 5 = "Plang"; 7 = "Plong"}
+$sounds = foreach ($key in $table.Keys) {
+    if ($Number % $key -eq 0) {
+        $table.$key
+    }
+}
+$sounds.Count -eq 0 ? "$Number" : -join $sounds

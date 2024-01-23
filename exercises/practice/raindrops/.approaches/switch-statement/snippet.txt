@@ -1,0 +1,7 @@
+$sounds = switch (0) {
+        ($number % 3) {"Pling"}
+        ($number % 5) {"Plang"}
+        ($number % 7) {"Plong"}
+        Default {$number}
+    }
+-join $sounds
