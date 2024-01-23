@@ -1,7 +1,7 @@
 # Introduction
 
-Raindrops exercise is a twist of the popular `FizzBuzz` problem.
-There are a couple ways to solve it idiomatic in PowerShell.
+Raindrops exercise is a twist on the popular [`FizzBuzz`](https://en.wikipedia.org/wiki/Fizz_buzz) problem.
+There are a couple ways to solve it idiomatically in PowerShell.
 You can use a series of `if` statements.
 Or you can leverage the useful `switch` statement.
 Or try looping through the keys of a `hashtable` and looking up the values.
@@ -14,10 +14,11 @@ For determining that, you can use the `modulus` operator (`%`).
 
 *Note* : The order of testing is crucial in this exercise to arrive to the correct result.
 
+
 ## Approach: Using `if` statements
 
 This is the most common approach to solve this exercise.
-The result string being built up by a succession of `if` statements to check of the input can be divided cleanly by 3, 5 and 7.
+The result string is built up by a succession of `if` statements checking if the input can be divided cleanly by 3, 5, and 7.
 
 ```powershell
 function Raindrops() {
@@ -38,7 +39,7 @@ For more information, check the [`if` statements approach][approach-if-statement
 
 ## Approach: Using `switch` statement
 
-Structurely, this approach is very similar to the `if` statements approach, however the `switch` statement lead to a cleaner syntax and a straight forward path to the result.
+Structurally, this approach is very similar to the `if` statements approach, however the `switch` statement leads to a cleaner syntax and a straight forward path to the result.
 
 ```powershell
 function Raindrops() {
@@ -83,9 +84,19 @@ function Raindrops() {
 }
 ```
 
-For more information, check the [`hashtable` approach][approach-ordered-hashtable].
+For more information, check the [`ordered hashtable` approach][approach-ordered-hashtable].
 
 
 ## Which approach to use?
 
-- The if statements approach is simple and straight to the point, however it has drawback from needing to create new string every time you do string concatenation.
+- The `if` statements approach is simple and straight to the point, however it has the drawback of needing to create a new string every time you do string concatenation.
+
+- The `ordered hashtable` approach is also quite simple, but working with `ordered hashtable` to retrieve value is quite a bit different than normal hashtable. Bracket notation is used for accessing index in this case instead of accessing key value, so dot notation is recommended.
+Similar to `if` statements approach, this approach required an additional check at the end.
+
+- The `switch` statement is the fastest of the three based on a quick benchmark run. The simplicity of the syntax and the flexibility of `switch` statement lends itself very well to solve this exercise idiomatically.
+
+
+[approach-if-statements]: https://exercism.org/tracks/powershell/exercises/raindrops/approaches/if-statements
+[approach-switch-statement]: https://exercism.org/tracks/powershell/exercises/raindrops/approaches/switch-statement
+[approach-ordered-hashtable]: https://exercism.org/tracks/powershell/exercises/raindrops/approaches/ordered-hashtable
