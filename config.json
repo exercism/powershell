@@ -985,6 +985,14 @@
         "difficulty": 5
       },
       {
+        "slug": "linked-list",
+        "name": "Linked List",
+        "uuid": "9650379f-9c97-4ba6-8fd1-c548642c8a0a",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "rectangles",
         "name": "Rectangles",
         "uuid": "0c624e88-1baf-4760-b0ff-6a138e62113f",
