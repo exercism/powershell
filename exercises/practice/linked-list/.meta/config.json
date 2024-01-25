@@ -1,0 +1,18 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "LinkedList.ps1"
+    ],
+    "test": [
+      "LinkedList.tests.ps1"
+    ],
+    "example": [
+      ".meta/LinkedList.example.ps1"
+    ]
+  },
+  "blurb": "Implement a doubly linked list.",
+  "source": "Classic computer science topic"
+}
