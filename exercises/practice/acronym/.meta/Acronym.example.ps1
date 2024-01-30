@@ -17,5 +17,5 @@ Function Get-Acronym() {
     Param (
         [string]$Phrase
     )
-    return ([regex]::Matches($Phrase, "\p{L}+'?\p{L}*") | ForEach-Object { $_.Value[0] }) -join ""
+    (-join ([regex]::Matches($Phrase, "\p{L}+'?\p{L}*") | ForEach-Object { ($_.Value[0]) })).ToUpper()
 }
