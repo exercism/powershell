@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "SgfParsing.ps1"
+    ],
+    "test": [
+      "SgfParsing.tests.ps1"
+    ],
+    "example": [
+      ".meta/SgfParsing.example.ps1"
+    ]
+  },
+  "blurb": "Parsing a Smart Game Format string."
+}
