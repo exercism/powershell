@@ -1089,6 +1089,14 @@
         "difficulty": 8
       },
       {
+        "slug": "sgf-parsing",
+        "name": "SGF Parsing",
+        "uuid": "d7163f3c-069d-451c-858c-a58a112c2a87",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 9
+      },
+      {
         "slug": "scale-generator",
         "name": "Scale Generator",
         "uuid": "c2eaec94-826e-44e2-b92d-827a713dd373",
