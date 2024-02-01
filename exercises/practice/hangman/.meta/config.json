@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "Hangman.ps1"
+    ],
+    "test": [
+      "Hangman.tests.ps1"
+    ],
+    "example": [
+      ".meta/Hangman.example.ps1"
+    ]
+  },
+  "blurb": "Implement the logic of the hangman game using functional reactive programming."
+}

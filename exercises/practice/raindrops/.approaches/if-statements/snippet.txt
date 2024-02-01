@@ -1,0 +1,5 @@
+$sounds = ""
+if ($Number % 3 -eq 0) {$sounds += "Pling"}
+if ($Number % 5 -eq 0) {$sounds += "Plang"}
+if ($Number % 7 -eq 0) {$sounds += "Plong"}
+$sounds.Length -eq 0 ? "$Number" : $sounds

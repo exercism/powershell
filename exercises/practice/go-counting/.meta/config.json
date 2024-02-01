@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "GoCounting.ps1"
+    ],
+    "test": [
+      "GoCounting.tests.ps1"
+    ],
+    "example": [
+      ".meta/GoCounting.example.ps1"
+    ]
+  },
+  "blurb": "Count the scored points on a Go board."
+}

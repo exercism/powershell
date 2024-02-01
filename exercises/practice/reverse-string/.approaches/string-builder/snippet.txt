@@ -1,0 +1,7 @@
+function ReverseString([string] $String) {
+    $strBuilder = [System.Text.StringBuilder]::new()
+    foreach ($i in ($String.Length - 1)..0) {
+        [void] $strBuilder.Append($String[$i])
+    }
+    $strBuilder.ToString()
+}

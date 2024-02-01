@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "ErrorHandling.ps1"
+    ],
+    "test": [
+      "ErrorHandling.tests.ps1"
+    ],
+    "example": [
+      ".meta/ErrorHandling.example.ps1"
+    ]
+  },
+  "blurb": "Implement various kinds of error handling and resource management."
+}

@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "AffineCipher.ps1"
+    ],
+    "test": [
+      "AffineCipher.tests.ps1"
+    ],
+    "example": [
+      ".meta/AffineCipher.example.ps1"
+    ]
+  },
+  "blurb": "Create an implementation of the Affine cipher, an ancient encryption algorithm from the Middle East.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Affine_cipher"
+}

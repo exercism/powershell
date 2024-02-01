@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "Satellite.ps1"
+    ],
+    "test": [
+      "Satellite.tests.ps1"
+    ],
+    "example": [
+      ".meta/Satellite.example.ps1"
+    ]
+  },
+  "blurb": "Rebuild binary trees from pre-order and in-order traversals."
+}

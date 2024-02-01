@@ -1,0 +1,3 @@
+function Test-Leap([int] $year) {
+    [DateTime]::IsLeapYear($year)
+}

@@ -1,0 +1,29 @@
+{
+    "introduction": {
+      "authors": ["glaxxie"],
+      "contributors": []
+    },
+    "approaches": [
+      {
+        "uuid": "2d286acf-dc3c-493d-839e-45ca17e2112a",
+        "slug": "boolean-chain",
+        "title": "Boolean chain",
+        "blurb": "Use a chain of boolean expressions.",
+        "authors": ["glaxxie"]
+      },
+      {
+        "uuid": "9456f386-9355-4c77-b222-5cc3441a8d00",
+        "slug": "datetime-object",
+        "title": "datetime object",
+        "blurb": "Use datetime object and its property.",
+        "authors": ["glaxxie"]
+      },
+      {
+        "uuid": "4716c9ec-ad99-46fa-bf73-1332c648f1b4",
+        "slug": "built-in-method",
+        "title": "built-in method",
+        "blurb": "Use IsLeapYear method of the DateTime class.",
+        "authors": ["glaxxie"]
+      }
+    ]
+  }

@@ -1,0 +1,5 @@
+function ReverseString([string] $String) {
+    $charArray = $String.ToCharArray()
+    [array]::Reverse($charArray)
+    -join $charArray
+}

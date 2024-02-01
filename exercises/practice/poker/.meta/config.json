@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "Poker.ps1"
+    ],
+    "test": [
+      "Poker.tests.ps1"
+    ],
+    "example": [
+      ".meta/Poker.example.ps1"
+    ]
+  },
+  "blurb": "Pick the best hand(s) from a list of poker hands.",
+  "source": "Inspired by the training course from Udacity.",
+  "source_url": "https://www.udacity.com/course/design-of-computer-programs--cs212"
+}

@@ -586,6 +586,22 @@
         "difficulty": 2
       },
       {
+        "slug": "pop-count",
+        "name": "Pop Count",
+        "uuid": "65fa1796-64de-4da7-8050-41b2a9addd9c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "error-handling",
+        "name": "Error Handling",
+        "uuid": "1813c9f6-a653-43b1-a835-5b9edcbd1c68",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "wordy",
         "name": "Wordy",
         "uuid": "5c84e3b4-d6d1-42e5-9614-c0c394a6b08f",
@@ -733,6 +749,14 @@
         "difficulty": 3
       },
       {
+        "slug": "robot-simulator",
+        "name": "Robot Simulator",
+        "uuid": "8e2f7042-da01-42ec-84ce-38930ed6e8b3",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "crypto-square",
         "name": "Crypto Square",
         "uuid": "169d1a37-1f0f-42ea-9b1d-8cff7e6f2ffc",
@@ -873,6 +897,30 @@
         "difficulty": 4
       },
       {
+        "slug": "hangman",
+        "name": "Hangman",
+        "uuid": "20058254-0d41-486f-99d9-d7ee3f3ccb44",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
+        "slug": "affine-cipher",
+        "name": "Affine Cipher",
+        "uuid": "0db7efd5-2ece-481a-b706-0e011aad52aa",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "markdown",
+        "name": "Markdown",
+        "uuid": "125b3f79-6485-4e5a-af0c-0238f4128dc6",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "change",
         "name": "Change",
         "uuid": "352d9205-5f01-4755-8844-e2a44d7b667b",
@@ -937,12 +985,28 @@
         "difficulty": 5
       },
       {
+        "slug": "linked-list",
+        "name": "Linked List",
+        "uuid": "9650379f-9c97-4ba6-8fd1-c548642c8a0a",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "ledger",
         "name": "Ledger",
         "uuid": "20bad781-7c4b-4133-8ce3-2160ab12a3a0",
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
+      },
+      {
+        "slug": "rectangles",
+        "name": "Rectangles",
+        "uuid": "0c624e88-1baf-4760-b0ff-6a138e62113f",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
       },
       {
         "slug": "two-bucket",
@@ -953,9 +1017,49 @@
         "difficulty": 6
       },
       {
+        "slug": "word-search",
+        "name": "Word Search",
+        "uuid": "246b4736-2a13-4298-a989-fb7ebc394c1b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
+      },
+      {
+        "slug": "knapsack",
+        "name": "Knapsack",
+        "uuid": "e59c633c-f5d1-45e6-bfb3-b32f0bb12f18",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
+      },
+      {
+        "slug": "bowling",
+        "name": "Bowling",
+        "uuid": "f374b4a0-d2a2-40c2-bd41-215b0fd64316",
+        "practices": ["classes"],
+        "prerequisites": [],
+        "difficulty": 6
+      },
+      {
+        "slug": "poker",
+        "name": "Poker",
+        "uuid": "12a4321d-886e-437f-8bf8-fc5d70b85c5c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 7
+      },
+      {
         "slug": "book-store",
         "name": "Book Store",
         "uuid": "890df47f-19d8-406a-b124-9d0613db486d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 7
+      },
+      {
+        "slug": "satellite",
+        "name": "Satellite",
+        "uuid": "8f4635fb-a904-4cbf-badb-859d4aa9f84b",
         "practices": [],
         "prerequisites": [],
         "difficulty": 7
@@ -980,6 +1084,14 @@
         "slug": "zebra-puzzle",
         "name": "Zebra Puzzle",
         "uuid": "66946bd7-5b80-4889-9de6-c0a02fa9df92",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 8
+      },
+      {
+        "slug": "go-counting",
+        "name": "Go Counting",
+        "uuid": "11cba495-68a1-4871-88cd-48a6acc7b4f4",
         "practices": [],
         "prerequisites": [],
         "difficulty": 8

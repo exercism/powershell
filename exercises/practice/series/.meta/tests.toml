@@ -24,6 +24,9 @@ description = "slices of two overlap"
 [8e17148d-ba0a-4007-a07f-d7f87015d84c]
 description = "slices can include duplicates"
 
+[bd5b085e-f612-4f81-97a8-6314258278b0]
+description = "slices of a long series"
+
 [6d235d85-46cf-4fae-9955-14b6efef27cd]
 description = "slice length is too large"
 

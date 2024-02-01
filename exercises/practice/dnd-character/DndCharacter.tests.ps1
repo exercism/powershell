@@ -146,10 +146,13 @@ Describe "DnD Character test cases" {
 
         It "each ability is calculated once" {
             $character = [Character]::New()
-            $got  = $character.Charisma
-            $want = $character.Charisma
 
-            $got | Should -BeExactly $want
+            $character.Strength     | Should -BeExactly $character.Strength
+            $character.Dexterity    | Should -BeExactly $character.Dexterity
+            $character.Constitution | Should -BeExactly $character.Constitution
+            $character.Intelligence | Should -BeExactly $character.Intelligence
+            $character.Wisdom       | Should -BeExactly $character.Wisdom
+            $character.Charisma     | Should -BeExactly $character.Charisma
         }
     }
 }

@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "Rectangles.ps1"
+    ],
+    "test": [
+      "Rectangles.tests.ps1"
+    ],
+    "example": [
+      ".meta/Rectangles.example.ps1"
+    ]
+  },
+  "blurb": "Count the rectangles in an ASCII diagram."
+}
