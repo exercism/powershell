@@ -1,5 +1,5 @@
 BeforeAll {
-    . "./PopCount.ps1"
+    . "./EliudsEggs.ps1"
 }
 
 Describe "PopCount test cases" {
