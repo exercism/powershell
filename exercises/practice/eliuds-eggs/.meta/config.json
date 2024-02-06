@@ -4,13 +4,13 @@
   ],
   "files": {
     "solution": [
-      "PopCount.ps1"
+      "EliudsEggs.ps1"
     ],
     "test": [
-      "PopCount.tests.ps1"
+      "EliudsEggs.tests.ps1"
     ],
     "example": [
-      ".meta/PopCount.example.ps1"
+      ".meta/EliudsEggs.example.ps1"
     ]
   },
   "blurb": "Help Eliud count the number of eggs in her chicken coop by counting the number of 1 bits in a binary representation.",
