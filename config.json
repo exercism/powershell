@@ -1057,6 +1057,14 @@
         "difficulty": 7
       },
       {
+        "slug": "rest-api",
+        "name": "REST API",
+        "uuid": "3eee7ed8-09ca-4072-8bd9-2bbc682a8dfb",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 7
+      },
+      {
         "slug": "zipper",
         "name": "Zipper",
         "uuid": "ed6dc7be-1a8b-4261-a28a-0e4fe06ef466",
