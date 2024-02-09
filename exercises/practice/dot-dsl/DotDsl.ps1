@@ -28,10 +28,6 @@ Class Edge {
         Throw "Please implement this class"
     }
 
-    Edge(){
-        Throw "Please implement this class"
-    }
-
     [bool] Equals() {
         Throw "Please implement this fucntion"
     }
