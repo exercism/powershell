@@ -1,0 +1,29 @@
+{
+    "introduction": {
+      "authors": ["glaxxie"],
+      "contributors": []
+    },
+    "approaches": [
+      {
+        "uuid": "51d10f15-e73c-48aa-b4e5-47bac06f5f32",
+        "slug": "app1",
+        "title": "app1",
+        "blurb": "temp",
+        "authors": ["glaxxie"]
+      },
+      {
+        "uuid": "8b4ab496-d06d-471f-b611-fe73daa48730",
+        "slug": "app2",
+        "title": "app2",
+        "blurb": "temp",
+        "authors": ["glaxxie"]
+      },
+      {
+        "uuid": "658db529-103b-4a99-8e1b-43dd366d4d0b",
+        "slug": "app3",
+        "title": "app3",
+        "blurb": "temp",
+        "authors": ["glaxxie"]
+      }
+    ]
+  }
