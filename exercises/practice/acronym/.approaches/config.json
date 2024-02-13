@@ -5,24 +5,24 @@
     },
     "approaches": [
       {
-        "uuid": "51d10f15-e73c-48aa-b4e5-47bac06f5f32",
-        "slug": "app1",
-        "title": "app1",
-        "blurb": "temp",
+        "uuid": "6be5cf7e-e4d4-4a2e-9433-02adc8c18400",
+        "slug": "regular-expression",
+        "title": "Regular expression",
+        "blurb": "Approach using regular expression to deal with string",
         "authors": ["glaxxie"]
       },
       {
-        "uuid": "8b4ab496-d06d-471f-b611-fe73daa48730",
-        "slug": "app2",
-        "title": "app2",
-        "blurb": "temp",
+        "uuid": "5b0b8952-62ed-4413-ae90-e4ea22f97fa4",
+        "slug": "string-methods",
+        "title": "String methods",
+        "blurb": "Approach using various string methods",
         "authors": ["glaxxie"]
       },
       {
-        "uuid": "658db529-103b-4a99-8e1b-43dd366d4d0b",
-        "slug": "app3",
-        "title": "app3",
-        "blurb": "temp",
+        "uuid": "3bb0e2ce-4c12-4cdf-aa61-4c6a1436a2a8",
+        "slug": "loop-boolean",
+        "title": "Loop and boolean",
+        "blurb": "Approach using foreach loop and boolean flag",
         "authors": ["glaxxie"]
       }
     ]
