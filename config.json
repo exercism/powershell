@@ -1001,6 +1001,14 @@
         "difficulty": 5
       },
       {
+        "slug": "ledger",
+        "name": "Ledger",
+        "uuid": "20bad781-7c4b-4133-8ce3-2160ab12a3a0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "rectangles",
         "name": "Rectangles",
         "uuid": "0c624e88-1baf-4760-b0ff-6a138e62113f",
