@@ -1,0 +1,29 @@
+{
+    "introduction": {
+      "authors": ["glaxxie"],
+      "contributors": []
+    },
+    "approaches": [
+      {
+        "uuid": "6be5cf7e-e4d4-4a2e-9433-02adc8c18400",
+        "slug": "regular-expression",
+        "title": "Regular expression",
+        "blurb": "Approach using regular expression to deal with string",
+        "authors": ["glaxxie"]
+      },
+      {
+        "uuid": "5b0b8952-62ed-4413-ae90-e4ea22f97fa4",
+        "slug": "string-methods",
+        "title": "String methods",
+        "blurb": "Approach using various string methods",
+        "authors": ["glaxxie"]
+      },
+      {
+        "uuid": "3bb0e2ce-4c12-4cdf-aa61-4c6a1436a2a8",
+        "slug": "loop-boolean",
+        "title": "Loop and boolean",
+        "blurb": "Approach using foreach loop and boolean flag",
+        "authors": ["glaxxie"]
+      }
+    ]
+  }
