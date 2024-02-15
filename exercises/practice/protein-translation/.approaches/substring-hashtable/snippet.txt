@@ -1,0 +1,7 @@
+    for ($i = 0; $i -lt $Strand.Length; $i+=3) {
+        $Protein = $codonsToProteins[$Strand.Substring($i, 3)]
+        if ("STOP" -eq $Protein) {break}
+        if ($null -eq $Protein) {Throw "error: Invalid codon"}
+        $Proteins += $Protein
+    }
+    $Proteins

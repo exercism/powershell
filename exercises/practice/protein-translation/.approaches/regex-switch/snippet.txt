@@ -1,0 +1,8 @@
+$codons = $Strand -split "(\w{3})" -ne ""
+    switch -Regex ($codons) {
+        "AUG"           { "Methionine" }
+        "UU[U|C]"       { "Phenylalanine" }
+        "UU[A|G]"       { "Leucine" }
+        "UC[U|C|A|G]"   { "Serine" }
+        "UA[U|C]"       { "Tyrosine" }
+        "UG[U|C]"       { "Cysteine" }
