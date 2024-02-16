@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "RestApi.ps1"
+    ],
+    "test": [
+      "RestApi.tests.ps1"
+    ],
+    "example": [
+      ".meta/RestApi.example.ps1"
+    ]
+  },
+  "blurb": "Implement a RESTful API for tracking IOUs."
+}
