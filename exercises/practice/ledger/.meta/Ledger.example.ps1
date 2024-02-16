@@ -36,7 +36,8 @@ Class LedgerEntry{
         $dateFormat  = $this.GetDateFormat($Currency, $Locale)
 
         $dateStr  = $this.Date.ToString($dateFormat)
-        $moneyStr = ($this.Change / 100).ToString("C2", [cultureinfo]::new($Locale))
+        $culture = [CultureInfo]::new($Locale)
+        $moneyStr = ($this.Change / 100).ToString("C2", $culture)
 
         if ($Currency -eq "EUR" -and $Locale -eq "en-US") {
             $moneyStr = $moneyStr -replace '\$', '€'
