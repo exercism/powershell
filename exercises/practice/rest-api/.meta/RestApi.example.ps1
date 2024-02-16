@@ -15,7 +15,7 @@ Please read instructions for more details about the methods, their payload forma
 $data = @{ 
     users = @(
         @{name = "Adam"; owes = @{}; owed_by = @{}; balance = 5.0}
-        @{name = "Bob"  ; owes = @{}; owed_by = @{}; balance = 3.0}
+        @{name = "Bob" ; owes = @{}; owed_by = @{}; balance = 3.0}
     ) 
 }
 
