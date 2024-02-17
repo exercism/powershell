@@ -42,7 +42,7 @@ Class LedgerEntry{
             $moneyStr = $moneyStr -replace '\$', '€'
         }
         if ($Locale -eq "nl-NL") {
-            $currency = $Currency -eq "USD" ? '$' : '€'
+            $currency = $Currency -eq "USD" ? "`$" : '€'
             $space = $this.Change -ge 0 ? " " : " -"
             $moneyStr = $moneyStr.Replace(',', '*').Replace('.', ',').Replace('*', '.')
             $moneyStr = $moneyStr.Trim("()")
