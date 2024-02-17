@@ -18,10 +18,6 @@ jobs:
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
 
-      - uses: actions/setup-dotnet@4d6c8fcf3c8f7a60068d26b594648e99df24cee3
-        with:
-            dotnet-version: "7.0.100"
-
       - name: Run exercism/powershell ci (runs tests) for all exercises
         shell: pwsh
         run: bin/run-tests.ps1

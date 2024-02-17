@@ -36,14 +36,19 @@ Class LedgerEntry{
         $dateFormat  = $this.GetDateFormat($Currency, $Locale)
 
         $dateStr  = $this.Date.ToString($dateFormat)
-        $culture = [CultureInfo]::new($Locale)
-        $moneyStr = ($this.Change / 100).ToString("C2", $culture)
+        $moneyStr = ($this.Change / 100).ToString("C2")
 
-        if ($Currency -eq "EUR" -and $Locale -eq "en-US") {
+        if ($Currency -eq "EUR") {
             $moneyStr = $moneyStr -replace '\$', '€'
         }
-        if ($Currency -eq "USD" -and $Locale -eq "nl-NL") {
-            $moneyStr = $moneyStr -replace '€', '$'
+        if ($Locale -eq "nl-NL") {
+            $moneyStr = $moneyStr.Replace(",", "*").Replace(".", ",").Replace("*", ".")
+            if ($this.Change -ge 0) {
+                $moneyStr = $moneyStr[0] + " " + $moneyStr.Substring(1)
+            }else {
+                $moneyStr = $moneyStr.Trim("()")
+                $moneyStr = $moneyStr[0] + " -" + $moneyStr.Substring(1)
+            }
         }
         if ($this.Desc.Length -gt 25) {
             $this.Desc = $this.Desc.Substring(0,22) + "..."
