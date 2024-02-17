@@ -42,13 +42,11 @@ Class LedgerEntry{
             $moneyStr = $moneyStr -replace '\$', '€'
         }
         if ($Locale -eq "nl-NL") {
-            $moneyStr = $moneyStr.Replace(",", "*").Replace(".", ",").Replace("*", ".")
-            if ($this.Change -ge 0) {
-                $moneyStr = $moneyStr[0] + " " + $moneyStr.Substring(1)
-            }else {
-                $moneyStr = $moneyStr.Trim("()")
-                $moneyStr = $moneyStr[0] + " -" + $moneyStr.Substring(1)
-            }
+            $currency = $Currency -eq "USD" ? '$' : '€'
+            $space = $this.Change -ge 0 ? " " : " -"
+            $moneyStr = $moneyStr.Replace(',', '*').Replace('.', ',').Replace('*', '.')
+            $moneyStr = $moneyStr.Trim("()")
+            $moneyStr = $currency + $space + $moneyStr.Substring(1)
         }
         if ($this.Desc.Length -gt 25) {
             $this.Desc = $this.Desc.Substring(0,22) + "..."
