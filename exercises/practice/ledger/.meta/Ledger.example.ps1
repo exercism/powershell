@@ -37,6 +37,7 @@ Class LedgerEntry{
 
         $dateStr  = $this.Date.ToString($dateFormat)
         $moneyStr = ($this.Change / 100).ToString("C2")
+        $moneyStr = "$moneyStr"
 
         $sign = $Currency -eq "USD" ? [char]0x0024 : [char]0x20AC
         $moneyStr = $moneyStr.Replace([char]0x0024, $sign)
