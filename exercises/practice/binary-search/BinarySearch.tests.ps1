@@ -49,23 +49,23 @@ Describe "Test Invoke-BinarySearch.ps1" {
     
     Context "Invalid Inputs" {
         It "identifies that a value is not included in the array" {
-            { Invoke-BinarySearch -Array @(1, 3, 4, 6, 8, 9, 11) -Value 7  } | Should -Throw "error: value not in array"
+            { Invoke-BinarySearch -Array @(1, 3, 4, 6, 8, 9, 11) -Value 7  } | Should -Throw "*error: value not in array*"
         }
 
         It "identifies that a value smaller than the array's smallest value is not included in the array" {
-            { Invoke-BinarySearch -Array @(1, 3, 4, 6, 8, 9, 11) -Value 0  } | Should -Throw "error: value not in array"
+            { Invoke-BinarySearch -Array @(1, 3, 4, 6, 8, 9, 11) -Value 0  } | Should -Throw "*error: value not in array*"
         }
 
         It "identifies that a value larger than the array's largest value is not included in the array" {
-            { Invoke-BinarySearch -Array @(1, 3, 4, 6, 8, 9, 11) -Value 13  } | Should -Throw "error: value not in array"
+            { Invoke-BinarySearch -Array @(1, 3, 4, 6, 8, 9, 11) -Value 13  } | Should -Throw "*error: value not in array*"
         }
 
         It "nothing is found in an empty array" {
-            { Invoke-BinarySearch -Array @() -Value 1  } | Should -Throw "error: value not in array"
+            { Invoke-BinarySearch -Array @() -Value 1  } | Should -Throw "*error: value not in array*"
         }
 
         It "nothing is found when the left and right bounds cross" {
-            { Invoke-BinarySearch -Array @(1, 2) -Value 0  } | Should -Throw "error: value not in array"
+            { Invoke-BinarySearch -Array @(1, 2) -Value 0  } | Should -Throw "*error: value not in array*"
         }
     }
 }

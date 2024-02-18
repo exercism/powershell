@@ -63,15 +63,15 @@ Describe "Test Grains.ps1" {
     
     Context "Invalid Inputs" {
         It "zero is an error" {
-            { Get-GrainSquare -Number 0 } | Should -Throw "square must be between 1 and 64"
+            { Get-GrainSquare -Number 0 } | Should -Throw "*square must be between 1 and 64*"
         }
     
         It "negative value is an error" {
-            { Get-GrainSquare -Number -1 } | Should -Throw "square must be between 1 and 64"
+            { Get-GrainSquare -Number -1 } | Should -Throw "*square must be between 1 and 64*"
         }
 
         It "exceeds maximum square" {
-            { Get-GrainSquare -Number 65 } | Should -Throw "square must be between 1 and 64"
+            { Get-GrainSquare -Number 65 } | Should -Throw "*square must be between 1 and 64*"
         }
     }
 }

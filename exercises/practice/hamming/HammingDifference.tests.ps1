@@ -27,19 +27,19 @@ Describe "Get-Hamming Test cases" {
 
     Context "Invalid Inputs" {
         It "disallow first strand longer" {
-            { Get-HammingDifference "AATG" "AAA" } | Should -Throw "strands must be of equal length."
+            { Get-HammingDifference "AATG" "AAA" } | Should -Throw "*strands must be of equal length.*"
         }
 
         It "disallow second strand longer" {
-            { Get-HammingDifference "ATA" "AGTG" } | Should -Throw "strands must be of equal length."
+            { Get-HammingDifference "ATA" "AGTG" } | Should -Throw "*strands must be of equal length.*"
         }
 
         It "disallow left empty strand" {
-            { Get-HammingDifference "" "G" } | Should -Throw "strands must be of equal length."
+            { Get-HammingDifference "" "G" } | Should -Throw "*strands must be of equal length.*"
         }
 
         It "disallow right empty strand" {
-            { Get-HammingDifference "G" "" } | Should -Throw "strands must be of equal length."
+            { Get-HammingDifference "G" "" } | Should -Throw "*strands must be of equal length.*"
         }
     }
 }

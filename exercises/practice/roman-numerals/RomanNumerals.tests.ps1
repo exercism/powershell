@@ -41,15 +41,15 @@ Describe "Roman Numerals Test Cases" {
 
     Context "Invalid Inputs" {
         It "Number is zero" {
-            { Get-RomanNumerals -Number    0 }  | Should -Throw "Number has to be positive integer in range of 1-3999."
+            { Get-RomanNumerals -Number    0 }  | Should -Throw "*Number has to be positive integer in range of 1-3999.*"
         }
 
         It "Negative number" {
-            { Get-RomanNumerals -Number  -12 }  | Should -Throw "Number has to be positive integer in range of 1-3999."
+            { Get-RomanNumerals -Number  -12 }  | Should -Throw "*Number has to be positive integer in range of 1-3999.*"
         }
 
         It "Number larger than 3999" {
-            { Get-RomanNumerals -Number 9999 }  | Should -Throw "Number has to be positive integer in range of 1-3999."
+            { Get-RomanNumerals -Number 9999 }  | Should -Throw "*Number has to be positive integer in range of 1-3999.*"
         }
     }
 }

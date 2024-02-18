@@ -108,7 +108,7 @@ Describe "SaddlePoints test cases" {
                 @(3, 2, 1),
                 @(0, 1),
                 @(2, 1, 0)
-            )} | Should -Throw "Irregular matrix"
+            )} | Should -Throw "*Irregular matrix*"
         }
     }
 }

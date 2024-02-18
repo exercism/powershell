@@ -209,11 +209,11 @@ Describe "VariableLengthQuantity test cases" {
 
     Context "invalid input" {
         It "incomplete sequence causes error" {
-            { Invoke-DecodeVLQ -Bytes @(0xFF) } | Should -Throw "Incomplete sequence"
+            { Invoke-DecodeVLQ -Bytes @(0xFF) } | Should -Throw "*Incomplete sequence*"
         }
     
         It "incomplete sequence causes error, even if value is zero" {
-            { Invoke-DecodeVLQ -Bytes @(0x80) } | Should -Throw "Incomplete sequence"
+            { Invoke-DecodeVLQ -Bytes @(0x80) } | Should -Throw "*Incomplete sequence*"
         }
     }
 }

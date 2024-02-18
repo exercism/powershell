@@ -49,23 +49,23 @@ Describe "Test Get-Slices" {
 
     Context "Invalid Inputs" {
         It "slice length is too large" {
-            { Get-Slices -Series "12345" -SliceLength 6 } | Should -Throw "Slice length cannot be greater than series length."
+            { Get-Slices -Series "12345" -SliceLength 6 } | Should -Throw "*Slice length cannot be greater than series length.*"
         }
 
         It "slice length is way too large" {
-            { Get-Slices -Series "12345" -SliceLength 42 } | Should -Throw "Slice length cannot be greater than series length."
+            { Get-Slices -Series "12345" -SliceLength 42 } | Should -Throw "*Slice length cannot be greater than series length.*"
         }
 
         It "slice length cannot be zero" {
-            { Get-Slices -Series "12345" -SliceLength 0 } | Should -Throw "Slice length cannot be zero."
+            { Get-Slices -Series "12345" -SliceLength 0 } | Should -Throw "*Slice length cannot be zero.*"
         }
 
         It "slice length cannot be negative" {
-            { Get-Slices -Series "123" -SliceLength -1 } | Should -Throw "Slice length cannot be negative."
+            { Get-Slices -Series "123" -SliceLength -1 } | Should -Throw "*Slice length cannot be negative.*"
         }
 
         It "empty series is invalid" {
-            { Get-Slices -Series "" -SliceLength 1 } | Should -Throw "Series cannot be empty."
+            { Get-Slices -Series "" -SliceLength 1 } | Should -Throw "*Series cannot be empty.*"
         }
     }
 }

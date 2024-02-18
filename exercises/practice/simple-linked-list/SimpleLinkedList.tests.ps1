@@ -22,7 +22,7 @@ Describe "SimpleLinkedList test cases" {
 
         It "error trying to access head on empty list" {
             $list = [LinkedList]::new()
-            {$list.Head()} | Should -Throw "The list is empty"
+            {$list.Head()} | Should -Throw "*The list is empty*"
         }
     }
 

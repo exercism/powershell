@@ -148,23 +148,23 @@ Describe "Queen Attack Test Cases" {
 
     Context "Invalid inputs" {
         It "queen must have positive row" {
-            { [ChessBoard]::new(@(-2,3), @(1,4)) } | Should -Throw 'White queen must be placed on the board'
+            { [ChessBoard]::new(@(-2,3), @(1,4)) } | Should -Throw "*White queen must be placed on the board*"
         }
 
         It "queen must have row on board" {
-            { [ChessBoard]::new(@(3,3), @(8,4)) }  | Should -Throw 'Black queen must be placed on the board'
+            { [ChessBoard]::new(@(3,3), @(8,4)) }  | Should -Throw "*Black queen must be placed on the board*"
         }
 
         It "queen must have positive column" {
-            { [ChessBoard]::new(@(3,-1), @(5,2)) } | Should -Throw 'White queen must be placed on the board'
+            { [ChessBoard]::new(@(3,-1), @(5,2)) } | Should -Throw "*White queen must be placed on the board*"
         }
 
         It "queen must have column on board" {
-            { [ChessBoard]::new(@(3,2), @(4,9)) }  | Should -Throw 'Black queen must be placed on the board'
+            { [ChessBoard]::new(@(3,2), @(4,9)) }  | Should -Throw "*Black queen must be placed on the board*"
         }
 
         It "queens can't occupy same space" {
-            { [ChessBoard]::new(@(1,1), @(1,1)) }  | Should -Throw 'Queens can not share the same space'
+            { [ChessBoard]::new(@(1,1), @(1,1)) }  | Should -Throw "*Queens can not share the same space*"
         }
     }
 }

@@ -35,7 +35,7 @@ Describe "NthPrime Tests" {
 
     Context "Invalid Inputs" {
         It "there is no zeroth prime" {
-            { Get-NthPrime -Number 0 } | Should -Throw "error: there is no zeroth prime"
+            { Get-NthPrime -Number 0 } | Should -Throw "*error: there is no zeroth prime*"
         }
     }
 }

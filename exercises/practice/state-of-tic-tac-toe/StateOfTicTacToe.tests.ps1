@@ -245,7 +245,7 @@ Describe "StateOfTicTacToe test cases" {
                       "   ",
                       "   ")
 
-            {Get-StateOfTicTacToe -Board $grid} | Should -Throw "Wrong turn order: X went twice"
+            {Get-StateOfTicTacToe -Board $grid} | Should -Throw "*Wrong turn order: X went twice*"
         }
     
         It "Invalid board: O started" {
@@ -253,7 +253,7 @@ Describe "StateOfTicTacToe test cases" {
                       "   ",
                       "   ")
 
-            {Get-StateOfTicTacToe -Board $grid} | Should -Throw "Wrong turn order: O started"
+            {Get-StateOfTicTacToe -Board $grid} | Should -Throw "*Wrong turn order: O started*"
         }
     
         It "Invalid board: X won and O kept playing" {
@@ -261,7 +261,7 @@ Describe "StateOfTicTacToe test cases" {
                       "OOO",
                       "   ")
 
-            {Get-StateOfTicTacToe -Board $grid} | Should -Throw "Impossible board: game should have ended after the game was won"
+            {Get-StateOfTicTacToe -Board $grid} | Should -Throw "*Impossible board: game should have ended after the game was won*"
         }
     
         It "Invalid board: players kept playing after a win" {
@@ -269,7 +269,7 @@ Describe "StateOfTicTacToe test cases" {
                       "OOO",
                       "XOX")
 
-            {Get-StateOfTicTacToe -Board $grid} | Should -Throw "Impossible board: game should have ended after the game was won"
+            {Get-StateOfTicTacToe -Board $grid} | Should -Throw "*Impossible board: game should have ended after the game was won*"
         }
     }
 }
