@@ -1,0 +1,7 @@
+switch -Regex -CaseSensitive ($HeyBob.TrimEnd()) {
+    "^[A-Z ]+\?$"           {"Calm down, I know what I'm doing!"; break}
+    "^$"                    {"Fine. Be that way!"}
+    "\?$"                   {"Sure."}
+    "^[^a-z]*[A-Z][^a-z]*$" {"Whoa, chill out!"}
+    Default                 {"Whatever."}
+}
