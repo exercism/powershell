@@ -10,7 +10,7 @@
       "uuid": "03002fba-242c-4011-a469-32591fdda76c",
       "slug": "regex-switch",
       "title": "regex switch",
-      "blurb": "",
+      "blurb": "Approach using regular expression and switch statement",
       "authors": [
         "glaxxie"
       ]
@@ -19,7 +19,7 @@
       "uuid": "a4fe911c-d135-44bc-ba67-68e030a87f25",
       "slug": "conditional-bools",
       "title": "conditional bools",
-      "blurb": "",
+      "blurb": "Approach using boolean variables as conditions and if statements",
       "authors": [
         "glaxxie"
       ]
