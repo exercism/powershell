@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "contributors": [
+    "clapmyhands"
+  ],
+  "files": {
+    "solution": [
+      "TreeBuilding.ps1"
+    ],
+    "test": [
+      "TreeBuilding.tests.ps1"
+    ],
+    "example": [
+      ".meta/TreeBuilding.example.ps1"
+    ]
+  },
+  "blurb": "Refactor a tree building algorithm."
+}
