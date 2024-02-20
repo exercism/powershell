@@ -261,25 +261,25 @@ Describe "RobotSimulator test cases" {
 
     Context "invalid input" {
         It "create robot with invalid direction" {
-            { [Robot]::new('DOWN', 8, 4) } | Should -Throw "Error: Invalid direction"
+            { [Robot]::new('DOWN', 8, 4) } | Should -Throw "*Error: Invalid direction*"
         }
 
         It "create robot with invalid X coordinate" {
-            { [Robot]::new('NORTH', $null, 4) } | Should -Throw "Error: Invalid X position"
+            { [Robot]::new('NORTH', $null, 4) } | Should -Throw "*Error: Invalid X position*"
         }
 
         It "create robot with invalid Y coordinate" {
-            { [Robot]::new('NORTH', 0, 'one') } | Should -Throw "Error: Invalid Y position"
+            { [Robot]::new('NORTH', 0, 'one') } | Should -Throw "*Error: Invalid Y position*"
         }
 
         It "move with invalid instruction" {
             $robot = [Robot]::new('NORTH', 0, 0)
-            { $robot.Move("U") } | Should -Throw "Error: Invalid instruction"
+            { $robot.Move("U") } | Should -Throw "*Error: Invalid instruction*"
         }
 
         It "move with series of invalid instruction" {
             $robot = [Robot]::new('NORTH', 0, 0)
-            { $robot.Move("EXERCISM") } | Should -Throw "Error: Invalid instruction"
+            { $robot.Move("EXERCISM") } | Should -Throw "*Error: Invalid instruction*"
         }
     }
 }

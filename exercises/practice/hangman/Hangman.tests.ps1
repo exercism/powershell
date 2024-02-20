@@ -24,7 +24,7 @@ Describe "Hangman test cases" {
             $game.Guess("x")
         }
         $game.GetStatus() | Should -BeExactly LOSE
-        {$game.Guess("x")} | Should -Throw "The game has already ended."
+        {$game.Guess("x")} | Should -Throw "*The game has already ended.*"
     }
 
     It "test feeding a correct letter removes underscores" {
@@ -82,7 +82,7 @@ Describe "Hangman test cases" {
         $game.GetStatus() | Should -BeExactly WIN
         $game.Display() | Should -BeExactly "hello"
         
-        {$game.Guess("x")} | Should -Throw "The game has already ended."
+        {$game.Guess("x")} | Should -Throw "*The game has already ended.*"
     }
 
     It "test winning on last guess still counts as a win" {

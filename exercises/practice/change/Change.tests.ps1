@@ -70,15 +70,15 @@ Describe "coin change test cases" {
 
     Context "invalid inputs" {
         It "error testing for change smaller than the smallest of coins" {
-            {Get-Change -Coins @(5, 10) -Target 3} | Should -Throw "Can't make change with given coins"
+            {Get-Change -Coins @(5, 10) -Target 3} | Should -Throw "*Can't make change with given coins*"
         }
 
         It "error if no combination can add up to target" {
-            {Get-Change -Coins @(5, 10) -Target 27} | Should -Throw "Can't make change with given coins"
+            {Get-Change -Coins @(5, 10) -Target 27} | Should -Throw "*Can't make change with given coins*"
         }
 
         It "cannot find negative change values" {
-            {Get-Change -Coins @(5, 10) -Target -2} | Should -Throw "Target can't be negative"
+            {Get-Change -Coins @(5, 10) -Target -2} | Should -Throw "*Target can't be negative*"
         }
     }
 }

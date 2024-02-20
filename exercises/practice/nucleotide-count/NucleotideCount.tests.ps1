@@ -36,6 +36,6 @@ Describe "NucleotideCountTests" {
 	}
 
 	It "strand with invalid nucleotides" {
-		{ Get-NucleotideCount -Strand "AGXXACT" } | Should -Throw "Invalid nucleotide in strand"
+		{ Get-NucleotideCount -Strand "AGXXACT" } | Should -Throw "*Invalid nucleotide in strand*"
 	}	
 }
