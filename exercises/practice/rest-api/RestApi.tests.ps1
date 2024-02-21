@@ -26,7 +26,7 @@ Describe "RestApi test cases" {
     It "user management -> get single user" {
         $data = @{ 
             users = @(
-                @{name = "Adam" ; owes = @{}; owed_by = @{}; balance = 0.0}
+                @{name = "Adam"; owes = @{}; owed_by = @{}; balance = 0.0}
                 @{name = "Bob"  ; owes = @{}; owed_by = @{}; balance = 0.0}
             ) 
         }
@@ -45,7 +45,7 @@ Describe "RestApi test cases" {
     It "user management -> adding existing user throw error" {
         $data = @{ 
             users = @(
-                @{name = "Adam" ; owes = @{}; owed_by = @{}; balance = 0.0}
+                @{name = "Adam"; owes = @{}; owed_by = @{}; balance = 0.0}
                 @{name = "Bob"  ; owes = @{}; owed_by = @{}; balance = 0.0}
             ) 
         }
@@ -57,7 +57,7 @@ Describe "RestApi test cases" {
     It "iou -> both users have 0 balance" {
         $data = @{ 
             users = @(
-                @{name = "Adam" ; owes = @{}; owed_by = @{}; balance = 0.0}
+                @{name = "Adam"; owes = @{}; owed_by = @{}; balance = 0.0}
                 @{name = "Bob"  ; owes = @{}; owed_by = @{}; balance = 0.0}
             ) 
         }
@@ -65,7 +65,7 @@ Describe "RestApi test cases" {
         $got  = $api.Post("/iou", '{"lender": "Adam", "borrower": "Bob", "amount": 3.0}')
         $want = @{ 
             users = @(
-                @{name = "Adam" ; owes = @{}; owed_by = @{Bob = 3.0} ; balance = 3.0}
+                @{name = "Adam"; owes = @{}; owed_by = @{Bob = 3.0}; balance = 3.0}
                 @{name = "Bob"  ; owes = @{Adam = 3.0}; owed_by = @{}; balance = -3.0}
             )
         }
@@ -76,7 +76,7 @@ Describe "RestApi test cases" {
     It "iou -> borrower has negative balance" {
         $data = @{ 
             users = @(
-                @{name = "Adam"  ; owes = @{}; owed_by = @{}; balance = 0.0}
+                @{name = "Adam" ; owes = @{}; owed_by = @{}; balance = 0.0}
                 @{name = "Bob"   ; owes = @{Chuck = 3.0}; owed_by = @{}; balance = -3.0}
                 @{name = "Chuck" ; owes = @{}; owed_by = @{Bob = 3.0}; balance = 3.0}
             ) 
@@ -85,7 +85,7 @@ Describe "RestApi test cases" {
         $got  = $api.Post("/iou", '{"lender": "Adam", "borrower": "Bob", "amount": 3.0}')
         $want = @{ 
             users = @(
-                @{name = "Adam"  ; owes = @{}; owed_by = @{Bob = 3.0}; balance = 3.0}
+                @{name = "Adam" ; owes = @{}; owed_by = @{Bob = 3.0}; balance = 3.0}
                 @{name = "Bob"   ; owes = @{Adam = 3.0 ; Chuck = 3.0}; owed_by = @{}; balance = -6.0}
             )
         }
@@ -96,7 +96,7 @@ Describe "RestApi test cases" {
     It "iou -> lender has negative balance" {
         $data = @{ 
             users = @(
-                @{name = "Adam"  ; owes = @{}; owed_by = @{}; balance = 0.0}
+                @{name = "Adam" ; owes = @{}; owed_by = @{}; balance = 0.0}
                 @{name = "Bob"   ; owes = @{Chuck = 3.0}; owed_by = @{}; balance = -3.0}
                 @{name = "Chuck" ; owes = @{}; owed_by = @{Bob = 3.0}; balance = 3.0}
             ) 
@@ -106,7 +106,7 @@ Describe "RestApi test cases" {
         $want = @{ 
             users = @(
                 @{name = "Adam" ; owes = @{Bob = 3.0}; owed_by = @{}; balance = -3.0}
-                @{name = "Bob"  ; owes = @{Chuck = 3.0}; owed_by = @{Adam = 3.0}; balance = 0.0}
+                @{name = "Bob"   ; owes = @{Chuck = 3.0}; owed_by = @{Adam = 3.0}; balance = 0.0}
             )
         }
 
@@ -117,7 +117,7 @@ Describe "RestApi test cases" {
         $data = @{ 
             users = @(
                 @{name = "Adam" ; owes = @{Bob = 3.0}; owed_by = @{}; balance = -3.0}
-                @{name = "Bob"  ; owes = @{}; owed_by = @{Adam = 3.0}; balance = 3.0}
+                @{name = "Bob"   ; owes = @{}; owed_by = @{Adam = 3.0}; balance = 3.0}
             ) 
         }
         $api  = [RestAPI]::new($data)
@@ -125,7 +125,7 @@ Describe "RestApi test cases" {
         $want = @{ 
             users = @(
                 @{name = "Adam" ; owes = @{Bob = 1.0}; owed_by = @{}; balance = -1.0}
-                @{name = "Bob"  ; owes = @{}; owed_by = @{Adam = 1.0}; balance = 1.0}
+                @{name = "Bob"   ; owes = @{}; owed_by = @{Adam = 1.0}; balance = 1.0}
             )
         }
 
@@ -136,7 +136,7 @@ Describe "RestApi test cases" {
         $data = @{ 
             users = @(
                 @{name = "Adam" ; owes = @{Bob = 3.0}; owed_by = @{}; balance = -3.0}
-                @{name = "Bob"  ; owes = @{}; owed_by = @{Adam = 3.0}; balance = 3.0}
+                @{name = "Bob"   ; owes = @{}; owed_by = @{Adam = 3.0}; balance = 3.0}
             ) 
         }
         $api  = [RestAPI]::new($data)
@@ -144,7 +144,7 @@ Describe "RestApi test cases" {
         $want = @{ 
             users = @(
                 @{name = "Adam" ; owes = @{}; owed_by = @{Bob = 1.0}; balance = 1.0}
-                @{name = "Bob"  ; owes = @{Adam = 1.0}; owed_by = @{}; balance = -1.0}
+                @{name = "Bob"   ; owes = @{Adam = 1.0}; owed_by = @{}; balance = -1.0}
             )
         }
 
@@ -155,7 +155,7 @@ Describe "RestApi test cases" {
         $data = @{ 
             users = @(
                 @{name = "Adam" ; owes = @{Bob = 3.0}; owed_by = @{}; balance = -3.0}
-                @{name = "Bob"  ; owes = @{}; owed_by = @{Adam = 3.0}; balance = 3.0}
+                @{name = "Bob"   ; owes = @{}; owed_by = @{Adam = 3.0}; balance = 3.0}
             ) 
         }
         $api  = [RestAPI]::new($data)
@@ -163,7 +163,7 @@ Describe "RestApi test cases" {
         $want = @{ 
             users = @(
                 @{name = "Adam" ; owes = @{}; owed_by = @{}; balance = 0.0}
-                @{name = "Bob"  ; owes = @{}; owed_by = @{}; balance = 0.0}
+                @{name = "Bob"   ; owes = @{}; owed_by = @{}; balance = 0.0}
             )
         }
 
