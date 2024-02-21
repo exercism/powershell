@@ -31,6 +31,7 @@ Returns: @{ users = @(
 # Post method to add a new user
 $api.Post("/add", '{"users":["Chuck"]}')
 Returns: @{ name = "Chuck"; owes = @{}; owed_by = @{}; balance = 0.0 }
+#testing in stub
 #>
 
 Class RestAPI{
