@@ -586,8 +586,8 @@
         "difficulty": 2
       },
       {
-        "slug": "pop-count",
-        "name": "Pop Count",
+        "slug": "eliuds-eggs",
+        "name": "Eliuds Eggs",
         "uuid": "65fa1796-64de-4da7-8050-41b2a9addd9c",
         "practices": [],
         "prerequisites": [],
@@ -961,6 +961,14 @@
         "difficulty": 5
       },
       {
+        "slug": "dot-dsl",
+        "name": "DOT DSL",
+        "uuid": "79c56891-bb51-4de9-acb1-13edfa14573e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "connect",
         "name": "Connect",
         "uuid": "97aafbc5-da65-4539-aaeb-0d4507b1bf44",
@@ -988,6 +996,22 @@
         "slug": "linked-list",
         "name": "Linked List",
         "uuid": "9650379f-9c97-4ba6-8fd1-c548642c8a0a",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "ledger",
+        "name": "Ledger",
+        "uuid": "20bad781-7c4b-4133-8ce3-2160ab12a3a0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "tree-building",
+        "name": "Tree Building",
+        "uuid": "088fcf19-851f-4fb9-a740-7d9d14362432",
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
@@ -1057,6 +1081,14 @@
         "difficulty": 7
       },
       {
+        "slug": "rest-api",
+        "name": "REST API",
+        "uuid": "3eee7ed8-09ca-4072-8bd9-2bbc682a8dfb",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 7
+      },
+      {
         "slug": "zipper",
         "name": "Zipper",
         "uuid": "ed6dc7be-1a8b-4261-a28a-0e4fe06ef466",
@@ -1087,6 +1119,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 8
+      },
+      {
+        "slug": "sgf-parsing",
+        "name": "SGF Parsing",
+        "uuid": "d7163f3c-069d-451c-858c-a58a112c2a87",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 9
       },
       {
         "slug": "pov",

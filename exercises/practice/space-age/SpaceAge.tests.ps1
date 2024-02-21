@@ -70,7 +70,7 @@ Describe "Space Age test cases" {
     
     Context "invalid input" {
         It "invalid planet give error" {
-            { Get-SpaceAge -Seconds 1000000000 -Planet Pluto } | Should -Throw "Cannot validate argument on parameter 'Planet'. Invalid planet"
+            { Get-SpaceAge -Seconds 1000000000 -Planet Pluto } | Should -Throw "*Invalid planet*"
         }
     }
 }

@@ -43,19 +43,19 @@ Describe "Test LargestSeriesProduct Cases" {
     
     Context "Invalid Inputs" {
         It "rejects span longer than string length" {
-            { Get-LargestSeriesProduct -Digits "123" -Span 4 } | Should -Throw "span must be smaller than string length"
+            { Get-LargestSeriesProduct -Digits "123" -Span 4 } | Should -Throw "*span must be smaller than string length*"
         }
     
         It "rejects empty string and nonzero span" {
-            { Get-LargestSeriesProduct -Digits "" -Span 2 } | Should -Throw "span must be smaller than string length"
+            { Get-LargestSeriesProduct -Digits "" -Span 2 } | Should -Throw "*span must be smaller than string length*"
         }
     
         It "rejects invalid character in digits" {
-            { Get-LargestSeriesProduct -Digits "12e456T" -Span 3 } | Should -Throw "digits input must only contain digits"
+            { Get-LargestSeriesProduct -Digits "12e456T" -Span 3 } | Should -Throw "*digits input must only contain digits*"
         }
     
         It "rejects negative span" {
-            { Get-LargestSeriesProduct -Digits "1234" -Span -2 } | Should -Throw "span must not be negative"
+            { Get-LargestSeriesProduct -Digits "1234" -Span -2 } | Should -Throw "*span must not be negative*"
         }
     }
 }

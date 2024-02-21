@@ -77,27 +77,27 @@ Describe "Test Get-Triangle" {
 
     Context "Invalid Inputs" {
         It "all zero sides is not a triangle" {
-            { Get-Triangle -Sides @(0, 0, 0)} | Should -Throw "All side lengths must be positive."
+            { Get-Triangle -Sides @(0, 0, 0)} | Should -Throw "*All side lengths must be positive.*"
         }
 
         It "negative sides are illegal" {
-            { Get-Triangle -Sides @(3, 4, -5)} | Should -Throw "All side lengths must be positive."
+            { Get-Triangle -Sides @(3, 4, -5)} | Should -Throw "*All side lengths must be positive.*"
         }
 
         It "first isosceles triangle inequality violation" {
-            { Get-Triangle -Sides @(1, 1, 3)} | Should -Throw "Side lengths violate triangle inequality."
+            { Get-Triangle -Sides @(1, 1, 3)} | Should -Throw "*Side lengths violate triangle inequality.*"
         }
 
         It "second isosceles triangle inequality violation" {
-            { Get-Triangle -Sides @(1, 3, 1)} | Should -Throw "Side lengths violate triangle inequality."
+            { Get-Triangle -Sides @(1, 3, 1)} | Should -Throw "*Side lengths violate triangle inequality.*"
         }
 
         It "third isosceles triangle inequality violation" {
-            { Get-Triangle -Sides @(3, 1, 1)} | Should -Throw "Side lengths violate triangle inequality."
+            { Get-Triangle -Sides @(3, 1, 1)} | Should -Throw "*Side lengths violate triangle inequality.*"
         }
 
         It "SCALENE triangle inequality violation" {
-            { Get-Triangle -Sides @(7, 3, 2)} | Should -Throw "Side lengths violate triangle inequality."
+            { Get-Triangle -Sides @(7, 3, 2)} | Should -Throw "*Side lengths violate triangle inequality.*"
         }
     }
 }

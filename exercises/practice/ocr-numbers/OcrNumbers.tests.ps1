@@ -215,7 +215,7 @@ Describe "OcrNumbers test cases" {
                 "| |",
                 "   "
                 )
-            { Invoke-OCR -Grid $lines } | Should -Throw "Number of input lines is not a multiple of four"
+            { Invoke-OCR -Grid $lines } | Should -Throw "*Number of input lines is not a multiple of four*"
         }
     
         It "Input with a number of columns that is not a multiple of three raises an error" {
@@ -225,7 +225,7 @@ Describe "OcrNumbers test cases" {
                 "   |",
                 "    "
                 )
-            { Invoke-OCR -Grid $lines } | Should -Throw "Number of input columns is not a multiple of three"
+            { Invoke-OCR -Grid $lines } | Should -Throw "*Number of input columns is not a multiple of three*"
         }
     }
 

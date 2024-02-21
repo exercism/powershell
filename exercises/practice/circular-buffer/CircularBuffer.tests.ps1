@@ -5,7 +5,7 @@ BeforeAll {
 Describe "CircularBuffer test cases" {
     It "reading empty buffer should fail" {
         $buffer = [CircularBuffer]::new(1)
-        { $buffer.Read() } | Should -Throw "BufferError: Circular buffer is empty"
+        { $buffer.Read() } | Should -Throw "*BufferError: Circular buffer is empty*"
     }
 
     It "can read an item just written" {
@@ -18,7 +18,7 @@ Describe "CircularBuffer test cases" {
         $buffer = [CircularBuffer]::new(1)
         $buffer.Write(1)
         $buffer.Read() | Should -BeExactly 1
-        { $buffer.Read() } | Should -Throw "BufferError: Circular buffer is empty"
+        { $buffer.Read() } | Should -Throw "*BufferError: Circular buffer is empty*"
     }
 
     It "items are read in the order they are written" {
@@ -32,7 +32,7 @@ Describe "CircularBuffer test cases" {
     It "full buffer can't be written to" {
         $buffer = [CircularBuffer]::new(5)
         1..5 | ForEach-Object {$buffer.Write($_)}
-        { $buffer.Write(6) } | Should -Throw "BufferError: Circular buffer is full"
+        { $buffer.Write(6) } | Should -Throw "*BufferError: Circular buffer is full*"
     }
 
     It "a read frees up capacity for another write" {
@@ -57,7 +57,7 @@ Describe "CircularBuffer test cases" {
         $buffer = [CircularBuffer]::new(1)
         $buffer.Write(1)
         $buffer.Clear()
-        { $buffer.Read() } | Should -Throw "BufferError: Circular buffer is empty"
+        { $buffer.Read() } | Should -Throw "*BufferError: Circular buffer is empty*"
     }
 
     It "clear frees up capacity for another write" {
@@ -114,6 +114,6 @@ Describe "CircularBuffer test cases" {
         $buffer.Overwrite(4)
         $buffer.Read() | Should -BeExactly 3
         $buffer.Read() | Should -BeExactly 4
-        { $buffer.Read() } | Should -Throw "BufferError: Circular buffer is empty"
+        { $buffer.Read() } | Should -Throw "*BufferError: Circular buffer is empty*"
     }
 }

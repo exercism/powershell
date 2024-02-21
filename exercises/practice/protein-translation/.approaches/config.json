@@ -1,0 +1,28 @@
+{
+  "introduction": {
+    "authors": [
+      "glaxxie"
+    ],
+    "contributors": []
+  },
+  "approaches": [
+    {
+      "uuid": "11aa2b40-050c-433b-b3db-3e5d88e23826",
+      "slug": "regex-switch",
+      "title": "regex switch",
+      "blurb": "Approach using regex and switch statement",
+      "authors": [
+        "glaxxie"
+      ]
+    },
+    {
+      "uuid": "05c3c31a-24cb-4696-9266-bc8b5ecae54e",
+      "slug": "substring-hashtable",
+      "title": "substring hashtable",
+      "blurb": "Apparoach using substring and hashtable",
+      "authors": [
+        "glaxxie"
+      ]
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-Function Invoke-PopCount() {
+Function Invoke-Counter() {
     <#
     .SYNOPSIS
     Count the number of '1' bit in the binary representation of a decimal number.
@@ -11,7 +11,7 @@ Function Invoke-PopCount() {
     Integer represent the decimal value being displayed.
 
     .EXAMPLE
-    Invoke-PopCount -Value 12345
+    Invoke-Counter -Value 12345
     Returns: 6
     #>
     [CmdletBinding()]

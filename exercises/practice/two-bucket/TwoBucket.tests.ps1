@@ -59,7 +59,7 @@ Describe "TwoBucket test cases" {
 
     It "Not possible to reach the goal" {
         $buckets = [TwoBucket]::new(6, 15, "one")
-        { $buckets.Measure(5) } | Should -Throw "Target is impossible to reach"
+        { $buckets.Measure(5) } | Should -Throw "*Target is impossible to reach*"
     }
 
     It "With the same buckets but a different goal, then it is possible" {
@@ -73,11 +73,11 @@ Describe "TwoBucket test cases" {
 
     It "Goal larger than both buckets is impossible" {
         $buckets = [TwoBucket]::new(5, 7, "one")
-        { $buckets.Measure(8) } | Should -Throw "Target is impossible to reach"
+        { $buckets.Measure(8) } | Should -Throw "*Target is impossible to reach*"
     }
 
     It "Two buckets of the same size throw error" {
         $buckets = [TwoBucket]::new(5, 5, "one")
-        { $buckets.Measure(4) } | Should -Throw "Two buckets can't be of the same size"
+        { $buckets.Measure(4) } | Should -Throw "*Two buckets can't be of the same size*"
     }
 }

@@ -1,5 +1,7 @@
 {
-  "authors": ["glaxxie"],
+  "authors": [
+    "glaxxie"
+  ],
   "files": {
     "solution": [
       "RomanNumerals.ps1"
@@ -11,7 +13,7 @@
       ".meta/RomanNumerals.example.ps1"
     ]
   },
-  "blurb": "Write a function to convert from normal numbers to Roman Numerals.",
+  "blurb": "Convert modern Arabic numbers into Roman numerals.",
   "source": "The Roman Numeral Kata",
   "source_url": "https://codingdojo.org/kata/RomanNumerals/"
 }

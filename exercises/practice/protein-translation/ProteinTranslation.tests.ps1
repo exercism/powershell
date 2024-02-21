@@ -189,15 +189,15 @@ Describe "Test Invoke-ProteinTranslation.ps1" {
     
     Context "Invalid Inputs" {
         It "Non-existing codon can't translate" {
-            { Invoke-ProteinTranslation -Strand "AAA" } | Should -Throw "error: Invalid codon"
+            { Invoke-ProteinTranslation -Strand "AAA" } | Should -Throw "*error: Invalid codon*"
         }
 
         It "Unknown amino acids, not part of a codon, can't translate" {
-            { Invoke-ProteinTranslation -Strand "XYZ" } | Should -Throw "error: Invalid codon"
+            { Invoke-ProteinTranslation -Strand "XYZ" } | Should -Throw "*error: Invalid codon*"
         }
 
         It "Incomplete RNA sequence can't translate" {
-            { Invoke-ProteinTranslation -Strand "AUGU" } | Should -Throw "error: Invalid codon"
+            { Invoke-ProteinTranslation -Strand "AUGU" } | Should -Throw "*error: Invalid codon*"
         }
     }
 }

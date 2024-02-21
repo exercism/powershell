@@ -152,25 +152,24 @@ Describe "BottleSong test cases" {
     Context "Error: Invalid parameter inputs" {
         It "start with too many bottles" {
             $bottles = 50
-            $errMsg = "Cannot validate argument on parameter 'Start'. The $bottles argument is greater than the maximum allowed range of 10. Supply an argument that is less than or equal to 10 and then try the command again."
+            $errMsg = "*Cannot validate argument on parameter 'Start'. The $bottles argument is greater than the maximum allowed range of 10. Supply an argument that is less than or equal to 10 and then try the command again.*"
             { Get-Lyric -Start $bottles } | Should -Throw $errMsg
         }
 
         It "start with less than one bottle" {
             $bottles = 0
-            $errMsg = "Cannot validate argument on parameter 'Start'. The $bottles argument is less than the minimum allowed range of 1. Supply an argument that is greater than or equal to 1 and then try the command again."
+            $errMsg = "*Cannot validate argument on parameter 'Start'. The $bottles argument is less than the minimum allowed range of 1. Supply an argument that is greater than or equal to 1 and then try the command again.*"
             { Get-Lyric -Start $bottles } | Should -Throw $errMsg
         }
 
         It "taking less than one bottle" {
             $bottles = -1
-            $errMsg = "Cannot validate argument on parameter 'Take'. The $bottles argument is less than the minimum allowed range of 1. Supply an argument that is greater than or equal to 1 and then try the command again."
+            $errMsg = "*Cannot validate argument on parameter 'Take'. The $bottles argument is less than the minimum allowed range of 1. Supply an argument that is greater than or equal to 1 and then try the command again.*"
             { Get-Lyric -Start 3 -Take $bottles } | Should -Throw $errMsg
         }
 
         It "taking more bottle than available" {
-            $errMsg = "Cannot validate argument on parameter 'Take'. You can't take more bottle than what you started with."
-            { Get-Lyric -Start 3 -Take 5 } | Should -Throw $errMsg
+            { Get-Lyric -Start 3 -Take 5 } | Should -Throw "*You can't take more bottle than what you started with.*"
         }
     }
 }

@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "Ledger.ps1"
+    ],
+    "test": [
+      "Ledger.tests.ps1"
+    ],
+    "example": [
+      ".meta/Ledger.example.ps1"
+    ]
+  },
+  "blurb": "Refactor a ledger printer."
+}

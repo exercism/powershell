@@ -1,0 +1,8 @@
+foreach ($char in $Phrase.ToCharArray()) {
+    if ($newWord -and $char -match "[a-z]") {
+        $acronym += $char
+        $newWord = $false
+    }
+    if (-not $newWord -and $char -match "[_\- ]") {
+        $newWord = $true
+    }

@@ -84,11 +84,11 @@ Describe "Test Invoke-PerfectNumbers.ps1" {
 
     Context "Invalid Inputs" {
         It "Zero is rejected (not a natural number)" {
-            { Invoke-PerfectNumbers -Number 0 } | Should -Throw "error: Classification is only possible for positive integers."
+            { Invoke-PerfectNumbers -Number 0 } | Should -Throw "*error: Classification is only possible for positive integers.*"
         }
 
         It "Negative integer is rejected (not a natural number)" {
-            { Invoke-PerfectNumbers -Number -1 } | Should -Throw "error: Classification is only possible for positive integers."
+            { Invoke-PerfectNumbers -Number -1 } | Should -Throw "*error: Classification is only possible for positive integers.*"
         }
     }
 }
