@@ -1129,6 +1129,14 @@
         "difficulty": 9
       },
       {
+        "slug": "pov",
+        "name": "Pov",
+        "uuid": "05773ba2-d938-44ac-bfcc-e16f5ff9851d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 10
+      },
+      {
         "slug": "scale-generator",
         "name": "Scale Generator",
         "uuid": "c2eaec94-826e-44e2-b92d-827a713dd373",
