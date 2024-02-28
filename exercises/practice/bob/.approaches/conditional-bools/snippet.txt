@@ -1,0 +1,7 @@
+if ($IsSilence) { return "Fine. Be that way!" }
+if ($IsQuestion) {
+    if ($IsYelling) { return "Calm down, I know what I'm doing!" }
+    return "Sure."
+}
+if ($IsYelling) {return "Whoa, chill out!" }
+"Whatever."
