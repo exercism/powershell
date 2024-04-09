@@ -34,7 +34,16 @@
     ]
   },
   "exercises": {
-    "concept": [],
+    "concept": [
+        {
+        "slug": "jeffrey-juicy-lasagna",
+        "name": "Jeffrey Juicy Lasagna",
+        "uuid": "00e439fb-a5f4-4e0c-b89c-ea23c586c9e3",
+        "concepts": ["basics"],
+        "prerequisites": [],
+        "status": "wip"
+        }
+    ],
     "practice": [
       {
         "slug": "hello-world",
