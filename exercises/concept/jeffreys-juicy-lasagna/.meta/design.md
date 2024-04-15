@@ -32,13 +32,13 @@ The goal of this exercise is to teach the student some of the basics of programm
 
 `basics`:
 
-- function definition & `return` keyword
+- function definition and `return` keyword
 - integer, double, string
 - mathematical operators
 - single line comments
 - updating variable values
 - using functions
-- variables, variable assignment, & variable naming
+- variables, variable assignment and variable naming
 
 ## Prerequisites
 

@@ -1,12 +1,12 @@
 # Hints
 
 ## General
-- A variable [type][types] are based on the value of that variables: *10* as `Int` , *'Hello'* as `String`, or *2.0* as `double`.
+- A variable's [type][types] is based on the value of that variable: *10* as `Int` , *'Hello'* as `String`, or *2.0* as `double`.
 
 ## 1. Define constant expected bake time in minutes
 
-- You need to define a constant variable, and assign it an integer value.
-- Constant can be defined through [New-Variable cmdlet][new variable].
+- You need to define a constant variable and assign it an integer value.
+- Constants can be defined through the [New-Variable cmdlet][new variable].
 
 ## 2. Calculate remaining bake time in minutes
 

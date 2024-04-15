@@ -1,18 +1,18 @@
 # Introduction
 
-PowerShell is a dynamically implicit typed (also support strongly typed variables) scripting language from Microsoft, mostly focus on task automation and confifuration management.
+PowerShell is a dynamic and implicitly typed (_but also supporting [strongly typed][strong typed] variables_) scripting language from Microsoft, mostly focused on task automation and configuration management.
 
-PowerShell supports imperative, functional, object-oriented programming, and even pipeline style.
+PowerShell supports imperative, functional, object-oriented, and even pipeline style programming.
 
 PowerShell was built on the .NET platform and first released in 2006.
-It has been included by default in all modern Windows OS, and can be installed on Mac and Linux.
+It has been included by default in all modern Windows OS, and can also be installed on Mac and Linux.
 
 
 ## Variables
 
 There are two common ways to define a variable in PowerShell.
 
-Varible name in PowerShell must start with `$` and using the assignment operator `=` to bind the variable name to a value.
+Variable names in PowerShell must start with a `$`, and use the assignment operator `=` to bind the variable name to a value.
 
 ```powershell
 > $intVar = 1
@@ -24,7 +24,7 @@ Varible name in PowerShell must start with `$` and using the assignment operator
 System.Double
 ```
 
-You can also explicitly specify a variable's type if you want to enforce a specific [type][strong typed].
+You can also specify a variable's type explicitly, if you want to enforce/require the value be of a certain type.
 PowerShell will try its best to convert the value from one type to another if possible.
 
 ```powershell
@@ -41,21 +41,21 @@ MetadataError: Cannot convert value "hello" to type "System.Double"
 
 ### Constants
 
-Constants in PowerShell are read-only variables that can't be **removed** after defined.
-This lead us to the second way to define variables using the cmdlet `New-Variable`.
+Constants in PowerShell are variables that can't be **changed** nor **removed** after definition.
+This leads us to the second way of defining variables: using the cmdlet `New-Variable`.
 
 ```powershell
 > New-Variable -Name "MyConstant" -Value 100 -Option Constant
 > $MyConstant
 ```
 
-For a more detailed and advanced way to create a new variable with various options, please see [New-Variable][New-Variable] cmdlet.
+For more detailed and advanced ways to create a new variable, please read [New-Variable][New-Variable].
 
 
 ## Functions
 
 [Functions][functions] in PowerShell are defined using the `function` keyword.
-Each function can have zero or more formal [parameters][parameters] in `()` parenthesis, followed by its own [scope][scope] start  with `{` and end with `}`. 
+Each function can have zero or more formal parameters in `()` parenthesis, followed by the function scope starting  with `{` and ending with `}`.
 
 ```powershell
 function Greeting {
@@ -79,13 +79,17 @@ An advanced look of how to write a detailed function definition, and how functio
 
 ## Comments
 
-Single comment in PowerShell start with a `#`, and end at line termination.
-Comment block in PowerShell start with `<#` and end with `#>`.
+Single comments in PowerShell start with a `#`, and end at line termination.
+Comment blocks in PowerShell start with `<#` and end with `#>`.
 An advanced showcase of comment block to create Comment-Based Help will be covered in the `Functions` concept module.
 
 ```powershell
 function Main() {
     #This is a comment
+    <#
+    And this is a comment block
+    that can span multiple lines
+    #>
 }
 ```
 
