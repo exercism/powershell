@@ -1158,7 +1158,13 @@
       }
     ]
   },
-  "concepts": [],
+  "concepts": [
+    {
+      "uuid": "5151f982-fa99-494e-9036-af7e6a3af86f",
+      "slug": "basics",
+      "name": "Basics"
+    }
+  ],
   "key_features": [
     {
       "title": "Cross Platform",
