@@ -34,7 +34,18 @@
     ]
   },
   "exercises": {
-    "concept": [],
+    "concept": [
+        {
+        "slug": "jeffreys-juicy-lasagna",
+        "name": "Jeffrey's Juicy Lasagna",
+        "uuid": "00e439fb-a5f4-4e0c-b89c-ea23c586c9e3",
+        "concepts": [
+            "basics"
+        ],
+        "prerequisites": [],
+        "status": "wip"
+        }
+    ],
     "practice": [
       {
         "slug": "hello-world",
@@ -1147,7 +1158,13 @@
       }
     ]
   },
-  "concepts": [],
+  "concepts": [
+    {
+      "uuid": "5151f982-fa99-494e-9036-af7e6a3af86f",
+      "slug": "basics",
+      "name": "Basics"
+    }
+  ],
   "key_features": [
     {
       "title": "Cross Platform",

@@ -1,0 +1,22 @@
+{
+    "authors": [
+      "glaxxie"
+    ],
+    "files": {
+      "solution": [
+        "lasagna.ps1"
+      ],
+      "test": [
+        "lasagna.tests.ps1"
+      ],
+      "exemplar": [
+        ".meta/lasagna.example.ps1"
+      ]
+    },
+    "forked_from": [
+      "csharp/lucians-luscious-lasagna",
+      "python/guidos-gorgeous-lasagna"
+    ],
+    "icon": "lasagna",
+    "blurb": "Learn the basics of Powershell by making lasagna."
+}

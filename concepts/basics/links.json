@@ -1,0 +1,14 @@
+[
+    {
+        "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_return",
+        "description": "return"
+    },
+    {
+        "url": "https://learn.microsoft.com/en-us/powershell/scripting/community/contributing/powershell-style-guide",
+        "description": "style guide"
+    },
+    {
+        "url": "https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/cmdlet-overview",
+        "description": "style guide"
+    }
+]
