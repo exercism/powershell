@@ -18,7 +18,6 @@
   "test_runner": {
     "average_run_time": 5
   },
-  "checklist_issue": 4,
   "files": {
     "solution": [
       "%{pascal_slug}.ps1"
@@ -35,16 +34,28 @@
   },
   "exercises": {
     "concept": [
-        {
+      {
         "slug": "jeffreys-juicy-lasagna",
         "name": "Jeffrey's Juicy Lasagna",
         "uuid": "00e439fb-a5f4-4e0c-b89c-ea23c586c9e3",
         "concepts": [
-            "basics"
+          "basics"
         ],
         "prerequisites": [],
         "status": "wip"
-        }
+      },
+      {
+        "slug": "pacmans-powerful-pursuit",
+        "name": "Pacman's Powerful Pursuit",
+        "uuid": "49a52681-be7c-43db-862f-109ee13ac8a3",
+        "concepts": [
+            "bools"
+        ],
+        "prerequisites": [
+            "basics"
+        ],
+        "status": "wip"
+      }
     ],
     "practice": [
       {
@@ -155,7 +166,7 @@
         "name": "Resistor Color Trio",
         "uuid": "666f7921-e650-4c6d-9f4c-f9a653c33a1d",
         "practices": [
-            "strings"
+          "strings"
         ],
         "prerequisites": [],
         "difficulty": 1
@@ -311,7 +322,7 @@
         "name": "Triangle",
         "uuid": "b439d97f-3661-45d4-903d-6c739e4ab05f",
         "practices": [
-            "bools"
+          "bools"
         ],
         "prerequisites": [],
         "difficulty": 1
@@ -321,7 +332,7 @@
         "name": "Space Age",
         "uuid": "76c5078c-9255-44a6-97dd-aab7a1099907",
         "practices": [
-            "dictionaries"
+          "dictionaries"
         ],
         "prerequisites": [],
         "difficulty": 1
@@ -331,7 +342,7 @@
         "name": "House",
         "uuid": "e0be6456-880b-4cb4-8c62-4479f045fa93",
         "practices": [
-            "loops"
+          "loops"
         ],
         "prerequisites": [],
         "difficulty": 1
@@ -462,7 +473,7 @@
         "name": "Acronym",
         "uuid": "84e522fc-d042-43fe-8dd2-84c9f1150d1e",
         "practices": [
-            "regular-expressions"
+          "regular-expressions"
         ],
         "prerequisites": [],
         "difficulty": 2
@@ -472,8 +483,8 @@
         "name": "D&D Character",
         "uuid": "e7702910-5a0a-4180-bef9-9962304ef6c5",
         "practices": [
-            "classes",
-            "random"
+          "classes",
+          "random"
         ],
         "prerequisites": [],
         "difficulty": 2
@@ -498,8 +509,8 @@
         "slug": "isbn-verifier",
         "name": "Isbn Verifier",
         "uuid": "c71cfb54-746a-492a-88f8-4258ee9bfe44",
-        "prerequisites": [],
         "practices": [],
+        "prerequisites": [],
         "difficulty": 2
       },
       {
@@ -515,7 +526,7 @@
         "name": "Square Root",
         "uuid": "84ab45f7-243e-43ee-bd56-4ac6267f4206",
         "practices": [
-            "math"
+          "math"
         ],
         "prerequisites": [],
         "difficulty": 2
@@ -549,7 +560,7 @@
         "name": "Matching Brackets",
         "uuid": "970494d9-0fba-4ee8-9f9a-f949e6d72ba1",
         "practices": [
-            "conditionals"
+          "conditionals"
         ],
         "prerequisites": [],
         "difficulty": 2
@@ -567,7 +578,7 @@
         "name": "Yacht",
         "uuid": "48571314-77a4-4b7a-b4d1-9c1626cf2e14",
         "practices": [
-            "enums"
+          "enums"
         ],
         "prerequisites": [],
         "difficulty": 2
@@ -651,11 +662,11 @@
         "name": "Allergies",
         "uuid": "ed2cb05a-97e9-4a4c-b6d6-a9748d7436e8",
         "practices": [
-            "bitwise-operators"
+          "bitwise-operators"
         ],
         "prerequisites": [],
         "difficulty": 3
-      },             
+      },
       {
         "slug": "nth-prime",
         "name": "Nth Prime",
@@ -679,7 +690,7 @@
         "name": "Kindergarten Garden",
         "uuid": "3cbb336f-9824-46a2-817d-d7a6810f5778",
         "practices": [
-            "classes"
+          "classes"
         ],
         "prerequisites": [],
         "difficulty": 3
@@ -688,7 +699,9 @@
         "slug": "simple-cipher",
         "name": "Simple Cipher",
         "uuid": "d76c645e-d665-4e2b-9cee-fbb97572e9fd",
-        "practices": ["classes"],
+        "practices": [
+          "classes"
+        ],
         "prerequisites": [],
         "difficulty": 3
       },
@@ -731,7 +744,9 @@
         "slug": "circular-buffer",
         "name": "Circular Buffer",
         "uuid": "a4693b2e-3450-4391-aa34-927f86030d04",
-        "practices": ["classes"],
+        "practices": [
+          "classes"
+        ],
         "prerequisites": [],
         "difficulty": 3
       },
@@ -827,7 +842,8 @@
         ],
         "prerequisites": [],
         "difficulty": 4
-      },{
+      },
+      {
         "slug": "rail-fence-cipher",
         "name": "Rail Fence Cipher",
         "uuid": "33012310-6494-47ff-a29f-6cc168fe12b4",
@@ -959,7 +975,9 @@
         "slug": "binary-search-tree",
         "name": "Binary Search Tree",
         "uuid": "3cf07ef7-5445-4f5d-b60d-cca72ef07935",
-        "practices": ["classes"],
+        "practices": [
+          "classes"
+        ],
         "prerequisites": [],
         "difficulty": 5
       },
@@ -967,7 +985,9 @@
         "slug": "rational-numbers",
         "name": "Rational Numbers",
         "uuid": "5d76a98a-f130-41b3-af1f-1b8d32d2f6e6",
-        "practices": ["operator-overloading"],
+        "practices": [
+          "operator-overloading"
+        ],
         "prerequisites": [],
         "difficulty": 5
       },
@@ -1063,7 +1083,9 @@
         "slug": "bowling",
         "name": "Bowling",
         "uuid": "f374b4a0-d2a2-40c2-bd41-215b0fd64316",
-        "practices": ["classes"],
+        "practices": [
+          "classes"
+        ],
         "prerequisites": [],
         "difficulty": 6
       },
@@ -1151,10 +1173,10 @@
         "slug": "scale-generator",
         "name": "Scale Generator",
         "uuid": "c2eaec94-826e-44e2-b92d-827a713dd373",
-        "status": "deprecated",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 5
+        "difficulty": 5,
+        "status": "deprecated"
       }
     ]
   },
@@ -1163,6 +1185,11 @@
       "uuid": "5151f982-fa99-494e-9036-af7e6a3af86f",
       "slug": "basics",
       "name": "Basics"
+    },
+    {
+      "uuid": "2981782d-98dd-4221-8936-b71d10b0fc59",
+      "slug": "bools",
+      "name": "Booleans"
     }
   ],
   "key_features": [
@@ -1198,11 +1225,11 @@
     }
   ],
   "tags": [
-    "paradigm/procedural",
-    "typing/dynamic",
     "execution_mode/interpreted",
-    "platform/windows",
+    "paradigm/procedural",
+    "platform/linux",
     "platform/mac",
-    "platform/linux"
+    "platform/windows",
+    "typing/dynamic"
   ]
 }

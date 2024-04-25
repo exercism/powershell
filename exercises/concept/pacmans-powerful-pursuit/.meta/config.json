@@ -1,0 +1,21 @@
+{
+    "authors": [
+      "glaxxie"
+    ],
+    "files": {
+      "solution": [
+        "Pacman.ps1"
+      ],
+      "test": [
+        "Pacman.tests.ps1"
+      ],
+      "exemplar": [
+        ".meta/Pacman.example.ps1"
+      ]
+    },
+    "forked_from": [
+      "python/ghost-gobble-arcade-game"
+    ],
+    "icon": "pacman-rules",
+    "blurb": "Learn about bools by setting up the rules for the Pacman arcade game."
+}
