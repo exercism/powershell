@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "GameOfLife.ps1"
+    ],
+    "test": [
+      "GameOfLife.tests.ps1"
+    ],
+    "example": [
+      ".meta/GameOfLife.example.ps1"
+    ]
+  },
+  "blurb": "Implement Conway's Game of Life.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+}
