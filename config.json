@@ -791,6 +791,14 @@
         "difficulty": 3
       },
       {
+        "slug": "robot-name",
+        "name": "Robot Name",
+        "uuid": "0b35919e-ccba-4f45-8a03-504869e229ae",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "simple-linked-list",
         "name": "Simple Linked List",
         "uuid": "97477cc5-2cad-44a6-9d5b-d82afe02465e",
