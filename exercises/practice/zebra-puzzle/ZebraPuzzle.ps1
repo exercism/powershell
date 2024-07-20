@@ -2,7 +2,7 @@ Enum Color { Blue ; Green ; Ivory ; Red ; Yellow }
 Enum Nationality { English ; Japanese ; Norwegian ; Spaniard ; Ukrainian }
 Enum Pet { Dog ; Fox ; Horse ; Snails ; Zebra }
 Enum Drink { Coffee ; Milk ; OrangeJuice ; Tea ; Water }
-Enum Smoke { Chesterfields ; Kools ; LuckyStrike ; OldGold ; Parliaments }
+Enum Smoke { Paint ; Football ; Dance ; Chess ; Read }
 
 Function Get-ZebraOwner() {
     <#

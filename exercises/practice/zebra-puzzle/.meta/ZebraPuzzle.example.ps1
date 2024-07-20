@@ -1,10 +1,9 @@
-# Based values
+# Base values
 Enum Color { Blue ; Green ; Ivory ; Red ; Yellow }
 Enum Nationality { English ; Japanese ; Norwegian ; Spaniard ; Ukrainian }
 Enum Pet { Dog ; Fox ; Horse ; Snails ; Zebra }
 Enum Drink { Coffee ; Milk ; OrangeJuice ; Tea ; Water }
-Enum Smoke { Chesterfields ; Kools ; LuckyStrike ; OldGold ; Parliaments }
-
+Enum Smoke { Paint ; Football ; Dance ; Chess ; Read }
 
 Function Get-Permutation() {
     <#
@@ -76,20 +75,20 @@ Class ZebraPuzzle {
     }
 
     [bool] hidden SmokeRule($colors, $people, $drinks, $smokes) {
-        $cond1 = $smokes.IndexOf('Kools') -eq $colors.IndexOf('Yellow')             #Rule 8
-        $cond2 = $smokes.IndexOf('Parliaments') -eq $people.IndexOf('Japanese')     #Rule 14
-        $cond3 = $smokes.IndexOf('Parliaments') -ne $colors.IndexOf('Red')          #Rule 14 + 2
-        $cond4 = $smokes.IndexOf('LuckyStrike') -eq $drinks.IndexOf('OrangeJuice')  #Rule 13
-        $cond5 = $smokes.IndexOf('LuckyStrike') -ne $colors.IndexOf('Green')        #Rule 13 + 4
-        $cond6 = $smokes.IndexOf('LuckyStrike') -ne $people.IndexOf('Ukrainian')    #Rule 13 + 5
+        $cond1 = $smokes.IndexOf('Paint') -eq $colors.IndexOf('Yellow')             #Rule 8
+        $cond2 = $smokes.IndexOf('Chess') -eq $people.IndexOf('Japanese')     #Rule 14
+        $cond3 = $smokes.IndexOf('Chess') -ne $colors.IndexOf('Red')          #Rule 14 + 2
+        $cond4 = $smokes.IndexOf('Football') -eq $drinks.IndexOf('OrangeJuice')  #Rule 13
+        $cond5 = $smokes.IndexOf('Football') -ne $colors.IndexOf('Green')        #Rule 13 + 4
+        $cond6 = $smokes.IndexOf('Football') -ne $people.IndexOf('Ukrainian')    #Rule 13 + 5
         return $cond1 -and $cond2 -and $cond3 -and $cond4 -and $cond5 -and $cond6
     }
 
     [bool] hidden PetRule($colors, $people, $drinks, $smokes, $pets) {
         $cond1 = $people.IndexOf('Spaniard') -eq $pets.IndexOf('Dog')                       #Rule 3
-        $cond2 = $smokes.IndexOf('OldGold') -eq $pets.IndexOf('Snails')                     #Rule 7
-        $cond3 = [Math]::Abs($smokes.IndexOf('Kools') - $pets.IndexOf('Horse')) -eq 1       #Rule 12
-        $cond4 = [Math]::Abs($smokes.IndexOf('Chesterfields') - $pets.IndexOf('Fox')) -eq 1 #Rule 11
+        $cond2 = $smokes.IndexOf('Dance') -eq $pets.IndexOf('Snails')                     #Rule 7
+        $cond3 = [Math]::Abs($smokes.IndexOf('Paint') - $pets.IndexOf('Horse')) -eq 1       #Rule 12
+        $cond4 = [Math]::Abs($smokes.IndexOf('Read') - $pets.IndexOf('Fox')) -eq 1 #Rule 11
         return $cond1 -and $cond2 -and $cond3 -and $cond4
     }
 

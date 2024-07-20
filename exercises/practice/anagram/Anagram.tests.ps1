@@ -114,4 +114,18 @@ Describe "Test Invoke-Anagram.ps1" {
 
         $got | Should -Be $want
     }
+
+    It "handles case of greek letters" {
+        $got = Invoke-Anagram -Subject "ΑΒΓ" -Candidates @("ΒΓΑ", "ΒΓΔ", "γβα", "αβγ")
+        $want = @("ΒΓΑ", "γβα")
+
+        $got | Should -Be $want
+    }
+
+    It "different characters may have the same bytes" {
+        $got = Invoke-Anagram -Subject "a⬂" -Candidates @("€a")
+        $want = @()
+
+        $got | Should -Be $want
+    }
 }
