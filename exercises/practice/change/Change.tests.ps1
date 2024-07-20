@@ -60,6 +60,13 @@ Describe "coin change test cases" {
             $got | Should -BeExactly $want
         }
 
+        It "a greedy approach is not optimal" {
+            $got  = Get-Change -Coins @(1, 10, 11) -Target 20
+            $want = @(10, 10)
+
+            $got | Should -BeExactly $want
+        }
+
         It "no coins make 0 change" {
             $got  = Get-Change -Coins @(1, 2, 5) -Target 0
             $want = @()

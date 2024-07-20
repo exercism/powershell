@@ -29,6 +29,7 @@ Describe "Roman Numerals Test Cases" {
         @{ Number = 1666;   Result = "MDCLXVI"  },
         @{ Number = 3000;   Result = "MMM"      },
         @{ Number = 3001;   Result = "MMMI"     },
+        @{ Number = 3888;   Result = "MMMDCCCLXXXVIII"},
         @{ Number = 3999;   Result = "MMMCMXCIX"}
         ) {
             Param(

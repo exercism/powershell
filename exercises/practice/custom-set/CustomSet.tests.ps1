@@ -258,6 +258,16 @@ Describe "custom set test cases" {
 
             $got | Should -BeExactly $want
         }
+
+        It "difference (or complement) -> of a set is a set of all elements that are only in the first set removes all duplicates in the first set" {
+            $set1 = [CustomSet]::new(@(1, 1))
+            $set2 = [CustomSet]::new(@(1))
+            
+            $got  = $set1.Difference($set2)
+            $want = [CustomSet]::new()
+
+            $got | Should -BeExactly $want
+        }
     
         It "union -> union of empty sets is an empty set" {
             $set1 = [CustomSet]::new()

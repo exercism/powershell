@@ -179,6 +179,13 @@ Describe "Test Invoke-ProteinTranslation.ps1" {
             $got | Should -BeExactly $want
         }
 
+        It "Sequence of two non-STOP codons does not translate to a STOP codon" {
+            $got = Invoke-ProteinTranslation -Strand "AUGAUG"
+            $want = @("Methionine", "Methionine")
+    
+            $got | Should -BeExactly $want
+        }
+
         It "Incomplete RNA sequence can translate if valid until a STOP codon" {
             $got = Invoke-ProteinTranslation -Strand "UUCUUCUAAUGGU"
             $want = @("Phenylalanine", "Phenylalanine")

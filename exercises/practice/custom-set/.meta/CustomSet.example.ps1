@@ -66,8 +66,14 @@ Class CustomSet {
     }
     
     [CustomSet] Difference([CustomSet]$otherSet) {
-        $dif = Compare-Object $this.Set $otherSet.Set -PassThru | Where-Object { $_.SideIndicator -eq '<='}
-        return [CustomSet]::new(@($dif))
+        if ($otherSet.Set.Count -eq 0) {
+            return [CustomSet]::new($this.Set)
+        }
+        $difA = $this.Set | Where-Object {$_ -notin $otherSet.Set}
+        if ($this.Set.Count -eq 0 -or $difA.Count -eq 0) {
+            return [CustomSet]::new()
+        }
+        return [CustomSet]::new(@($difA))
     }
 
     [CustomSet] Intersection([CustomSet]$otherSet) {

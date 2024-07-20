@@ -203,4 +203,24 @@ Describe "Ledger test cases" {
 
         $got | Should -BeExactly $want
     }
+
+    It "multiple entries on same date ordered by description" {
+        $params = @{
+            Currency = "USD"
+            Locale = "en-US"
+            Entries = @(
+                CreateEntry -Date '2015-01-01' -Desc 'Get present' -Amount 1000
+                CreateEntry -Date '2015-01-01' -Desc 'Buy present' -Amount -1000
+            )
+        }
+        
+        $got  = FormatEntries @params
+        $want = @(
+            'Date       | Description               | Change       ',
+            '01/01/2015 | Buy present               |      ($10.00)',
+            '01/01/2015 | Get present               |       $10.00 '
+        ) -join "`n"
+
+        $got | Should -BeExactly $want
+    }
 }
