@@ -200,7 +200,7 @@ Describe "custom set test cases" {
             $got  = $set.Add(1)
             $want = [CustomSet]::new(1)
 
-            $got | Should -BeExactly $want
+            $got | Should -Be $want
         }
     
         It "add -> add to non-empty set" {
@@ -208,7 +208,7 @@ Describe "custom set test cases" {
             $got  = $set.Add(5)
             $want = [CustomSet]::new(@(1,5))
 
-            $got | Should -BeExactly $want
+            $got | Should -Be $want
         }
     
         It "add -> adding an existing element does not change the set" {
@@ -216,7 +216,7 @@ Describe "custom set test cases" {
             $got  = $set.Add(3)
             $want = [CustomSet]::new(@(1, 2, 3))
 
-            $got | Should -BeExactly $want
+            $got | Should -Be $want
         }
 
         It "difference (or complement) -> difference of two empty sets is an empty set" {
@@ -226,7 +226,7 @@ Describe "custom set test cases" {
             $got  = $set1.Difference($set2)
             $want = [CustomSet]::new()
 
-            $got | Should -BeExactly $want
+            $got | Should -Be $want
         }
     
         It "difference (or complement) -> difference of empty set and non-empty set is an empty set" {
@@ -236,7 +236,7 @@ Describe "custom set test cases" {
             $got  = $set1.Difference($set2)
             $want = [CustomSet]::new()
 
-            $got | Should -BeExactly $want
+            $got | Should -Be $want
         }
     
         It "difference (or complement) -> difference of a non-empty set and an empty set is the non-empty set" {
@@ -246,7 +246,7 @@ Describe "custom set test cases" {
             $got  = $set1.Difference($set2)
             $want = [CustomSet]::new(@(1, 3, 4))
 
-            $got | Should -BeExactly $want
+            $got | Should -Be $want
         }
     
         It "difference (or complement) -> difference of two non-empty sets is a set of elements that are only in the first set" {
@@ -256,7 +256,7 @@ Describe "custom set test cases" {
             $got  = $set1.Difference($set2)
             $want = [CustomSet]::new(@(1, 3))
 
-            $got | Should -BeExactly $want
+            $got | Should -Be $want
         }
 
         It "difference (or complement) -> of a set is a set of all elements that are only in the first set removes all duplicates in the first set" {
@@ -266,7 +266,7 @@ Describe "custom set test cases" {
             $got  = $set1.Difference($set2)
             $want = [CustomSet]::new()
 
-            $got | Should -BeExactly $want
+            $got | Should -Be $want
         }
     
         It "union -> union of empty sets is an empty set" {
@@ -276,7 +276,7 @@ Describe "custom set test cases" {
             $got  = $set1.Union($set2)
             $want = [CustomSet]::new()
 
-            $got | Should -BeExactly $want
+            $got | Should -Be $want
         }
     
         It "union -> union of an empty set and non-empty set is the non-empty set" {
@@ -286,7 +286,7 @@ Describe "custom set test cases" {
             $got  = $set1.Union($set2)
             $want = [CustomSet]::new(@(2, 1))
 
-            $got | Should -BeExactly $want
+            $got | Should -Be $want
         }
     
         It "union -> union of a non-empty set and empty set is the non-empty set" {
@@ -296,7 +296,7 @@ Describe "custom set test cases" {
             $got  = $set1.Union($set2)
             $want = [CustomSet]::new(@(3, 5, 7))
 
-            $got | Should -BeExactly $want
+            $got | Should -Be $want
         }
     
         It "union -> union of non-empty sets contains all unique elements" {
@@ -306,7 +306,7 @@ Describe "custom set test cases" {
             $got  = $set1.Union($set2)
             $want = [CustomSet]::new(@(3, 5, 7, 1, 8))
             
-            $got | Should -BeExactly $want
+            $got | Should -Be $want
         }
 
         It "intersection -> intersection of two empty sets is an empty set" {
@@ -316,7 +316,7 @@ Describe "custom set test cases" {
             $got  = $set1.Intersection($set2)
             $want = [CustomSet]::new()
 
-            $got | Should -BeExactly $want
+            $got | Should -Be $want
         }
     
         It "intersection -> intersection of an empty set and non-empty set is an empty set" {
@@ -326,7 +326,7 @@ Describe "custom set test cases" {
             $got  = $set1.Intersection($set2)
             $want = [CustomSet]::new()
 
-            $got | Should -BeExactly $want
+            $got | Should -Be $want
         }
     
         It "intersection -> intersection of a non-empty set and an empty set is an empty set" {
@@ -336,7 +336,7 @@ Describe "custom set test cases" {
             $got  = $set1.Intersection($set2)
             $want = [CustomSet]::new()
 
-            $got | Should -BeExactly $want
+            $got | Should -Be $want
         }
     
         It "intersection -> intersection of two sets with no shared elements is an empty set" {
@@ -346,7 +346,7 @@ Describe "custom set test cases" {
             $got  = $set1.Intersection($set2)
             $want = [CustomSet]::new()
 
-            $got | Should -BeExactly $want
+            $got | Should -Be $want
         }
     
         It "intersection -> intersection of two sets with shared elements is a set of the shared elements" {
@@ -356,7 +356,7 @@ Describe "custom set test cases" {
             $got  = $set1.Intersection($set2)
             $want = [CustomSet]::new(@(4, 8, 5))
 
-            $got | Should -BeExactly $want
+            $got | Should -Be $want
         }
     }
 
@@ -368,7 +368,7 @@ Describe "custom set test cases" {
             $got  = $set1.Intersection($set2).Add(1).Union($set2).Difference($set2)
             $want = [CustomSet]::new(@(1))
 
-            $got | Should -BeExactly $want
+            $got | Should -Be $want
         }
     }
 }
