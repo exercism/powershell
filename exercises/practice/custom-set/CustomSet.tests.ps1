@@ -190,7 +190,7 @@ Describe "custom set test cases" {
             $set2 = [CustomSet]::new(@(1, 1))
             $got  = $set1 -eq $set2
 
-            $got | Should -BeFalse
+            $got | Should -BeTrue
         }
     }
 
