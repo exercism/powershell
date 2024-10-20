@@ -23,17 +23,18 @@
     Returns: $true
 #>
 Class CustomSet {
-    [Object[]] hidden $Set
+    [Object[]] $Set
 
     CustomSet() {
         $this.Set = @()
     }
 
     CustomSet([Object[]]$values) {
-        if ($values.Count -eq 0) {
-            $this.Set = @()
-        }else {
-            $this.Set += $values | Where-Object { $this.Set -notcontains $_ }
+        $this.Set = @()
+        foreach ($val in $values) {
+            if ($val -notin $this.Set) {
+                $this.Set += $val
+            }
         }
     }
 
@@ -41,13 +42,20 @@ Class CustomSet {
         return $this.Set.Count -eq 0
     }
     
-    [bool] Contains([Object]$element) {
+    [bool] Contains([object]$element) {
         return $this.Set -contains $element
     }
 
-    [bool] IsSubset([CustomSet]$otherSet) {
-        $overlap = Compare-Object $this.Set $otherSet.Set -IncludeEqual -ExcludeDifferent
-        return $overlap.Count -eq $this.Set.Count
+    [bool] IsSubset([CustomSet]$other) {
+        if ($this.IsEmpty()) {
+            return $true
+        }
+        foreach ($element in $this.Set) {
+            if (-not $other.Contains($element)) {
+                return $false
+            }
+        }
+        return $true
     }
 
     [bool] IsDisjoint([CustomSet]$otherSet) {
@@ -66,11 +74,11 @@ Class CustomSet {
     }
     
     [CustomSet] Difference([CustomSet]$otherSet) {
-        if ($otherSet.Set.Count -eq 0) {
+        if ($otherSet.IsEmpty()) {
             return [CustomSet]::new($this.Set)
         }
         $difA = $this.Set | Where-Object {$_ -notin $otherSet.Set}
-        if ($this.Set.Count -eq 0 -or $difA.Count -eq 0) {
+        if ($this.IsEmpty() -or $difA.Count -eq 0) {
             return [CustomSet]::new()
         }
         return [CustomSet]::new(@($difA))
@@ -81,10 +89,15 @@ Class CustomSet {
         return [CustomSet]::new(@($overlap))
     }
 
-    [bool] Equals([Object]$otherSet) {
-        if ($otherSet -is [CustomSet]) {
-            return -not (Compare-Object $this.Set $otherSet.Set)
+    [bool] Equals($other) {
+        if ($this.IsEmpty() -and $other.IsEmpty()) {
+            return $true
         }
-        return $false
+        foreach ($element in $this.Set) {
+            if (-not $other.Contains($element)) {
+                return $false
+            }
+        }
+        return $this.Set.Count -eq $other.Set.Count
     }
 }
