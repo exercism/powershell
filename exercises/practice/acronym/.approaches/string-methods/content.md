@@ -10,6 +10,6 @@ Function Get-Acronym() {
 }
 ```
 
-
-
-[Get-Date](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date) cmdlet.
+[Find and replace](https://learn.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-string-substitutions#find-and-replace-tokens) strings.  
+About [Split operator](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_split).  
+About [Join operator](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_join).
