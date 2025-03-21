@@ -49,10 +49,10 @@
         "name": "Pacman's Powerful Pursuit",
         "uuid": "49a52681-be7c-43db-862f-109ee13ac8a3",
         "concepts": [
-            "bools"
+          "bools"
         ],
         "prerequisites": [
-            "basics"
+          "basics"
         ],
         "status": "wip"
       }
@@ -142,7 +142,7 @@
       },
       {
         "slug": "sum-of-multiples",
-        "name": "Sum Of Multiples",
+        "name": "Sum of Multiples",
         "uuid": "df4403d1-3fb2-4c2c-a228-2bdb442d0680",
         "practices": [],
         "prerequisites": [],
@@ -261,7 +261,7 @@
       },
       {
         "slug": "rna-transcription",
-        "name": "Rna Transcription",
+        "name": "RNA Transcription",
         "uuid": "4ec88a7f-7a15-4e61-8db7-acf8b7f7086d",
         "practices": [
           "strings"
@@ -279,7 +279,7 @@
       },
       {
         "slug": "two-fer",
-        "name": "Two Fer",
+        "name": "Two-Fer",
         "uuid": "45f285c2-9358-451d-a931-1dee54df7b67",
         "practices": [],
         "prerequisites": [],
@@ -357,7 +357,7 @@
       },
       {
         "slug": "etl",
-        "name": "Etl",
+        "name": "ETL",
         "uuid": "85148e36-583b-4eba-9f66-daeb0c865daa",
         "practices": [
           "objects",
@@ -440,7 +440,7 @@
       },
       {
         "slug": "difference-of-squares",
-        "name": "Difference Of Squares",
+        "name": "Difference of Squares",
         "uuid": "b2eb59e2-f3ec-49aa-bcd0-2e9cb86e62bc",
         "practices": [
           "numbers"
@@ -507,7 +507,7 @@
       },
       {
         "slug": "isbn-verifier",
-        "name": "Isbn Verifier",
+        "name": "ISBN Verifier",
         "uuid": "c71cfb54-746a-492a-88f8-4258ee9bfe44",
         "practices": [],
         "prerequisites": [],
@@ -1057,7 +1057,7 @@
       },
       {
         "slug": "game-of-life",
-        "name": "Conway's Game Of Life",
+        "name": "Conway's Game of Life",
         "uuid": "9a66392e-acde-4c17-a8c6-281498eb635a",
         "practices": [],
         "prerequisites": [],
@@ -1179,7 +1179,7 @@
       },
       {
         "slug": "pov",
-        "name": "Pov",
+        "name": "POV",
         "uuid": "05773ba2-d938-44ac-bfcc-e16f5ff9851d",
         "practices": [],
         "prerequisites": [],
