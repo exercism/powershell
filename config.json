@@ -799,6 +799,14 @@
         "difficulty": 3
       },
       {
+        "slug": "swift-scheduling",
+        "name": "Swift Scheduling",
+        "uuid": "8fb9b94d-9d56-4655-b272-f2718da9575e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "simple-linked-list",
         "name": "Simple Linked List",
         "uuid": "97477cc5-2cad-44a6-9d5b-d82afe02465e",
