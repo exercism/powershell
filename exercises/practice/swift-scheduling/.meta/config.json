@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "SwiftScheduling.ps1"
+    ],
+    "test": [
+      "SwiftScheduling.tests.ps1"
+    ],
+    "example": [
+      ".meta/SwiftScheduling.example.ps1"
+    ]
+  },
+  "blurb": "Convert delivery date descriptions to actual delivery dates.",
+  "source": "Erik Schierboom",
+  "source_url": "https://github.com/exercism/problem-specifications/pull/2536"
+}
