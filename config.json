@@ -948,6 +948,14 @@
         "difficulty": 4
       },
       {
+        "slug": "baffling-birthdays",
+        "name": "Baffling Birthdays",
+        "uuid": "6f7add34-456f-4284-8e97-20fbd46e386e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "affine-cipher",
         "name": "Affine Cipher",
         "uuid": "0db7efd5-2ece-481a-b706-0e011aad52aa",
