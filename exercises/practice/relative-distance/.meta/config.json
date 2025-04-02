@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "RelativeDistance.ps1"
+    ],
+    "test": [
+      "RelativeDistance.tests.ps1"
+    ],
+    "example": [
+      ".meta/RelativeDistance.example.ps1"
+    ]
+  },
+  "blurb": "Given a family tree, calculate the degree of separation.",
+  "source": "vaeng",
+  "source_url": "https://github.com/exercism/problem-specifications/pull/2537"
+}
