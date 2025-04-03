@@ -940,6 +940,14 @@
         "difficulty": 4
       },
       {
+        "slug": "relative-distance",
+        "name": "Relative Distance",
+        "uuid": "904aaf68-8cef-47dc-8f53-e6bba8e2859c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "hangman",
         "name": "Hangman",
         "uuid": "20058254-0d41-486f-99d9-d7ee3f3ccb44",
