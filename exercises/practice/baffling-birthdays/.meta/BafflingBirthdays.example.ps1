@@ -16,13 +16,13 @@ Function Invoke-BafflingBirthdays {
     Param(
         [int]$People
     )
-    $runs = 1000
+    $runs = 5000
     $count = 0
     for ($i = 0; $i -lt $runs; $i++) {
         $birthdays = Get-RandomBirthdates -People $People
         $count += Test-SharedBirthday -Birthdates $birthdays
     }
-    $count /  100.00
+    $count * 100.00 / $runs
 }
 
 Function Get-RandomBirthdate([int]$Year) {
