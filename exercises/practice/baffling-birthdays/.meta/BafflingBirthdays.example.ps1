@@ -11,24 +11,20 @@ Function Invoke-BafflingBirthdays {
 
     .PARAMETER People
     Number of people in the group.
+
+    .NOTES
+    Consider doing 5000 runs of the test for optimal result for 2% tolerance.
     #>
     [CmdletBinding()]
     Param(
         [int]$People
     )
-    $runs = 1000
+    $runs = 5000
     $count = 0
     for ($i = 0; $i -lt $runs; $i++) {
-        $birthdays = Get-RandomBirthdates -People $People
-        $count += Test-SharedBirthday -Birthdates $birthdays
+        $count += Test-SharedBirthday -Birthdates (Get-RandomBirthdates -People $People)
     }
-    $count /  100.00
-}
-
-Function Get-RandomBirthdate([int]$Year) {
-    $month = Get-Random -Minimum 1 -Maximum (12 + 1)
-    $day   = Get-Random -Minimum 1 -Maximum (([DateTime]::DaysInMonth($Year, $month)) + 1)
-    [datetime]::New($Year, $month, $day)
+    $count * 100.00 / $runs
 }
 
 Function Get-RandomBirthdates {
@@ -47,9 +43,8 @@ Function Get-RandomBirthdates {
         $year = Get-Random -Minimum 1900 -Maximum ((Get-Date).Year + 1)
     } until (-not [DateTime]::IsLeapYear($year))
 
-    for ($i = 0; $i -lt $People; $i++) {
-        Get-RandomBirthdate $year
-    }
+    Get-Random -Minimum 0 -Maximum 365 -Count $People |
+        ForEach-Object { [DateTime]::new($year, 1, 1).AddDays($_) }
 }
 
 Function Test-SharedBirthday {
@@ -64,7 +59,7 @@ Function Test-SharedBirthday {
     Param(
         [DateTime[]]$Birthdates
     )
-    for ($i = 0; $i -lt $Birthdates.Count; $i++) {
+    for ($i = 0; $i -lt $Birthdates.Count - 1; $i++) {
         for ($j = $i+1; $j -lt $Birthdates.Count; $j++) {
             if ($Birthdates[$i].DayOfYear -eq $Birthdates[$j].DayOfYear) {
                 return $true
