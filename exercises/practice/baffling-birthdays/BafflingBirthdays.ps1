@@ -11,6 +11,9 @@ Function Invoke-BafflingBirthdays {
 
     .PARAMETER People
     Number of people in the group.
+
+    .NOTES
+    Consider doing 5000 runs of the test for optimal result for 2% tolerance.
     #>
     [CmdletBinding()]
     Param(
