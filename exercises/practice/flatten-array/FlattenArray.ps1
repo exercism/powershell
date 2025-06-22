@@ -7,7 +7,7 @@ Function Invoke-FlattenArray() {
     Given an array, flatten it and keep all values except null.
 
     .PARAMETER Array
-    The nested array to be flatten.
+    The nested array to be flattened.
 
     .EXAMPLE
     Invoke-FlattenArray -Array @(1, @(2, 3, $null, 4), @($null), 5)
