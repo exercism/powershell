@@ -4,7 +4,7 @@ Function Invoke-FlattenArray() {
     Take a nested array and return a single flattened array with all values except null.
 
     .DESCRIPTION
-    Given an array, flatten it and keep all values execept null.
+    Given an array, flatten it and keep all values except null.
 
     .PARAMETER Array
     The nested array to be flatten.
