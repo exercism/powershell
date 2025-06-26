@@ -1,5 +1,35 @@
 BeforeAll {
     . "./RestApi.ps1"
+
+    Function Test-ApiResult([object]$got, [object]$want, [string[]]$path = $null) {
+        $basePath = $path -join "."
+        if ($want -is [hashtable]) {
+            # Make sure keys are the same
+            $gotKeys = $got.Keys | Sort-Object
+            $wantKeys = $want.Keys | Sort-Object
+            $gotKeys | Should -BeExactly $wantKeys -Because "$basePath keys"
+
+            # Make sure values are the same
+            foreach ($entry in $want.GetEnumerator()) {
+                Test-ApiResult $got[$entry.Key] $entry.Value ($path + $entry.Key)
+            }
+        }
+        elseif ($want -is [array]) {
+            # Make number of values is the same
+            $gotCount = $got.Count
+            $wantCount = $want.Count
+            $gotCount | Should -BeExactly $wantCount -Because "$basePath value count"
+
+            # Make sure values are the same
+            for ($i = 0; $i -lt $wantCount; $i++) {
+                Test-ApiResult $got[$i] $want[$i] ($path + "[$i]")
+            }
+        }
+        else {
+            # Make sure value is the same
+            $got | Should -BeExactly $want -Because $basePath
+        }
+    }
 }
 
 Describe "RestApi test cases" {
@@ -9,7 +39,7 @@ Describe "RestApi test cases" {
         $got = $api.Get("/users") 
         $want = @{users = @()}
 
-        ($got | ConvertTo-Json -Depth 5) | Should -BeExactly ($want | ConvertTo-Json -Depth 5)
+        Test-ApiResult $got $want
     }
 
     It "user management -> add user" {
@@ -20,7 +50,7 @@ Describe "RestApi test cases" {
             name = "Adam"; owes = @{}; owed_by = @{}; balance = 0.0
         }
 
-        ($got | ConvertTo-Json -Depth 5) | Should -BeExactly ($want | ConvertTo-Json -Depth 5)
+        Test-ApiResult $got $want
     }
 
     It "user management -> get single user" {
@@ -38,7 +68,7 @@ Describe "RestApi test cases" {
             )
         } 
 
-        ($got | ConvertTo-Json -Depth 5) | Should -BeExactly ($want | ConvertTo-Json -Depth 5)
+        Test-ApiResult $got $want
     }
 
     # addition test to make sure you can't add existing user
@@ -70,7 +100,7 @@ Describe "RestApi test cases" {
             )
         }
 
-        ($got | ConvertTo-Json -Depth 5) | Should -BeExactly ($want | ConvertTo-Json -Depth 5)
+        Test-ApiResult $got $want
     }
 
     It "iou -> borrower has negative balance" {
@@ -90,7 +120,7 @@ Describe "RestApi test cases" {
             )
         }
 
-        ($got | ConvertTo-Json -Depth 5) | Should -BeExactly ($want | ConvertTo-Json -Depth 5)
+        Test-ApiResult $got $want
     }
 
     It "iou -> lender has negative balance" {
@@ -110,7 +140,7 @@ Describe "RestApi test cases" {
             )
         }
 
-        ($got | ConvertTo-Json -Depth 5) | Should -BeExactly ($want | ConvertTo-Json -Depth 5)
+        Test-ApiResult $got $want
     }
 
     It "iou -> lender owes borrower" {
@@ -129,7 +159,7 @@ Describe "RestApi test cases" {
             )
         }
 
-        ($got | ConvertTo-Json -Depth 5) | Should -BeExactly ($want | ConvertTo-Json -Depth 5)
+        Test-ApiResult $got $want
     }
 
     It "iou -> lender owes borrower less than new loan" {
@@ -148,7 +178,7 @@ Describe "RestApi test cases" {
             )
         }
 
-        ($got | ConvertTo-Json -Depth 5) | Should -BeExactly ($want | ConvertTo-Json -Depth 5)
+        Test-ApiResult $got $want
     }
 
     It "iou -> lender owes borrower same as new loan" {
@@ -167,6 +197,6 @@ Describe "RestApi test cases" {
             )
         }
 
-        ($got | ConvertTo-Json -Depth 5) | Should -BeExactly ($want | ConvertTo-Json -Depth 5)
+        Test-ApiResult $got $want
     }
 }
