@@ -2,6 +2,7 @@ BeforeAll {
     . "./RestApi.ps1"
 
     Function Test-ApiResult([object]$got, [object]$want, [string[]]$path = $null) {
+        $path = $path ?? @()
         $basePath = $path -join "."
         if ($want -is [hashtable]) {
             # Make sure keys are the same
