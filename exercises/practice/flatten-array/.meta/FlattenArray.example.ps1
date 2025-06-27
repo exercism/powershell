@@ -1,13 +1,13 @@
 Function Invoke-FlattenArray() {
     <#
     .SYNOPSIS
-    Given an array, flatten it and keep all values execept null.
-
-    .DESCRIPTION
     Take a nested array and return a single flattened array with all values except null.
 
+    .DESCRIPTION
+    Given an array, flatten it and keep all values except null.
+
     .PARAMETER Array
-    The nested array to be flatten.
+    The nested array to be flattened.
 
     .EXAMPLE
     Invoke-FlattenArray -Array @(1, @(2, 3, $null, 4), @($null), 5)
