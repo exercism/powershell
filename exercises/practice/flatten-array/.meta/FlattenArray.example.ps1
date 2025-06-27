@@ -1,10 +1,10 @@
 Function Invoke-FlattenArray() {
     <#
     .SYNOPSIS
-    Given an array, flatten it and keep all values except null.
+    Take a nested array and return a single flattened array with all values except null.
 
     .DESCRIPTION
-    Take a nested array and return a single flattened array with all values except null.
+    Given an array, flatten it and keep all values except null.
 
     .PARAMETER Array
     The nested array to be flattened.
