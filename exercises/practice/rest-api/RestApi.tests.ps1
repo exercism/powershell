@@ -1,34 +1,32 @@
 BeforeAll {
     . "./RestApi.ps1"
 
-    Function Test-ApiResult([object]$got, [object]$want, [string[]]$path = $null) {
-        $path = $path ?? @()
-        $basePath = $path -join "."
+    Function Test-ApiResult([object]$got, [object]$want, [string]$path = "expected") {
         if ($want -is [hashtable]) {
             # Make sure keys are the same
             $gotKeys = $got.Keys | Sort-Object
             $wantKeys = $want.Keys | Sort-Object
-            $gotKeys | Should -BeExactly $wantKeys -Because "$basePath keys"
+            $gotKeys | Should -BeExactly $wantKeys -Because "those are the expected keys for $path"
 
             # Make sure values are the same
             foreach ($entry in $want.GetEnumerator()) {
-                Test-ApiResult $got[$entry.Key] $entry.Value ($path + $entry.Key)
+                Test-ApiResult $got[$entry.Key] $entry.Value "$path[`"$($entry.Key)`"]"
             }
         }
         elseif ($want -is [array]) {
             # Make number of values is the same
             $gotCount = $got.Count
             $wantCount = $want.Count
-            $gotCount | Should -BeExactly $wantCount -Because "$basePath value count"
+            $gotCount | Should -BeExactly $wantCount -Because "that is the expected number of $path values"
 
             # Make sure values are the same
             for ($i = 0; $i -lt $wantCount; $i++) {
-                Test-ApiResult $got[$i] $want[$i] ($path + "[$i]")
+                Test-ApiResult $got[$i] $want[$i] "$path[$i]"
             }
         }
         else {
             # Make sure value is the same
-            $got | Should -BeExactly $want -Because $basePath
+            $got | Should -BeExactly $want -Because "that is the expected value for $path"
         }
     }
 }
