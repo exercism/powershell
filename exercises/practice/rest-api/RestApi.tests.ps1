@@ -2,30 +2,40 @@ BeforeAll {
     . "./RestApi.ps1"
 
     Function Test-ApiResult([object]$got, [object]$want, [string]$path = "expected") {
+        <#
+        .SYNOPSIS
+        Test the result returned from a REST API call to make sure that it matches the expected value.
+
+        .DESCRIPTION
+        Recursively test the result returned from a REST API call against the expected value:
+
+        - For a hash table:
+          - Make sure that the keys match
+          - Recursively check that each value matches
+        - For an array:
+          - Make sure that the number of values match
+          - Recursively check that each value matches
+        - For a simple value, make sure that the value matches
+        #>
         if ($want -is [hashtable]) {
-            # Make sure keys are the same
             $gotKeys = $got.Keys | Sort-Object
             $wantKeys = $want.Keys | Sort-Object
             $gotKeys | Should -BeExactly $wantKeys -Because "those are the expected keys for $path"
 
-            # Make sure values are the same
             foreach ($entry in $want.GetEnumerator()) {
                 Test-ApiResult $got[$entry.Key] $entry.Value "$path[`"$($entry.Key)`"]"
             }
         }
         elseif ($want -is [array]) {
-            # Make number of values is the same
             $gotCount = $got.Count
             $wantCount = $want.Count
             $gotCount | Should -BeExactly $wantCount -Because "that is the expected number of $path values"
 
-            # Make sure values are the same
             for ($i = 0; $i -lt $wantCount; $i++) {
                 Test-ApiResult $got[$i] $want[$i] "$path[$i]"
             }
         }
         else {
-            # Make sure value is the same
             $got | Should -BeExactly $want -Because "that is the expected value for $path"
         }
     }
