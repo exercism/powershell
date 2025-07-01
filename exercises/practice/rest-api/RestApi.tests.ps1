@@ -1,5 +1,44 @@
 BeforeAll {
     . "./RestApi.ps1"
+
+    Function Test-ApiResult([object]$got, [object]$want, [string]$path = "expected") {
+        <#
+        .SYNOPSIS
+        Test the result returned from a REST API call to make sure that it matches the expected value.
+
+        .DESCRIPTION
+        Recursively test the result returned from a REST API call against the expected value:
+
+        - For a hash table:
+          - Make sure that the keys match
+          - Recursively check that each value matches
+        - For an array:
+          - Make sure that the number of values match
+          - Recursively check that each value matches
+        - For a simple value, make sure that the value matches
+        #>
+        if ($want -is [hashtable]) {
+            $gotKeys = $got.Keys | Sort-Object
+            $wantKeys = $want.Keys | Sort-Object
+            $gotKeys | Should -BeExactly $wantKeys -Because "those are the expected keys for $path"
+
+            foreach ($entry in $want.GetEnumerator()) {
+                Test-ApiResult $got[$entry.Key] $entry.Value "$path[`"$($entry.Key)`"]"
+            }
+        }
+        elseif ($want -is [array]) {
+            $gotCount = $got.Count
+            $wantCount = $want.Count
+            $gotCount | Should -BeExactly $wantCount -Because "that is the expected number of $path values"
+
+            for ($i = 0; $i -lt $wantCount; $i++) {
+                Test-ApiResult $got[$i] $want[$i] "$path[$i]"
+            }
+        }
+        else {
+            $got | Should -BeExactly $want -Because "that is the expected value for $path"
+        }
+    }
 }
 
 Describe "RestApi test cases" {
@@ -9,7 +48,7 @@ Describe "RestApi test cases" {
         $got = $api.Get("/users") 
         $want = @{users = @()}
 
-        ($got | ConvertTo-Json -Depth 5) | Should -BeExactly ($want | ConvertTo-Json -Depth 5)
+        Test-ApiResult $got $want
     }
 
     It "user management -> add user" {
@@ -20,7 +59,7 @@ Describe "RestApi test cases" {
             name = "Adam"; owes = @{}; owed_by = @{}; balance = 0.0
         }
 
-        ($got | ConvertTo-Json -Depth 5) | Should -BeExactly ($want | ConvertTo-Json -Depth 5)
+        Test-ApiResult $got $want
     }
 
     It "user management -> get single user" {
@@ -38,7 +77,7 @@ Describe "RestApi test cases" {
             )
         } 
 
-        ($got | ConvertTo-Json -Depth 5) | Should -BeExactly ($want | ConvertTo-Json -Depth 5)
+        Test-ApiResult $got $want
     }
 
     # addition test to make sure you can't add existing user
@@ -70,7 +109,7 @@ Describe "RestApi test cases" {
             )
         }
 
-        ($got | ConvertTo-Json -Depth 5) | Should -BeExactly ($want | ConvertTo-Json -Depth 5)
+        Test-ApiResult $got $want
     }
 
     It "iou -> borrower has negative balance" {
@@ -90,7 +129,7 @@ Describe "RestApi test cases" {
             )
         }
 
-        ($got | ConvertTo-Json -Depth 5) | Should -BeExactly ($want | ConvertTo-Json -Depth 5)
+        Test-ApiResult $got $want
     }
 
     It "iou -> lender has negative balance" {
@@ -110,7 +149,7 @@ Describe "RestApi test cases" {
             )
         }
 
-        ($got | ConvertTo-Json -Depth 5) | Should -BeExactly ($want | ConvertTo-Json -Depth 5)
+        Test-ApiResult $got $want
     }
 
     It "iou -> lender owes borrower" {
@@ -129,7 +168,7 @@ Describe "RestApi test cases" {
             )
         }
 
-        ($got | ConvertTo-Json -Depth 5) | Should -BeExactly ($want | ConvertTo-Json -Depth 5)
+        Test-ApiResult $got $want
     }
 
     It "iou -> lender owes borrower less than new loan" {
@@ -148,7 +187,7 @@ Describe "RestApi test cases" {
             )
         }
 
-        ($got | ConvertTo-Json -Depth 5) | Should -BeExactly ($want | ConvertTo-Json -Depth 5)
+        Test-ApiResult $got $want
     }
 
     It "iou -> lender owes borrower same as new loan" {
@@ -167,6 +206,6 @@ Describe "RestApi test cases" {
             )
         }
 
-        ($got | ConvertTo-Json -Depth 5) | Should -BeExactly ($want | ConvertTo-Json -Depth 5)
+        Test-ApiResult $got $want
     }
 }
