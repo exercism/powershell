@@ -900,6 +900,14 @@
         "difficulty": 4
       },
       {
+        "slug": "flower-field",
+        "name": "Flower Field",
+        "uuid": "a70c28bc-4373-4549-a089-7fd0c355d21e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "food-chain",
         "name": "Food Chain",
         "uuid": "b39e143f-dbf6-4157-9e18-220147b145a9",
@@ -911,14 +919,6 @@
         "slug": "killer-sudoku-helper",
         "name": "Killer Sudoku Helper",
         "uuid": "cdfc017a-30aa-4dcd-aa79-8a7dfcd7bca1",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 4
-      },
-      {
-        "slug": "minesweeper",
-        "name": "Minesweeper",
-        "uuid": "23508af2-2bf3-4ef9-aac4-f41471afe76d",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4
@@ -1208,6 +1208,15 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 10
+      },
+      {
+        "slug": "minesweeper",
+        "name": "Minesweeper",
+        "uuid": "23508af2-2bf3-4ef9-aac4-f41471afe76d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4,
+        "status": "deprecated"
       },
       {
         "slug": "scale-generator",
