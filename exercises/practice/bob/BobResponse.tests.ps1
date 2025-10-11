@@ -85,7 +85,7 @@ Describe "Test Get-BobResponse" {
     }
 
     It "multiple line question" {
-        Get-BobResponse -HeyBob "`nDoes this cryogenic chamber make me look fat?`nno" | Should -BeExactly "Whatever."
+        Get-BobResponse -HeyBob "`nDoes this cryogenic chamber make`n me look fat?" | Should -BeExactly "Sure."
     }
 
     It "starting with whitespace" {
