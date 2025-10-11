@@ -10,6 +10,20 @@ Describe "Wordy test cases" {
     
             $got | Should -BeExactly $want
         }
+
+        It "just a zero" {
+            $got  = Get-Answer -Question "What is 0?"
+            $want = 0
+    
+            $got | Should -BeExactly $want
+        }
+
+        It "just a negative number" {
+            $got  = Get-Answer -Question "What is -123?"
+            $want = -123
+    
+            $got | Should -BeExactly $want
+        }
     
         It "addition" {
             $got  = Get-Answer -Question "What is 1 plus 1?"
@@ -28,6 +42,20 @@ Describe "Wordy test cases" {
         It "addition with negative numbers" {
             $got  = Get-Answer -Question "What is -1 plus -10?"
             $want = -11
+    
+            $got | Should -BeExactly $want
+        }
+
+        It "addition with a left hand zero" {
+            $got  = Get-Answer -Question "What is 0 plus 2?"
+            $want = 2
+    
+            $got | Should -BeExactly $want
+        }
+
+        It "addition with a right hand zero" {
+            $got  = Get-Answer -Question "What is 3 plus 0?"
+            $want = 3
     
             $got | Should -BeExactly $want
         }

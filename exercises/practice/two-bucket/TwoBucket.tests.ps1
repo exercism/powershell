@@ -80,4 +80,22 @@ Describe "TwoBucket test cases" {
         $buckets = [TwoBucket]::new(5, 5, "one")
         { $buckets.Measure(4) } | Should -Throw "*Two buckets can't be of the same size*"
     }
+
+    It "Measure using bucket one much bigger than bucket two" {
+        $buckets = [TwoBucket]::new(5, 1, "one")
+        $got = $buckets.Measure(2)
+
+        $got.Moves       | Should -BeExactly 6
+        $got.GoalBucket  | Should -BeExactly "one"
+        $got.OtherBucket | Should -BeExactly 1
+    }
+
+    It "Measure using bucket one much smaller than bucket two" {
+        $buckets = [TwoBucket]::new(3, 15, "one")
+        $got = $buckets.Measure(9)
+
+        $got.Moves       | Should -BeExactly 6
+        $got.GoalBucket  | Should -BeExactly "two"
+        $got.OtherBucket | Should -BeExactly 0
+    }
 }
