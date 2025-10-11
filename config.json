@@ -615,6 +615,14 @@
         "prerequisites": [],
         "difficulty": 2
       },
+            {
+        "slug": "line-up",
+        "name": "Line Up",
+        "uuid": "35d96adf-0fc2-4442-9299-76d880a70b3c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
       {
         "slug": "error-handling",
         "name": "Error Handling",
