@@ -25,6 +25,7 @@ Describe "PigLatin test cases" {
             @{Text = "koala" ; want = "oalakay" ; Desc = "k"}
             @{Text = "xenon" ; want = "enonxay" ; Desc = "x"}
             @{Text = "qat"   ; want = "atqay"   ; Desc = "q without a following u"}
+            @{Text = "liquid"; want = "iquidlay"; Desc = "consonant and vowel containing qu"}
         ) {
             param($Text, $want)
             $got = Invoke-PigLatin -Text $Text

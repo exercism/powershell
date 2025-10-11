@@ -49,7 +49,7 @@ Function Validator() {
         Throw "digits input must only contain digits"
     }
     if ($Span -gt $Digits.Length) {
-        Throw "span must be smaller than string length"
+        Throw "span must not exceed string length"
     }
     if ($Span -lt 0) {
         Throw "span must not be negative"

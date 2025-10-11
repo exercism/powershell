@@ -32,6 +32,11 @@ Describe "Forth test cases" {
         It "addition -> errors if there is only one value on the stack" {
             {$forth.Evaluate(@("1 +"))} | Should -Throw "*Not enough items in stack to perform operation*"
         }
+
+        It "addition -> more than two values on the stack" {
+            $forth.Evaluate(@("1 2 3 +"))
+            $forth.GetStack() | Should -Be @(1, 5)
+        }
     
         It "subtraction -> can subtract two numbers" {
             $forth.Evaluate(@("3 4 -"))
@@ -45,6 +50,11 @@ Describe "Forth test cases" {
         It "subtraction -> errors if there is only one value on the stack" {
             {$forth.Evaluate(@("1 -"))} | Should -Throw "*Not enough items in stack to perform operation*"
         }
+
+        It "subtraction -> more than two values on the stack" {
+            $forth.Evaluate(@("1 12 3 -"))
+            $forth.GetStack() | Should -Be @(1, 9)
+        }
     
         It "multiplication -> can multiply two numbers" {
             $forth.Evaluate(@("2 4 *"))
@@ -57,6 +67,11 @@ Describe "Forth test cases" {
     
         It "multiplication -> errors if there is only one value on the stack" {
             {$forth.Evaluate(@("1 *"))} | Should -Throw "*Not enough items in stack to perform operation*"
+        }
+
+        It "multiplication -> more than two values on the stack" {
+            $forth.Evaluate(@("1 2 3 *"))
+            $forth.GetStack() | Should -Be @(1, 6)
         }
     
         It "division -> can divide two numbers" {
@@ -76,6 +91,11 @@ Describe "Forth test cases" {
         It "division -> errors if there is nothing on the stack" {
             {$forth.Evaluate(@("/"))} | Should -Throw "*Stack is empty*"
         }
+
+        It "division -> more than two values on the stack" {
+            $forth.Evaluate(@("1 12 3 /"))
+            $forth.GetStack() | Should -Be @(1, 4)
+        }
     
         It "division -> errors if there is only one value on the stack" {
             {$forth.Evaluate(@("1 /"))} | Should -Throw "*Not enough items in stack to perform operation*"
@@ -89,6 +109,16 @@ Describe "Forth test cases" {
         It "combined arithmetic -> multiplication and division" {
             $forth.Evaluate(@("2 4 * 3 /"))
             $forth.GetStack() | Should -Be @(2)
+        }
+
+        It "combined arithmetic -> multiplication and addition" {
+            $forth.Evaluate(@("1 3 4 * +"))
+            $forth.GetStack() | Should -Be @(13)
+        }
+
+        It "combined arithmetic -> addition and multiplication" {
+            $forth.Evaluate(@("1 3 4 + *"))
+            $forth.GetStack() | Should -Be @(7)
         }
     }
     

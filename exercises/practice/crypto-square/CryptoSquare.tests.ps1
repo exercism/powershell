@@ -52,7 +52,7 @@ Describe "CryptoSquare test cases" {
         $got | Should -BeExactly $want
     }
 
-    It "54 character plaintext results in 7 chunks, the last two with trailing spaces" {
+    It "54 character plaintext results in 8 chunks, the last two with trailing spaces" {
         $got  = Invoke-CryptoSquare -PlainText "If man was meant to stay on the ground, god would have given us roots."
         $want = "imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn  sseoau "
 

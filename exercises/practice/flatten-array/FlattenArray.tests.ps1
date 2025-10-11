@@ -52,28 +52,28 @@ Describe "flatten array test cases" {
         $got | Should -BeExactly $want
     }
     
-    It "consecutive null values at the front of the list are omitted from the final result" {
+    It "consecutive null values at the front of the array are omitted from the final result" {
         $got  = Invoke-FlattenArray -Array @($null, $null, 5)
         $want = @(5)
 
         $got | Should -BeExactly $want
     }
     
-    It "consecutive null values in the middle of the list are omitted from the final result" {
+    It "consecutive null values in the middle of the array are omitted from the final result" {
         $got  = Invoke-FlattenArray -Array @(1, $null, $null, 4)
         $want = @(1, 4)
 
         $got | Should -BeExactly $want
     }
     
-    It "6 level nest list with null values" {
+    It "6 level nest array with null values" {
         $got  = Invoke-FlattenArray -Array @(0, 2, @(@(2, 3), 8, @(@(100)), $null, @(@($null))), -2)
         $want = @(0, 2, 2, 3, 8, 100, -2)
 
         $got | Should -BeExactly $want
     }
     
-    It "all values in nested list are null" {
+    It "all values in nested array are null" {
         $got  = Invoke-FlattenArray -Array @($null, @(@(@($null))), $null, $null, @(@($null, $null), $null), $null)
         $want = @()
 

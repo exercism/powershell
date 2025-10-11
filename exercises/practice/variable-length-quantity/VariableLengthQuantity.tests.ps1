@@ -145,6 +145,41 @@ Describe "VariableLengthQuantity test cases" {
 
             $got | Should -BeExactly $want
         }
+
+        It "asymmetric single byte" {
+            $got  = Invoke-EncodeVLQ -Bytes @(83)
+            $want = @(83)
+
+            $got | Should -BeExactly $want
+        }
+
+        It "asymmetric double byte" {
+            $got  = Invoke-EncodeVLQ -Bytes @(173)
+            $want = @(129, 45)
+
+            $got | Should -BeExactly $want
+        }
+
+        It "asymmetric triple byte" {
+            $got  = Invoke-EncodeVLQ -Bytes @(120220)
+            $want = @(135, 171, 28)
+
+            $got | Should -BeExactly $want
+        }
+
+        It "asymmetric quadruple byte" {
+            $got  = Invoke-EncodeVLQ -Bytes @(3503876)
+            $want = @(129, 213, 238, 4)
+
+            $got | Should -BeExactly $want
+        }
+
+        It "asymmetric quintuple byte" {
+            $got  = Invoke-EncodeVLQ -Bytes @(2254790917)
+            $want = @(136, 179, 149, 194, 5)
+
+            $got | Should -BeExactly $want
+        }
     }
     
     Context "Decode a series of bytes, producing a series of integers." {
