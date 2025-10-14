@@ -1096,6 +1096,14 @@
         "difficulty": 5
       },
       {
+        "slug": "intergalactic-transmission",
+        "name": "Intergalactic Transmission",
+        "uuid": "7ec4147a-392c-49f6-9587-f580ac61b48e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "rectangles",
         "name": "Rectangles",
         "uuid": "0c624e88-1baf-4760-b0ff-6a138e62113f",

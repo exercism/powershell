@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "IntergalacticTransmission.ps1"
+    ],
+    "test": [
+      "IntergalacticTransmission.tests.ps1"
+    ],
+    "example": [
+      ".meta/IntergalacticTransmission.example.ps1"
+    ]
+  },
+  "blurb": "Add parity bits to a message for transmission",
+  "source": "Kah Goh",
+  "source_url": "https://github.com/exercism/problem-specifications/pull/2543"
+}
