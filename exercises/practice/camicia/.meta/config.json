@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "Camicia.ps1"
+    ],
+    "test": [
+      "Camicia.tests.ps1"
+    ],
+    "example": [
+      ".meta/Camicia.example.ps1"
+    ]
+  },
+  "blurb": "Simulate the card game and determine whether the match ends or enters an infinite loop.",
+  "source": "Beggar-My-Neighbour",
+  "source_url": "https://www.richardpmann.com/beggar-my-neighbour-records.html"
+}

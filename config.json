@@ -1104,6 +1104,14 @@
         "difficulty": 5
       },
       {
+        "slug": "camicia",
+        "name": "Camicia",
+        "uuid": "7aaaf5fa-1a22-433b-9c0d-0e1c035eba3d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "rectangles",
         "name": "Rectangles",
         "uuid": "0c624e88-1baf-4760-b0ff-6a138e62113f",
