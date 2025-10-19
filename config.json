@@ -972,6 +972,14 @@
         "difficulty": 4
       },
       {
+        "slug": "split-second-stopwatch",
+        "name": "Split Second Stopwatch",
+        "uuid": "09ae15d4-b79e-4666-ad37-58a6545bb4e9",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "affine-cipher",
         "name": "Affine Cipher",
         "uuid": "0db7efd5-2ece-481a-b706-0e011aad52aa",
