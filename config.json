@@ -615,13 +615,21 @@
         "prerequisites": [],
         "difficulty": 2
       },
-            {
+      {
         "slug": "line-up",
         "name": "Line Up",
         "uuid": "35d96adf-0fc2-4442-9299-76d880a70b3c",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
+      },
+      {
+        "slug": "parallel-letter-frequency",
+        "name": "Parallel Letter Frequency",
+        "uuid": "6382ecca-b108-4fae-9901-dc1a9591a9cb",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
       },
       {
         "slug": "error-handling",
