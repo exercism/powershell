@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "ParallelLetterFrequency.ps1"
+    ],
+    "test": [
+      "ParallelLetterFrequency.tests.ps1"
+    ],
+    "example": [
+      ".meta/ParallelLetterFrequency.example.ps1"
+    ]
+  },
+  "blurb": "Count the frequency of letters in texts using parallel computation."
+}
