@@ -629,7 +629,7 @@
         "uuid": "6382ecca-b108-4fae-9901-dc1a9591a9cb",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 5
+        "difficulty": 3
       },
       {
         "slug": "error-handling",
