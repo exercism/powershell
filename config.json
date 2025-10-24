@@ -1250,6 +1250,14 @@
         "difficulty": 9
       },
       {
+        "slug": "alphametics",
+        "name": "Alphametics",
+        "uuid": "b0fe9c19-f846-4e3d-b36b-6504f1740902",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 9
+      },
+      {
         "slug": "pov",
         "name": "POV",
         "uuid": "05773ba2-d938-44ac-bfcc-e16f5ff9851d",
