@@ -1,0 +1,18 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "Alphametics.ps1"
+    ],
+    "test": [
+      "Alphametics.tests.ps1"
+    ],
+    "example": [
+      ".meta/Alphametics.example.ps1"
+    ]
+  },
+  "test_runner": false,
+  "blurb": "Write a function to solve alphametics puzzles."
+}
