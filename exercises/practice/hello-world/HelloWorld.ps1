@@ -10,5 +10,5 @@ Function Get-HelloWorld {
     Get-HelloWorld
     #>	
     
-    Return "Goodbye, Mars!"
+    Return "Hello, World!"
 }
