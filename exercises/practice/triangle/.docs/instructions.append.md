@@ -1,4 +1,7 @@
-# About Enum
+# Instructions append
+
+## About Enum
+
 The enum statement allows you to create a strongly typed set of labels.
 You can use that enumeration in the code without having to parse or check for spelling errors.
 

@@ -1,3 +1,5 @@
+# Instructions append
+
 ## Powershell Track
 
 ### Flags change
@@ -20,4 +22,5 @@ This exercise will provide 3 required text files: `iliad.txt`, `midsummer-night.
 
 ### Cmdlet
 
-Powershell does have a cmdlet similar to `grep` called `Select-String`, and you could read more about it [here](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/select-string) if you are interested. You should not use `Select-String` for this exercise at any point.
+Powershell does have a cmdlet similar to `grep` called `Select-String`, and you could read more about it [here](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/select-string) if you are interested.
+You should not use `Select-String` for this exercise at any point.

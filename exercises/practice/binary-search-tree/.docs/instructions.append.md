@@ -1,4 +1,7 @@
+# Instructions append
+
 ## Printing Tree
+
 This exercise has some predefined class methods to help printing out the tree in a nice format.
 Its main purpose is to help debugging and provide extra clarity.
 If you implement the rest of the class correctly it should print out the tree for you.
