@@ -271,5 +271,21 @@ Describe "StateOfTicTacToe test cases" {
 
             {Get-StateOfTicTacToe -Board $grid} | Should -Throw "*Impossible board: game should have ended after the game was won*"
         }
+
+        It "Invalid board: O kept playing after X wins" {
+            $grid = @("OO ",
+                      "XXX",
+                      " O ")
+
+            {Get-StateOfTicTacToe -Board $grid} | Should -Throw "*Impossible board: game should have ended after the game was won*"
+        }
+
+                It "Invalid board: X kept playing after O wins" {
+            $grid = @( "XX ",
+                       "OOO",
+                       " XX")
+
+            {Get-StateOfTicTacToe -Board $grid} | Should -Throw "*Impossible board: game should have ended after the game was won*"
+        }
     }
 }

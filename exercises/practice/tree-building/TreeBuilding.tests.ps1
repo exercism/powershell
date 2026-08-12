@@ -23,14 +23,14 @@ BeforeAll {
 
 Describe "TreeBuilding test cases" {
     Context "Valid records input" {
-        It "empty list input" {
+        It "empty list" {
             $records = @()
             $tree = Build-Tree -Records $records
     
             $tree | Should -BeNullOrEmpty
         }
     
-        It "one Node" {
+        It "single record" {
             $records = @(
                 [Record]::new(0, 0)
             )
@@ -39,7 +39,7 @@ Describe "TreeBuilding test cases" {
             NodeIsLeaf -Node $tree -NodeID 0
         }
     
-        It "three Nodes in order" {
+        It "three records in order" {
             $records = @(
                 [Record]::new(0, 0)
                 [Record]::new(1, 0)
@@ -52,7 +52,7 @@ Describe "TreeBuilding test cases" {
             NodeIsLeaf -Node $tree.Children[1] -NodeID 2
         }
     
-        It "three Nodes in reverse order" {
+        It "three records in reverse order" {
             $records = @(
                 [Record]::new(2, 0)
                 [Record]::new(1, 0)
@@ -101,7 +101,7 @@ Describe "TreeBuilding test cases" {
             NodeIsLeaf -Node $tree.Children[1].Children[1] -NodeID 6
         }
     
-        It "unbalanced treed" {
+        It "unbalanced tree" {
             $records = @(
                 [Record]::new(5, 2)
                 [Record]::new(2, 0)
@@ -124,6 +124,14 @@ Describe "TreeBuilding test cases" {
     }
     
     Context "Invalid records input" {
+        It "one root node and has parent" {
+            $records = @(
+                [Record]::new(0, 1)
+            )
+    
+            {Build-Tree -Records $records} | Should -Throw "*Node record id should be greater than parent id.*"
+        }
+
         It "root Node has parent" {
             $records = @(
                 [Record]::new(0, 1)
@@ -137,6 +145,25 @@ Describe "TreeBuilding test cases" {
             $records = @(
                 [Record]::new(1, 0)
                 [Record]::new(2, 0)
+            )
+    
+            {Build-Tree -Records $records} | Should -Throw "*Record id is invalid or out of order.*"
+        }
+
+        It "duplicate node" {
+            $records = @(
+                [Record]::new(0, 0)
+                [Record]::new(1, 0)
+                [Record]::new(1, 0)
+            )
+    
+            {Build-Tree -Records $records} | Should -Throw "*Record id is invalid or out of order.*"
+        }
+
+        It "duplicate root" {
+            $records = @(
+                [Record]::new(0, 0)
+                [Record]::new(0, 0)
             )
     
             {Build-Tree -Records $records} | Should -Throw "*Record id is invalid or out of order.*"

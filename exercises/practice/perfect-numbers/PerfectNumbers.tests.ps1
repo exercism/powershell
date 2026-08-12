@@ -39,6 +39,13 @@ Describe "Test Invoke-PerfectNumbers.ps1" {
             $got | Should -BeExactly $want
         }
 
+        It "Perfect square abundant number is classified correctly" {
+            $got = Invoke-PerfectNumbers -Number 196
+            $want = "abundant"
+
+            $got | Should -BeExactly $want
+        }
+
         It "Large abundant number is classified correctly" {
             $got = Invoke-PerfectNumbers -Number 33550335
             $want = "abundant"

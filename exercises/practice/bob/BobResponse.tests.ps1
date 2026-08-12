@@ -103,4 +103,8 @@ Describe "Test Get-BobResponse" {
     It "non-question ending with whitespace" {
         Get-BobResponse -HeyBob "This is a statement ending with whitespace      " | Should -BeExactly "Whatever."
     }
+
+    It "shouting a statement containing a question mark" {
+        Get-BobResponse -HeyBob "DO LIONS EAT PEOPLE? AHHHHH." | Should -BeExactly "Whoa, chill out!"
+    }
 }

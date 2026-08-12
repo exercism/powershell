@@ -45,6 +45,18 @@ Describe "IsbnVerifierTests" {
         $got | Should -BeFalse
     }
 
+    It "only one check digit is allowed" {
+        $got = Test-Isbn -Isbn "3-598-21508-96"
+
+        $got | Should -BeFalse
+    }
+
+    It "X is not substituted by the value 10" {
+        $got = Test-Isbn -Isbn "3-598-2X507-5"
+
+        $got | Should -BeFalse
+    }
+
     It "valid isbn without separating dashes" {
         $got = Test-Isbn -Isbn "3598215088"
 

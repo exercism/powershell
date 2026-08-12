@@ -146,4 +146,13 @@ Describe "SwiftScheduling test cases" {
 
         $got | Should -BeExactly $want
     }
+
+    It "Q2 starting in the last month of the second quarter translates to the last workday of the second quarter of this year" {
+        $start = [Datetime]::New(2019, 6, 15, 9, 50, 0)
+
+        $got = Invoke-SwiftScheduling -MeetingStart $start -Description "Q2"
+        $want = [Datetime]::New(2019, 6, 28, 8, 0, 0)
+
+        $got | Should -BeExactly $want
+    }
 }
