@@ -4,20 +4,24 @@ BeforeAll {
 
 Describe "Test Get-BobResponse" {
 
-    It "stating something" {
-        Get-BobResponse -HeyBob "Tom-ay-to, tom-aaaah-to." | Should -BeExactly "Whatever."
+    It "asking a question" {
+        Get-BobResponse -HeyBob "Does this cryogenic chamber make me look fat?" | Should -BeExactly "Sure."
     }
 
     It "shouting" {
         Get-BobResponse -HeyBob "WATCH OUT!" | Should -BeExactly "Whoa, chill out!"
     }
 
-    It "shouting gibberish" {
-        Get-BobResponse -HeyBob "FCECDFCAAB" | Should -BeExactly "Whoa, chill out!"
+    It "forceful question" {
+        Get-BobResponse -HeyBob "WHAT'S GOING ON?" | Should -BeExactly "Calm down, I know what I'm doing!"
     }
 
-    It "asking a question" {
-        Get-BobResponse -HeyBob "Does this cryogenic chamber make me look fat?" | Should -BeExactly "Sure."
+    It "silence" {
+        Get-BobResponse -HeyBob "" | Should -BeExactly "Fine. Be that way!"
+    }
+
+    It "stating something" {
+        Get-BobResponse -HeyBob "Tom-ay-to, tom-aaaah-to." | Should -BeExactly "Whatever."
     }
 
     It "asking a numeric question" {
@@ -28,40 +32,8 @@ Describe "Test Get-BobResponse" {
         Get-BobResponse -HeyBob "fffbbcbeab?" | Should -BeExactly "Sure."
     }
 
-    It "talking forcefully" {
-        Get-BobResponse -HeyBob "Let's go make out behind the gym!" | Should -BeExactly "Whatever."
-    }
-
-    It "using acronyms in regular speech" {
-        Get-BobResponse -HeyBob "It's OK if you don't want to go to the DMV." | Should -BeExactly "Whatever."
-    }
-
-    It "forceful question" {
-        Get-BobResponse -HeyBob "WHAT THE HELL WERE YOU THINKING?" | Should -BeExactly "Calm down, I know what I'm doing!"
-    }
-
-    It "shouting numbers" {
-        Get-BobResponse -HeyBob "1, 2, 3 GO!" | Should -BeExactly "Whoa, chill out!"
-    }
-
-    It "no letters" {
-        Get-BobResponse -HeyBob "1, 2, 3" | Should -BeExactly "Whatever."
-    }
-
     It "question with no letters" {
         Get-BobResponse -HeyBob "4?" | Should -BeExactly "Sure."
-    }
-
-    It "shouting with special characters" {
-        Get-BobResponse -HeyBob "ZOMG THE %^*@#`$(*^ ZOMBIES ARE COMING!!11!!1!" | Should -BeExactly "Whoa, chill out!"
-    }
-
-    It "shouting with no exclamation mark" {
-        Get-BobResponse -HeyBob "I HATE YOU" | Should -BeExactly "Whoa, chill out!"
-    }
-
-    It "statement containing question mark" {
-        Get-BobResponse -HeyBob "Ending with ? means a question." | Should -BeExactly "Whatever."
     }
 
     It "non-letters with question" {
@@ -72,8 +44,32 @@ Describe "Test Get-BobResponse" {
         Get-BobResponse -HeyBob "Wait! Hang on. Are you going to be OK?" | Should -BeExactly "Sure."
     }
 
-    It "silence" {
-        Get-BobResponse -HeyBob "" | Should -BeExactly "Fine. Be that way!"
+    It "ending with whitespace" {
+        Get-BobResponse -HeyBob "Okay if like my  spacebar  quite a bit?   " | Should -BeExactly "Sure."
+    }
+
+    It "multiple line question" {
+        Get-BobResponse -HeyBob "`nDoes this cryogenic chamber make`n me look fat?" | Should -BeExactly "Sure."
+    }
+
+    It "shouting gibberish" {
+        Get-BobResponse -HeyBob "FCECDFCAAB" | Should -BeExactly "Whoa, chill out!"
+    }
+
+    It "shouting a statement containing a question mark" {
+        Get-BobResponse -HeyBob "DO LIONS EAT PEOPLE? AHHHHH." | Should -BeExactly "Whoa, chill out!"
+    }
+
+    It "shouting numbers" {
+        Get-BobResponse -HeyBob "1, 2, 3 GO!" | Should -BeExactly "Whoa, chill out!"
+    }
+    
+    It "shouting with special characters" {
+        Get-BobResponse -HeyBob "ZOMG THE %^*@#`$(*^ ZOMBIES ARE COMING!!11!!1!" | Should -BeExactly "Whoa, chill out!"
+    }
+
+    It "shouting with no exclamation mark" {
+        Get-BobResponse -HeyBob "I HATE THE DENTIST" | Should -BeExactly "Whoa, chill out!"
     }
 
     It "prolonged silence" {
@@ -84,20 +80,28 @@ Describe "Test Get-BobResponse" {
         Get-BobResponse -HeyBob "`t`t`t`t`t`t`t`t`t`t`t" | Should -BeExactly "Fine. Be that way!"
     }
 
-    It "multiple line question" {
-        Get-BobResponse -HeyBob "`nDoes this cryogenic chamber make`n me look fat?" | Should -BeExactly "Sure."
+    It "other whitespace" {
+        Get-BobResponse -HeyBob "`n`r `t" | Should -BeExactly "Fine. Be that way!"
+    }
+
+    It "talking forcefully" {
+        Get-BobResponse -HeyBob "Hi there!" | Should -BeExactly "Whatever."
+    }
+
+    It "using acronyms in regular speech" {
+        Get-BobResponse -HeyBob "It's OK if you don't want to go work for NASA." | Should -BeExactly "Whatever."
+    }
+
+    It "no letters" {
+        Get-BobResponse -HeyBob "1, 2, 3" | Should -BeExactly "Whatever."
+    }
+
+    It "statement containing question mark" {
+        Get-BobResponse -HeyBob "Ending with ? means a question." | Should -BeExactly "Whatever."
     }
 
     It "starting with whitespace" {
         Get-BobResponse -HeyBob "         hmmmmmmm..." | Should -BeExactly "Whatever."
-    }
-
-    It "ending with whitespace" {
-        Get-BobResponse -HeyBob "Okay if like my  spacebar  quite a bit?   " | Should -BeExactly "Sure."
-    }
-
-    It "other whitespace" {
-        Get-BobResponse -HeyBob "`n`r `t" | Should -BeExactly "Fine. Be that way!"
     }
 
     It "non-question ending with whitespace" {

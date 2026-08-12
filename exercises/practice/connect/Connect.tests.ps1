@@ -78,6 +78,32 @@ Describe "Connect test cases" {
         $got | Should -BeExactly $want
     }
 
+    It "X wins with left-hand dead end fork" {
+        $board = @(
+            ". . X .",
+            " X X . .",
+            "  . X X X",
+            "   O O O O"
+        )
+        $got  = [Connect]::new($board).GetWinner()
+        $want = [Winner]::X
+
+        $got | Should -BeExactly $want
+    }
+
+    It "X wins with right-hand dead end fork" {
+        $board = @(
+            ". . X X",
+            " X X . .",
+            "  . X X .",
+            "   O O O O"
+        )
+        $got  = [Connect]::new($board).GetWinner()
+        $want = [Winner]::X
+
+        $got | Should -BeExactly $want
+    }
+
     It "X wins crossing from left to right" {
         $board = @(
             ". O . .",

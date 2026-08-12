@@ -54,6 +54,9 @@ Function Build-Tree() {
     | Sort-Object RecordId 
     | ForEach-Object {$nodes = @{}} {
         $_.Validate($upperBound)
+        if ($nodes.ContainsKey(($_.RecordId))) {
+            Throw "Record id is invalid or out of order."
+        }
         $nodes[$_.RecordId] = [Node]::new($_)
     }
 

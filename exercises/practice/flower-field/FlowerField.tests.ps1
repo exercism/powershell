@@ -168,6 +168,17 @@ Describe "Flower Field test cases" {
         $got | Should -BeExactly $want
     }
 
+    It "multiple adjacent flowers" {
+        $got  = Get-Annotate -Garden @(
+            " ** "
+        )
+        $want = @(
+            "1**1"
+        )
+
+        $got | Should -BeExactly $want
+    }
+
     It "annotate 9" {
         $got  = Get-Annotate -Garden @(
             "     ", 
