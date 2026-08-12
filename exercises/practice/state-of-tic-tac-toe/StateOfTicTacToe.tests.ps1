@@ -280,7 +280,7 @@ Describe "StateOfTicTacToe test cases" {
             {Get-StateOfTicTacToe -Board $grid} | Should -Throw "*Impossible board: game should have ended after the game was won*"
         }
 
-                It "Invalid board: X kept playing after O wins" {
+        It "Invalid board: X kept playing after O wins" {
             $grid = @( "XX ",
                        "OOO",
                        " XX")
