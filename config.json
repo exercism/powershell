@@ -964,9 +964,9 @@
         "difficulty": 4
       },
       {
-        "slug": "hangman",
-        "name": "Hangman",
-        "uuid": "20058254-0d41-486f-99d9-d7ee3f3ccb44",
+        "slug": "save-the-cow",
+        "name": "Save The Cow",
+        "uuid": "bc26a595-3d2a-4bea-90ef-25246e2cae9c",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4
@@ -1290,6 +1290,15 @@
         "prerequisites": [],
         "difficulty": 5,
         "status": "deprecated"
+      },
+      {
+        "slug": "hangman",
+        "name": "Hangman",
+        "uuid": "20058254-0d41-486f-99d9-d7ee3f3ccb44",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4,
+        "status":"deprecated"
       }
     ]
   },
