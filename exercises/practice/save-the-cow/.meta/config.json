@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "glaxxie"
+  ],
+  "files": {
+    "solution": [
+      "SaveTheCow.ps1"
+    ],
+    "test": [
+      "SaveTheCow.tests.ps1"
+    ],
+    "example": [
+      ".meta/SaveTheCow.example.ps1"
+    ]
+  },
+  "blurb": "Implement a word-guessing game."
+}
