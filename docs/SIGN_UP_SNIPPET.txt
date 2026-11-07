@@ -1,0 +1,12 @@
+function Get-MostCommonWord {
+    param([string]$Text)
+    $counts = @{}
+    $best = ""
+    foreach ($word in $Text.ToLower().Split(" ")) {
+        $counts[$word] = $counts[$word] + 1
+        if ($counts[$word] -gt $counts[$best]) {
+            $best = $word
+        }
+    }
+    "`"$best`" appears $($counts[$best]) times"
+}
